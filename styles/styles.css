@@ -1,6 +1,7 @@
 * {
 	/*background: lightblue;*/
 	margin: 0 auto;
+
 }
 
 body {
@@ -21,13 +22,25 @@ p::first-letter {
 	padding-left: 8px;
 }
 
+header {
+	background-image: url("../img/background_image.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 150px;
+	background-position: center bottom;
+}
+
 h1 {
+	color: #fff;
+	text-shadow: #000 2px 2px 10px; 
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	font-weight: 800;
 	text-align: center;
-	text-transform: uppercase;
-	font-weight: 700;
+	font-variant: small-caps;
 	font-size: 1.3em;
-	margin: 30px 30px 20px;
-	position: relative;
+	padding-top: 15px;
+
 }
 
 h2 {
@@ -51,13 +64,11 @@ a {
 	font-size: .95em;
 	color: #7f7f7f;
 	text-decoration: none; 
-
 }
 
 a:visited {
 	color: #000;
 }
-
 
 img {
 	display: block;

@@ -5,6 +5,12 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+}
+
+p {
+	margin: 30px;
+	padding: 0 60px;
 }
 
 img {

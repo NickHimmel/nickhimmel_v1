@@ -1,3 +1,12 @@
 * {
-	background: lightblue;
+	/*background: lightblue;*/
+	margin: 0;
+}
+
+img {
+	display: block;
+	margin: auto;
+	max-width: 75%;
+	max-height: 75%;
+
 }

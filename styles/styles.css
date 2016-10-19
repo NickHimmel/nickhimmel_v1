@@ -61,10 +61,31 @@ figcaption {
 	color: #7f7f7f;
 }
 
+form {
+	margin: 15px;
+	font-variant: small-caps;
+}
+
+textarea {
+	margin-top: 10px;
+}
+
+button {
+	margin-top: 10px;
+	font-size: .85em;
+}
+
+footer {
+	margin-bottom: 30px;
+}
 .nav-links {
 	border-bottom: 3px solid;
 }
 
 .nav-links:hover {
 	border-bottom: 6px solid;
+}
+
+.email {
+	margin-top: 5px;
 }

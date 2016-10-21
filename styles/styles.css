@@ -29,6 +29,7 @@ h1 {
 	font-variant: small-caps;
 	font-size: 1.5em;
 	margin: 30px;
+	margin-top: 15px; 
 }
 
 nav {
@@ -99,4 +100,22 @@ footer {
 
 .email {
 	margin-top: 5px;
+}
+
+#social-media-bar {
+	text-align: center;
+	height: 30px;
+	margin-top: 20px;
+}
+
+#social-media-bar ul {
+	padding: 0;
+	display: inline-block;
+}
+
+#social-media-bar img{
+	margin: 0 30px;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
 }

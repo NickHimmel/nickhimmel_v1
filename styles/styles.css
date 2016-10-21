@@ -63,13 +63,13 @@ a:visited {
 img {
 	display: block;
 	max-width: 100%;
-	margin: 15px 0;
+	margin: 30px auto;
 }
 
 figcaption {
-	margin: 0 30px;
 	font-size: .9em;
 	color: #7f7f7f;
+	text-align: center;
 }
 
 form {

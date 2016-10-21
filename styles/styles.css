@@ -137,7 +137,7 @@ button {
 
 	p::first-letter {
 		font-size: 1.6em;
-		padding-right: 5px;
+		padding-right: 4px;
 	}
 	
 	nav {
@@ -165,7 +165,7 @@ button {
 	}
 
 	p {
-		margin: 0 200px;
+		margin: 0 150px;
 	}
 
 	p::first-letter {
@@ -174,17 +174,16 @@ button {
 	}
 	
 	h2 {
-		margin: 0 100px;
+		margin: 0 50px;
 	}
 
 	ul {
-		padding: 0;
 		text-align: center;
 	}
 
 	li {
 		display: inline-block;
-		padding: 20px 13px 0 13px;
+		padding: 20px 20px 0 20px;
 	}
 
 	a {

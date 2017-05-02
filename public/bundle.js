@@ -46,26 +46,11 @@
 
 	'use strict';
 
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(158);
+	var Main = __webpack_require__(159);
 
-	var objOne = {
-	  name: 'Nick',
-	  location: 'New York'
-	};
-
-	var objTwo = _extends({
-	  age: 25
-	}, objOne);
-	console.log(objTwo);
-
-	ReactDOM.render(React.createElement(
-	  'h1',
-	  null,
-	  'Boilerplate app!'
-	), document.getElementById('app'));
+	ReactDOM.render(React.createElement(Main, null), document.getElementById('app'));
 
 /***/ }),
 /* 1 */
@@ -19760,6 +19745,42 @@
 
 	module.exports = __webpack_require__(3);
 
+
+/***/ }),
+/* 159 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var React = __webpack_require__(1);
+
+	var Main = React.createClass({
+	  displayName: 'Main',
+
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      null,
+	      React.createElement(
+	        'h1',
+	        null,
+	        'Nick Himmel'
+	      ),
+	      React.createElement(
+	        'h2',
+	        null,
+	        'web development'
+	      ),
+	      React.createElement(
+	        'h2',
+	        null,
+	        'photography'
+	      )
+	    );
+	  }
+	});
+
+	module.exports = Main;
 
 /***/ })
 /******/ ]);

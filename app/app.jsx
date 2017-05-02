@@ -1,7 +1,8 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import Main from 'app/components/Main.jsx';
 
 ReactDOM.render(
-  <h1>Boilerplate app!</h1>,
+  <Main />,
   document.getElementById('app')
 );

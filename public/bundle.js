@@ -77,15 +77,12 @@
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.hashHistory },
-	  _react2.default.createElement(
-	    _reactRouter.Route,
-	    { path: '/', component: _Main2.default },
-	    _react2.default.createElement(_reactRouter.Route, { path: 'photography', component: _Photography2.default })
-	  ),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _Main2.default }),
 	  _react2.default.createElement(
 	    _reactRouter.Route,
 	    { path: '/portfolio', component: _Portfolio2.default },
-	    _react2.default.createElement(_reactRouter.Route, { path: 'code', component: _Code2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: 'code', component: _Code2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'photography', component: _Photography2.default })
 	  )
 	), document.getElementById('app'));
 

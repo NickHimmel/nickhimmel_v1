@@ -78,7 +78,11 @@
 	    { path: '/', component: _Main2.default },
 	    _react2.default.createElement(_reactRouter.Route, { path: 'photography', component: _Photography2.default })
 	  ),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/code', component: _Code2.default })
+	  _react2.default.createElement(
+	    _reactRouter.Route,
+	    { path: '/portfolio' },
+	    _react2.default.createElement(_reactRouter.Route, { path: '/portfolio/code', component: _Code2.default })
+	  )
 	), document.getElementById('app'));
 
 /***/ }),

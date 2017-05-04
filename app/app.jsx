@@ -10,7 +10,9 @@ ReactDOM.render(
     <Route path="/" component={Main}>
       <Route path="photography" component={Photography}></Route>
     </Route>
-    <Route path="/code" component={Code}></Route>
+    <Route path="/portfolio">
+      <Route path="/portfolio/code" component={Code}></Route>
+    </Route>
   </Router>,
   document.getElementById('app')
 );

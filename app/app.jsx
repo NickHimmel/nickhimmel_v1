@@ -9,8 +9,8 @@ ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={Main}>
       <Route path="photography" component={Photography}></Route>
-      <Route path="code" component={Code}></Route>
     </Route>
+    <Route path="/code" component={Code}></Route>
   </Router>,
   document.getElementById('app')
 );

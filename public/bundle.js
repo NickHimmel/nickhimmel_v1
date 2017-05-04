@@ -60,6 +60,10 @@
 
 	var _Main2 = _interopRequireDefault(_Main);
 
+	var _Portfolio = __webpack_require__(221);
+
+	var _Portfolio2 = _interopRequireDefault(_Portfolio);
+
 	var _Photography = __webpack_require__(217);
 
 	var _Photography2 = _interopRequireDefault(_Photography);
@@ -80,7 +84,7 @@
 	  ),
 	  _react2.default.createElement(
 	    _reactRouter.Route,
-	    { path: '/portfolio' },
+	    { path: '/portfolio', component: _Portfolio2.default },
 	    _react2.default.createElement(_reactRouter.Route, { path: '/portfolio/code', component: _Code2.default })
 	  )
 	), document.getElementById('app'));
@@ -24981,10 +24985,6 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Nav = __webpack_require__(220);
-
-	var _Nav2 = _interopRequireDefault(_Nav);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25008,7 +25008,6 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_Nav2.default, null),
 	        _react2.default.createElement(
 	          'h2',
 	          null,
@@ -25140,6 +25139,59 @@
 	}(_react2.default.Component);
 
 	exports.default = Nav;
+
+/***/ }),
+/* 221 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Nav = __webpack_require__(220);
+
+	var _Nav2 = _interopRequireDefault(_Nav);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Portfolio = function (_React$Component) {
+	  _inherits(Portfolio, _React$Component);
+
+	  function Portfolio() {
+	    _classCallCheck(this, Portfolio);
+
+	    return _possibleConstructorReturn(this, (Portfolio.__proto__ || Object.getPrototypeOf(Portfolio)).apply(this, arguments));
+	  }
+
+	  _createClass(Portfolio, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(_Nav2.default, null)
+	      );
+	    }
+	  }]);
+
+	  return Portfolio;
+	}(_react2.default.Component);
+
+	exports.default = Portfolio;
 
 /***/ })
 /******/ ]);

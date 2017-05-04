@@ -72,7 +72,8 @@
 	  _react2.default.createElement(
 	    _reactRouter.Route,
 	    { path: '/', component: _Main2.default },
-	    _react2.default.createElement(_reactRouter.Route, { path: 'photography', component: _Photography2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: 'photography', component: _Photography2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'code', component: Code })
 	  )
 	), document.getElementById('app'));
 

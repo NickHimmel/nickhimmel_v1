@@ -8,6 +8,7 @@ ReactDOM.render(
   <Router>
     <Route path="/" component={Main}>
       <Route path="photography" component={Photography}></Route>
+      <Route path="code" component={Code}></Route>
     </Route>
   </Router>,
   document.getElementById('app')

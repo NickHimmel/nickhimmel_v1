@@ -25104,12 +25104,20 @@
 	          _react2.default.createElement(
 	            'li',
 	            null,
-	            'Web Projects'
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/portfolio/code', activeClassName: 'active' },
+	              'web development'
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'li',
 	            null,
-	            'Photo Projects'
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/portfolio/photography', activeClassName: 'active' },
+	              'photography'
+	            )
 	          ),
 	          _react2.default.createElement(
 	            'li',

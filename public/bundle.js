@@ -24960,14 +24960,30 @@
 	          'Nick Himmel'
 	        ),
 	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: '/portfolio/code', activeClassName: 'active' },
-	          'web development'
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/portfolio/code', activeClassName: 'active' },
+	              'web development'
+	            )
+	          )
 	        ),
 	        _react2.default.createElement(
-	          'h2',
+	          'div',
 	          null,
-	          'photography'
+	          _react2.default.createElement(
+	            'h2',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/portfolio/photography', activeClassName: 'active' },
+	              'photography'
+	            )
+	          )
 	        )
 	      );
 	    }

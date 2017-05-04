@@ -6,8 +6,12 @@ class SplashPage extends React.Component {
     return (
       <div>
         <h1>Nick Himmel</h1>
-        <Link to="/portfolio/code" activeClassName="active">web development</Link>
-        <h2>photography</h2>
+        <div>
+          <h2><Link to="/portfolio/code" activeClassName="active">web development</Link></h2>
+        </div>
+        <div>
+          <h2><Link to="/portfolio/photography" activeClassName="active">photography</Link></h2>
+        </div>
       </div>
     )
   }

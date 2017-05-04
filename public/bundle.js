@@ -25077,7 +25077,26 @@
 	        _react2.default.createElement(
 	          'h2',
 	          null,
-	          'Nav Bar'
+	          'Nick Himmel'
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          null,
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'Web Projects'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'Photo Projects'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            'About Projects'
+	          )
 	        )
 	      );
 	    }

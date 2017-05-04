@@ -4,7 +4,12 @@ class Nav extends React.Component {
   render() {
     return (
       <div>
-        <h2>Nav Bar</h2>
+        <h2>Nick Himmel</h2>
+        <ul>
+          <li>Web Projects</li>
+          <li>Photo Projects</li>
+          <li>About Projects</li>
+        </ul>
       </div>
     )
   }

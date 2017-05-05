@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import {Route, Router, IndexRoute, hashHistory} from 'react-router';
-import Main from 'app/components/Main.jsx';
+import SplashPage from 'app/components/SplashPage.jsx'
 import Portfolio from 'app/components/Portfolio'
 import Photography from 'app/components/Photography.jsx';
 import Code from 'app/components/Code.jsx';
@@ -9,7 +9,7 @@ import About from 'app/components/About.jsx'
 
 ReactDOM.render(
   <Router history={hashHistory}>
-    <Route path="/" component={Main}>
+    <Route path="/" component={SplashPage}>
     </Route>
     <Route path="/portfolio" component={Portfolio}>
       <Route path="code" component={Code}></Route>

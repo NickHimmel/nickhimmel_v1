@@ -9,7 +9,7 @@ class Nav extends React.Component {
         <ul>
           <li><Link to="/portfolio/code" activeClassName="active">web development</Link></li>
           <li><Link to="/portfolio/photography" activeClassName="active">photography</Link></li>
-          <li>About Projects</li>
+          <li><Link to="/portfolio/about" activeClassName="active">About</Link></li>
         </ul>
       </div>
     )

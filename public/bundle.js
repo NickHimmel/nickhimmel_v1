@@ -25014,7 +25014,11 @@
 	            _react2.default.createElement(
 	              'li',
 	              null,
-	              'About'
+	              _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: '/portfolio/about', activeClassName: 'active' },
+	                'About'
+	              )
 	            )
 	          )
 	        )
@@ -25155,7 +25159,11 @@
 	          _react2.default.createElement(
 	            'li',
 	            null,
-	            'About Projects'
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/portfolio/about', activeClassName: 'active' },
+	              'About'
+	            )
 	          )
 	        )
 	      );

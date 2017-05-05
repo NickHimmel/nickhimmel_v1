@@ -17,7 +17,7 @@ class SplashPage extends React.Component {
             <li>LinkedIn</li>
             <li>Instagram</li>
             <li>GitHub</li>
-            <li>About</li>
+            <li><Link to="/portfolio/about" activeClassName="active">About</Link></li>
           </ul>
         </div>
       </div>

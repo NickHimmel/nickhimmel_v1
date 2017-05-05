@@ -1,7 +1,7 @@
 import React from 'react';
 
 class Photography extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         <h2>Photography</h2>

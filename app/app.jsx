@@ -13,6 +13,7 @@ ReactDOM.render(
     <Route path="/portfolio" component={Portfolio}>
       <Route path="code" component={Code}></Route>
       <Route path="photography" component={Photography}></Route>
+      <Route path="about" component={About}></Route>
     </Route>
   </Router>,
   document.getElementById('app')

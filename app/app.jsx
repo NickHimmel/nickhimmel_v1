@@ -5,6 +5,7 @@ import Main from 'app/components/Main.jsx';
 import Portfolio from 'app/components/Portfolio'
 import Photography from 'app/components/Photography.jsx';
 import Code from 'app/components/Code.jsx';
+import About from 'app/components/About.jsx'
 
 ReactDOM.render(
   <Router history={hashHistory}>

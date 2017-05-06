@@ -25325,7 +25325,7 @@
 
 
 	// module
-	exports.push([module.id, "Body {\n  margin: 0;\n  padding: 0;\n}\n", ""]);
+	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n", ""]);
 
 	// exports
 

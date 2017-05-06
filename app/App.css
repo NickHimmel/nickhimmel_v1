@@ -7,7 +7,7 @@ Body {
 a {
   color:#8da2d9;
   text-decoration: none;
-  padding: 0 12px 12px 12px;
+  padding: 0 8px 8px 8px;
 }
 
 a:hover {
@@ -19,8 +19,13 @@ ul {
 }
 
 li {
+  padding: 10px 5px;
   list-style: none;
   display: inline-block;
+  border-right: solid 1px #8da2d9;
 }
 
+li:last-child {
+  border: none;
+}
 @import url("css/SplashPage.css")

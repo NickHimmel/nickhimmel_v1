@@ -25325,7 +25325,7 @@
 	exports.i(__webpack_require__(228), "");
 
 	// module
-	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color:#8da2d9;\n  text-decoration: none;\n  padding: 0 12px 12px 12px;\n}\n\na:hover {\n  background-color: #ffff00;\n}\n\nli {\n  list-style: none;\n}\n", ""]);
+	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color:#8da2d9;\n  text-decoration: none;\n  padding: 0 12px 12px 12px;\n}\n\na:hover {\n  background-color: #ffff00;\n}\n\nli {\n  list-style: none;\n  display: inline-block;\n}\n", ""]);
 
 	// exports
 

@@ -17,3 +17,5 @@ a:hover {
 li {
   list-style: none;
 }
+
+@import url("css/SplashPage.css")

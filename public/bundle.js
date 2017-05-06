@@ -25322,7 +25322,7 @@
 
 	exports = module.exports = __webpack_require__(224)(undefined);
 	// imports
-
+	exports.i(__webpack_require__(228), "");
 
 	// module
 	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color:#8da2d9;\n  text-decoration: none;\n  padding: 0 12px 12px 12px;\n}\n\na:hover {\n  background-color: #ffff00;\n}\n\nli {\n  list-style: none;\n}\n", ""]);
@@ -25818,6 +25818,21 @@
 		// send back the fixed css
 		return fixedCss;
 	};
+
+
+/***/ }),
+/* 227 */,
+/* 228 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(224)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, "", ""]);
+
+	// exports
 
 
 /***/ })

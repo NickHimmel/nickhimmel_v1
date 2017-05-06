@@ -76,10 +76,6 @@
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _style = __webpack_require__(222);
-
-	var _style2 = _interopRequireDefault(_style);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	_reactDom2.default.render(_react2.default.createElement(
@@ -25284,12 +25280,6 @@
 	}(_react2.default.Component);
 
 	exports.default = About;
-
-/***/ }),
-/* 222 */
-/***/ (function(module, exports) {
-
-	
 
 /***/ })
 /******/ ]);

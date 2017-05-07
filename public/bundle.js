@@ -24912,7 +24912,7 @@
 	        { className: 'splashpage' },
 	        _react2.default.createElement(
 	          'h1',
-	          { className: 'main_name' },
+	          { className: 'main_name name' },
 	          'Nick Himmel'
 	        ),
 	        _react2.default.createElement(
@@ -25094,7 +25094,7 @@
 	        { className: 'nav' },
 	        _react2.default.createElement(
 	          'h2',
-	          { className: 'nav_name' },
+	          { className: 'nav_name name' },
 	          _react2.default.createElement(
 	            _reactRouter.Link,
 	            { to: '/', activeClassName: 'active' },
@@ -25110,7 +25110,7 @@
 	            _react2.default.createElement(
 	              _reactRouter.Link,
 	              { to: '/portfolio/code', activeClassName: 'active' },
-	              'web development'
+	              'Web Development'
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -25119,7 +25119,7 @@
 	            _react2.default.createElement(
 	              _reactRouter.Link,
 	              { to: '/portfolio/photography', activeClassName: 'active' },
-	              'photography'
+	              'Photography'
 	            )
 	          ),
 	          _react2.default.createElement(
@@ -25341,7 +25341,7 @@
 	exports.i(__webpack_require__(229), "");
 
 	// module
-	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color:#8da2d9;\n  text-decoration: none;\n  padding: 0 5px 5px 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n", ""]);
+	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color:#8da2d9;\n  text-decoration: none;\n  padding: 0 5px 5px 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n\n.name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n", ""]);
 
 	// exports
 
@@ -25437,7 +25437,7 @@
 
 
 	// module
-	exports.push([module.id, ".splashpage {\n  text-align: center;\n  margin-top: 105px;\n}\n\n.main_name {\n  margin: auto;\n  padding: 5px 0;\n  text-transform: uppercase;\n  font-weight: 800;\n  font-size: 1em;\n  letter-spacing: 3px;\n  color: #FFF;\n  background: #8da2d9;\n  width: 168px;\n}\n\n.main_name:hover {\n  color:#8da2d9;\n  background: #ffff00\n}\n\n.main_header {\n  font-family: 'Old Standard TT', serif;\n  font-weight: 400;\n  font-size: 5em;\n  line-height: 78px;\n  letter-spacing: 3px;\n}\n\n.main_line {\n  margin: auto;\n  border-top: solid 6px #8da2d9;\n  width: 82px;\n}\n", ""]);
+	exports.push([module.id, ".splashpage {\n  text-align: center;\n  margin-top: 105px;\n}\n\n.main_name {\n  margin: auto;\n  padding: 5px 0;\n  color: #FFF;\n  background: #8da2d9;\n  width: 168px;\n}\n\n.main_name:hover {\n  color:#8da2d9;\n  background: #ffff00\n}\n\n.main_header {\n  font-family: 'Old Standard TT', serif;\n  font-weight: 400;\n  font-size: 5em;\n  line-height: 78px;\n  letter-spacing: 3px;\n}\n\n.main_line {\n  margin: auto;\n  border-top: solid 6px #8da2d9;\n  width: 82px;\n}\n", ""]);
 
 	// exports
 
@@ -25860,7 +25860,7 @@
 
 
 	// module
-	exports.push([module.id, ".nav {\n  position: fixed;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  font-size: 1em;\n  text-transform: uppercase;\n  float: left;\n  font-weight: 800;\n  letter-spacing: 3px;\n  margin-left: 50px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n", ""]);
+	exports.push([module.id, ".nav {\n  position: fixed;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 50px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n", ""]);
 
 	// exports
 

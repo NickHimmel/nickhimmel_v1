@@ -8,11 +8,7 @@
 }
 
 .nav_name {
-  font-size: 1em;
-  text-transform: uppercase;
   float: left;
-  font-weight: 800;
-  letter-spacing: 3px;
   margin-left: 50px;
   margin-top: 27px;
 }

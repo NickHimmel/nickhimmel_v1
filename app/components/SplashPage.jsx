@@ -5,7 +5,7 @@ class SplashPage extends React.Component {
   render() {
     return (
       <div className="splashpage">
-          <h1 className="main_name">Nick Himmel</h1>
+          <h1 className="main_name name">Nick Himmel</h1>
         <div>
           <h2 className="main_header"><Link to="/portfolio/code" activeClassName="active">web<br />development</Link></h2>
         </div>

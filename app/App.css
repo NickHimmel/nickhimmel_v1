@@ -29,4 +29,5 @@ li:last-child {
   border: none;
 }
 
-@import url("css/SplashPage.css")
+@import url("css/SplashPage.css");
+@import url("css/Nav.css");

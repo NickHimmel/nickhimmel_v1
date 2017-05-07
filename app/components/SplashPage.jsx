@@ -1,6 +1,5 @@
 import React from 'react';
 import {Link} from 'react-router';
-import styles from '../css/SplashPage.css'
 
 class SplashPage extends React.Component {
   render() {

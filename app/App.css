@@ -28,3 +28,5 @@ li {
 li:last-child {
   border: none;
 }
+
+@import url("css/SplashPage.css")

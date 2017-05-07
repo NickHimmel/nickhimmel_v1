@@ -25041,7 +25041,11 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(_Nav2.default, null),
-	        this.props.children
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          this.props.children
+	        )
 	      );
 	    }
 	  }]);

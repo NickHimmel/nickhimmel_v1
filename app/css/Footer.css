@@ -1,0 +1,24 @@
+.footer {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:100px;
+  width:100%;
+  text-align: right;
+}
+
+.footer_links {
+  font-size: .75em;
+  margin-top: 64px;
+  margin-right: 50px;
+}
+
+.footer_links li {
+  border-right: none;
+  padding: 5px;
+}
+
+.middle_dot {
+  color: #8da2d9;
+  padding: 0;
+}

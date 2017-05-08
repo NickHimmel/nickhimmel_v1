@@ -1,0 +1,31 @@
+.splashpage {
+  text-align: center;
+  margin-top: 82px;
+}
+
+.main_name {
+  margin: auto;
+  padding: 5px 0;
+  color: #FFF;
+  background: #8da2d9;
+  width: 168px;
+}
+
+.main_name:hover {
+  color:#8da2d9;
+  background: #ffff00
+}
+
+.main_header {
+  font-family: 'Old Standard TT', serif;
+  font-weight: 400;
+  font-size: 5em;
+  line-height: 78px;
+  letter-spacing: 3px;
+}
+
+.main_line {
+  margin: auto;
+  border-top: solid 6px #8da2d9;
+  width: 82px;
+}

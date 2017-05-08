@@ -25933,7 +25933,7 @@
 	        { className: 'footer' },
 	        _react2.default.createElement(
 	          'ul',
-	          null,
+	          { className: 'footer_links' },
 	          _react2.default.createElement(
 	            'li',
 	            null,
@@ -26007,7 +26007,7 @@
 
 
 	// module
-	exports.push([module.id, ".footer {\n  position:fixed;\n  left:0px;\n  bottom:0px;\n  height:100px;\n  width:100%;\n}\n", ""]);
+	exports.push([module.id, ".footer {\n  position:fixed;\n  left:0px;\n  bottom:0px;\n  height:100px;\n  width:100%;\n  text-align: right;\n}\n\n.footer_links {\n  font-size: .75em;\n  margin-top: 58px;\n}\n\n.footer_links li {\n  border-right: none;\n}\n\n.footer_dots {\n  border-right: solid 1px #8da2d9;\n}\n", ""]);
 
 	// exports
 

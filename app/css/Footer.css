@@ -4,4 +4,18 @@
   bottom:0px;
   height:100px;
   width:100%;
+  text-align: right;
+}
+
+.footer_links {
+  font-size: .75em;
+  margin-top: 58px;
+}
+
+.footer_links li {
+  border-right: none;
+}
+
+.footer_dots {
+  border-right: solid 1px #8da2d9;
 }

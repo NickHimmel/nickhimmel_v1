@@ -5,7 +5,7 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="footer">
-        <ul>
+        <ul className="footer_links">
           <li><Link to="/portfolio/code" activeClassName="active">Web Development</Link></li>
           <li><Link to="/portfolio/photography" activeClassName="active">Photography</Link></li>
           <li><a href="https://www.linkedin.com/in/nick-himmel">LinkedIn</a></li>

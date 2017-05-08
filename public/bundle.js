@@ -25352,7 +25352,7 @@
 	exports.i(__webpack_require__(232), "");
 
 	// module
-	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color:#8da2d9;\n  text-decoration: none;\n  padding: 0 5px 5px 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n\n.name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n", ""]);
+	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: #8da2d9;\n  text-decoration: none;\n  padding: 0 5px 5px 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n\n.name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n", ""]);
 
 	// exports
 
@@ -25954,12 +25954,22 @@
 	          ),
 	          _react2.default.createElement(
 	            'li',
+	            { className: 'middle_dot' },
+	            '\xB7'
+	          ),
+	          _react2.default.createElement(
+	            'li',
 	            null,
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'https://www.linkedin.com/in/nick-himmel' },
 	              'LinkedIn'
 	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'middle_dot' },
+	            '\xB7'
 	          ),
 	          _react2.default.createElement(
 	            'li',
@@ -25972,12 +25982,22 @@
 	          ),
 	          _react2.default.createElement(
 	            'li',
+	            { className: 'middle_dot' },
+	            '\xB7'
+	          ),
+	          _react2.default.createElement(
+	            'li',
 	            null,
 	            _react2.default.createElement(
 	              'a',
 	              { href: 'https://github.com/NickHimmel' },
 	              'GitHub'
 	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'middle_dot' },
+	            '\xB7'
 	          ),
 	          _react2.default.createElement(
 	            'li',
@@ -26007,7 +26027,7 @@
 
 
 	// module
-	exports.push([module.id, ".footer {\n  position:fixed;\n  left:0px;\n  bottom:0px;\n  height:100px;\n  width:100%;\n  text-align: right;\n}\n\n.footer_links {\n  font-size: .75em;\n  margin-top: 58px;\n}\n\n.footer_links li {\n  border-right: none;\n}\n\n.footer_dots {\n  border-right: solid 1px #8da2d9;\n}\n", ""]);
+	exports.push([module.id, ".footer {\n  position:fixed;\n  left:0px;\n  bottom:0px;\n  height:100px;\n  width:100%;\n  text-align: right;\n}\n\n.footer_links {\n  font-size: .75em;\n  margin-top: 64px;\n  margin-right: 50px;\n}\n\n.footer_links li {\n  border-right: none;\n  padding: 5px;\n}\n\n.middle_dot {\n  color: #8da2d9;\n  padding: 0;\n}\n", ""]);
 
 	// exports
 

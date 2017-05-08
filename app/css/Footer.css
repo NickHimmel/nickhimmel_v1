@@ -9,13 +9,16 @@
 
 .footer_links {
   font-size: .75em;
-  margin-top: 58px;
+  margin-top: 64px;
+  margin-right: 50px;
 }
 
 .footer_links li {
   border-right: none;
+  padding: 5px;
 }
 
-.footer_dots {
-  border-right: solid 1px #8da2d9;
+.middle_dot {
+  color: #8da2d9;
+  padding: 0;
 }

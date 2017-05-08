@@ -25043,7 +25043,7 @@
 	        _react2.default.createElement(_Nav2.default, null),
 	        _react2.default.createElement(
 	          'div',
-	          null,
+	          { className: 'portfolio' },
 	          this.props.children
 	        )
 	      );
@@ -25343,6 +25343,7 @@
 	// imports
 	exports.i(__webpack_require__(225), "");
 	exports.i(__webpack_require__(229), "");
+	exports.i(__webpack_require__(230), "");
 
 	// module
 	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color:#8da2d9;\n  text-decoration: none;\n  padding: 0 5px 5px 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n\n.name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n", ""]);
@@ -25865,6 +25866,20 @@
 
 	// module
 	exports.push([module.id, ".nav {\n  position: fixed;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 50px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n", ""]);
+
+	// exports
+
+
+/***/ }),
+/* 230 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(224)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".portfolio {\n  margin-top: 93px;\n}\n", ""]);
 
 	// exports
 

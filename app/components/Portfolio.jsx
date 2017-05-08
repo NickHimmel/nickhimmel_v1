@@ -6,7 +6,7 @@ class Portfolio extends React.Component {
     return (
       <div>
         <Nav />
-        <div>
+        <div className="portfolio">
           {this.props.children}
         </div>
       </div>

@@ -25282,7 +25282,7 @@
 /* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -25312,15 +25312,25 @@
 	  }
 
 	  _createClass(Photography, [{
-	    key: 'render',
+	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
+	        "div",
 	        null,
 	        _react2.default.createElement(
-	          'h2',
-	          null,
-	          'Photography'
+	          "h1",
+	          { className: "portfolio_title" },
+	          "Title"
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          { className: "portfolio_description" },
+	          "Description"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          { className: "portfolio_text" },
+	          "Ad quistibea venihillest, sit dus eos aut voluptam net od es denis prae digendisim nest, cone cus nihic tem re, tem. Arcimagnimi, soluptate dolupta tiossi si utaspisi nat quatio od quatur. Quias audandu ciurempelia dollicide sitat. Gitat occuptatiur. Ora si quiandi orrorrum ea plautem intibus cone nus apiet moluptis sini o c tem iunt, sequi bera de volorem etur, quis nem laciendisto es experepro doluptistia nobit ute id modisit omnihil inihicabo."
 	        )
 	      );
 	    }
@@ -25335,7 +25345,7 @@
 /* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -25365,25 +25375,25 @@
 	  }
 
 	  _createClass(Code, [{
-	    key: 'render',
+	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
+	        "div",
 	        null,
 	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'Title'
+	          "h1",
+	          { className: "portfolio_title" },
+	          "Title"
 	        ),
 	        _react2.default.createElement(
-	          'h2',
-	          null,
-	          'Description'
+	          "h2",
+	          { className: "portfolio_description" },
+	          "Description"
 	        ),
 	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'Ad quistibea venihillest, sit dus eos aut voluptam net od es denis prae digendisim nest, cone cus nihic tem re, tem. Arcimagnimi, soluptate dolupta tiossi si utaspisi nat quatio od quatur. Quias audandu ciurempelia dollicide sitat. Gitat occuptatiur. Ora si quiandi orrorrum ea plautem intibus cone nus apiet moluptis sini o c tem iunt, sequi bera de volorem etur, quis nem laciendisto es experepro doluptistia nobit ute id modisit omnihil inihicabo.'
+	          "p",
+	          { className: "portfolio_text" },
+	          "Ad quistibea venihillest, sit dus eos aut voluptam net od es denis prae digendisim nest, cone cus nihic tem re, tem. Arcimagnimi, soluptate dolupta tiossi si utaspisi nat quatio od quatur. Quias audandu ciurempelia dollicide sitat. Gitat occuptatiur. Ora si quiandi orrorrum ea plautem intibus cone nus apiet moluptis sini o c tem iunt, sequi bera de volorem etur, quis nem laciendisto es experepro doluptistia nobit ute id modisit omnihil inihicabo."
 	        )
 	      );
 	    }

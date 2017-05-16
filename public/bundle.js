@@ -25316,7 +25316,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        null,
+	        { className: "projects" },
 	        _react2.default.createElement(
 	          "h1",
 	          { className: "portfolio_title" },
@@ -25324,8 +25324,18 @@
 	        ),
 	        _react2.default.createElement(
 	          "h2",
+	          { className: "portfolio_subtitle" },
+	          "Subtitle"
+	        ),
+	        _react2.default.createElement(
+	          "p",
 	          { className: "portfolio_description" },
-	          "Description"
+	          _react2.default.createElement(
+	            "span",
+	            { className: "bold" },
+	            "Description:"
+	          ),
+	          " description"
 	        ),
 	        _react2.default.createElement(
 	          "p",
@@ -25379,7 +25389,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        null,
+	        { className: "projects" },
 	        _react2.default.createElement(
 	          "h1",
 	          { className: "portfolio_title" },
@@ -25387,8 +25397,18 @@
 	        ),
 	        _react2.default.createElement(
 	          "h2",
+	          { className: "portfolio_subtitle" },
+	          "Subtitle"
+	        ),
+	        _react2.default.createElement(
+	          "p",
 	          { className: "portfolio_description" },
-	          "Description"
+	          _react2.default.createElement(
+	            "span",
+	            { className: "bold" },
+	            "Description:"
+	          ),
+	          " description"
 	        ),
 	        _react2.default.createElement(
 	          "p",
@@ -25610,7 +25630,7 @@
 
 
 	// module
-	exports.push([module.id, ".nav {\n  position: fixed;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 50px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n", ""]);
+	exports.push([module.id, ".nav {\n  position: fixed;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n", ""]);
 
 	// exports
 
@@ -25624,7 +25644,7 @@
 
 
 	// module
-	exports.push([module.id, ".portfolio {\n  margin-top: 93px;\n}\n", ""]);
+	exports.push([module.id, ".portfolio {\n  margin-top: 93px;\n  font-family: 'Old Standard TT', serif;\n}\n\n.projects {\n  margin: 50px;\n}\n\n.portfolio_title {\n  font-size: 3em;\n  font-weight: 400;\n  text-transform: lowercase;\n  margin: 0;\n  line-height: 48px;\n}\n\n.portfolio_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.portfolio_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 5px 0;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.portfolio_text {\n  margin-top: 8px;\n}\n", ""]);
 
 	// exports
 

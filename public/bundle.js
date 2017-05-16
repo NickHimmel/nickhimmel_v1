@@ -64,19 +64,19 @@
 
 	var _Portfolio2 = _interopRequireDefault(_Portfolio);
 
-	var _Photography = __webpack_require__(219);
+	var _Photography = __webpack_require__(220);
 
 	var _Photography2 = _interopRequireDefault(_Photography);
 
-	var _Code = __webpack_require__(220);
+	var _Code = __webpack_require__(221);
 
 	var _Code2 = _interopRequireDefault(_Code);
 
-	var _About = __webpack_require__(221);
+	var _About = __webpack_require__(222);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _App = __webpack_require__(222);
+	var _App = __webpack_require__(223);
 
 	var _App2 = _interopRequireDefault(_App);
 
@@ -14747,7 +14747,7 @@
 	 *
 	 * @providesModule shallowEqual
 	 * @typechecks
-	 *
+	 * 
 	 */
 
 	'use strict';
@@ -22972,7 +22972,7 @@
 	 * nested.
 	 *
 	 *   import { Route, createRoutesFromReactChildren } from 'react-router'
-	 *
+	 *   
 	 *   const routes = createRoutesFromReactChildren(
 	 *     <Route component={App}>
 	 *       <Route path="home" component={Dashboard}/>
@@ -25017,7 +25017,7 @@
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
-	var _Footer = __webpack_require__(231);
+	var _Footer = __webpack_require__(219);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -25166,6 +25166,134 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _reactRouter = __webpack_require__(159);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Footer = function (_React$Component) {
+	  _inherits(Footer, _React$Component);
+
+	  function Footer() {
+	    _classCallCheck(this, Footer);
+
+	    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+	  }
+
+	  _createClass(Footer, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'footer' },
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'footer_links' },
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/portfolio/code', activeClassName: 'active' },
+	              'Web Development'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/portfolio/photography', activeClassName: 'active' },
+	              'Photography'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'middle_dot' },
+	            '\xB7'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://www.linkedin.com/in/nick-himmel' },
+	              'LinkedIn'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'middle_dot' },
+	            '\xB7'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://www.instagram.com/himmelnick/' },
+	              'Instagram'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'middle_dot' },
+	            '\xB7'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/NickHimmel' },
+	              'GitHub'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'middle_dot' },
+	            '\xB7'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/portfolio/about', activeClassName: 'active' },
+	              'About'
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Footer;
+	}(_react2.default.Component);
+
+	exports.default = Footer;
+
+/***/ }),
+/* 220 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25204,7 +25332,7 @@
 	exports.default = Photography;
 
 /***/ }),
-/* 220 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25243,9 +25371,19 @@
 	        'div',
 	        null,
 	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Title'
+	        ),
+	        _react2.default.createElement(
 	          'h2',
 	          null,
-	          'Code'
+	          'Description'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Ad quistibea venihillest, sit dus eos aut voluptam net od es denis prae digendisim nest, cone cus nihic tem re, tem. Arcimagnimi, soluptate dolupta tiossi si utaspisi nat quatio od quatur. Quias audandu ciurempelia dollicide sitat. Gitat occuptatiur. Ora si quiandi orrorrum ea plautem intibus cone nus apiet moluptis sini o c tem iunt, sequi bera de volorem etur, quis nem laciendisto es experepro doluptistia nobit ute id modisit omnihil inihicabo.'
 	        )
 	      );
 	    }
@@ -25257,7 +25395,7 @@
 	exports.default = Code;
 
 /***/ }),
-/* 221 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25310,13 +25448,13 @@
 	exports.default = About;
 
 /***/ }),
-/* 222 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(223);
+	var content = __webpack_require__(224);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// Prepare cssTransformation
 	var transform;
@@ -25324,7 +25462,7 @@
 	var options = {}
 	options.transform = transform
 	// add the styles to the DOM
-	var update = __webpack_require__(226)(content, options);
+	var update = __webpack_require__(230)(content, options);
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -25341,15 +25479,15 @@
 	}
 
 /***/ }),
-/* 223 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(224)(undefined);
+	exports = module.exports = __webpack_require__(225)(undefined);
 	// imports
-	exports.i(__webpack_require__(225), "");
+	exports.i(__webpack_require__(226), "");
+	exports.i(__webpack_require__(227), "");
+	exports.i(__webpack_require__(228), "");
 	exports.i(__webpack_require__(229), "");
-	exports.i(__webpack_require__(230), "");
-	exports.i(__webpack_require__(232), "");
 
 	// module
 	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: #8da2d9;\n  text-decoration: none;\n  padding: 0 5px 5px 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n\n.name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n", ""]);
@@ -25358,7 +25496,7 @@
 
 
 /***/ }),
-/* 224 */
+/* 225 */
 /***/ (function(module, exports) {
 
 	/*
@@ -25440,10 +25578,10 @@
 
 
 /***/ }),
-/* 225 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(224)(undefined);
+	exports = module.exports = __webpack_require__(225)(undefined);
 	// imports
 
 
@@ -25454,7 +25592,49 @@
 
 
 /***/ }),
-/* 226 */
+/* 227 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(225)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".nav {\n  position: fixed;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 50px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n", ""]);
+
+	// exports
+
+
+/***/ }),
+/* 228 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(225)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".portfolio {\n  margin-top: 93px;\n}\n", ""]);
+
+	// exports
+
+
+/***/ }),
+/* 229 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(225)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".footer {\n  position:fixed;\n  left:0px;\n  bottom:0px;\n  height:100px;\n  width:100%;\n  text-align: right;\n}\n\n.footer_links {\n  font-size: .75em;\n  margin-top: 64px;\n  margin-right: 50px;\n}\n\n.footer_links li {\n  border-right: none;\n  padding: 5px;\n}\n\n.middle_dot {\n  color: #8da2d9;\n  padding: 0;\n}\n", ""]);
+
+	// exports
+
+
+/***/ }),
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*
@@ -25472,7 +25652,7 @@
 		isOldIE = memoize(function() {
 			// Test for IE <= 9 as proposed by Browserhacks
 			// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
-			// Tests for existence of standard globals is to allow style-loader
+			// Tests for existence of standard globals is to allow style-loader 
 			// to operate correctly into non-standard environments
 			// @see https://github.com/webpack-contrib/style-loader/issues/177
 			return window && document && document.all && !window.atob;
@@ -25491,7 +25671,7 @@
 		singletonElement = null,
 		singletonCounter = 0,
 		styleElementsInsertedAtTop = [],
-		fixUrls = __webpack_require__(227);
+		fixUrls = __webpack_require__(231);
 
 	module.exports = function(list, options) {
 		if(false) {
@@ -25638,13 +25818,13 @@
 		// If a transform function was defined, run it on the css
 		if (options.transform && obj.css) {
 		    transformResult = options.transform(obj.css);
-
+		    
 		    if (transformResult) {
 		    	// If transform returns a value, use that instead of the original css.
 		    	// This allows running runtime transformations on the css.
 		    	obj.css = transformResult;
 		    } else {
-		    	// If the transform function returns a falsy value, don't add this css.
+		    	// If the transform function returns a falsy value, don't add this css. 
 		    	// This allows conditional loading of css
 		    	return function() {
 		    		// noop
@@ -25767,10 +25947,10 @@
 
 
 /***/ }),
-/* 227 */
+/* 231 */
 /***/ (function(module, exports) {
 
-
+	
 	/**
 	 * When source maps are enabled, `style-loader` uses a link element with a data-uri to
 	 * embed the css on the page. This breaks all relative urls because now they are relative to a
@@ -25859,177 +26039,6 @@
 		// send back the fixed css
 		return fixedCss;
 	};
-
-
-/***/ }),
-/* 228 */,
-/* 229 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(224)(undefined);
-	// imports
-
-
-	// module
-	exports.push([module.id, ".nav {\n  position: fixed;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 50px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n", ""]);
-
-	// exports
-
-
-/***/ }),
-/* 230 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(224)(undefined);
-	// imports
-
-
-	// module
-	exports.push([module.id, ".portfolio {\n  margin-top: 93px;\n}\n", ""]);
-
-	// exports
-
-
-/***/ }),
-/* 231 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouter = __webpack_require__(159);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Footer = function (_React$Component) {
-	  _inherits(Footer, _React$Component);
-
-	  function Footer() {
-	    _classCallCheck(this, Footer);
-
-	    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
-	  }
-
-	  _createClass(Footer, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'footer' },
-	        _react2.default.createElement(
-	          'ul',
-	          { className: 'footer_links' },
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/portfolio/code', activeClassName: 'active' },
-	              'Web Development'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/portfolio/photography', activeClassName: 'active' },
-	              'Photography'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'middle_dot' },
-	            '\xB7'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://www.linkedin.com/in/nick-himmel' },
-	              'LinkedIn'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'middle_dot' },
-	            '\xB7'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://www.instagram.com/himmelnick/' },
-	              'Instagram'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'middle_dot' },
-	            '\xB7'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://github.com/NickHimmel' },
-	              'GitHub'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'middle_dot' },
-	            '\xB7'
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/portfolio/about', activeClassName: 'active' },
-	              'About'
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Footer;
-	}(_react2.default.Component);
-
-	exports.default = Footer;
-
-/***/ }),
-/* 232 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(224)(undefined);
-	// imports
-
-
-	// module
-	exports.push([module.id, ".footer {\n  position:fixed;\n  left:0px;\n  bottom:0px;\n  height:100px;\n  width:100%;\n  text-align: right;\n}\n\n.footer_links {\n  font-size: .75em;\n  margin-top: 64px;\n  margin-right: 50px;\n}\n\n.footer_links li {\n  border-right: none;\n  padding: 5px;\n}\n\n.middle_dot {\n  color: #8da2d9;\n  padding: 0;\n}\n", ""]);
-
-	// exports
 
 
 /***/ })

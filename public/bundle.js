@@ -25393,12 +25393,12 @@
 	        _react2.default.createElement(
 	          "h1",
 	          { className: "portfolio_title" },
-	          "Title"
+	          "mypolitician"
 	        ),
 	        _react2.default.createElement(
 	          "h2",
 	          { className: "portfolio_subtitle" },
-	          "Subtitle"
+	          "Final project for Dev Bootcamp"
 	        ),
 	        _react2.default.createElement(
 	          "p",
@@ -25406,14 +25406,19 @@
 	          _react2.default.createElement(
 	            "span",
 	            { className: "bold" },
-	            "Description:"
+	            "Technologies used:"
 	          ),
-	          " description"
+	          "Ruby on Rails, React, D3; ",
+	          _react2.default.createElement(
+	            "a",
+	            { className: "portfolio_link", href: "https://github.com/NickHimmel/myPolitician" },
+	            "Code on Github"
+	          )
 	        ),
 	        _react2.default.createElement(
 	          "p",
 	          { className: "portfolio_text" },
-	          "Ad quistibea venihillest, sit dus eos aut voluptam net od es denis prae digendisim nest, cone cus nihic tem re, tem. Arcimagnimi, soluptate dolupta tiossi si utaspisi nat quatio od quatur. Quias audandu ciurempelia dollicide sitat. Gitat occuptatiur. Ora si quiandi orrorrum ea plautem intibus cone nus apiet moluptis sini o c tem iunt, sequi bera de volorem etur, quis nem laciendisto es experepro doluptistia nobit ute id modisit omnihil inihicabo."
+	          "This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows constituents which bills the lawmaker introduced, their vote history, and their Twitter stream, and provides links to their social media pages.iI built the map, utilizing the D3.js JavaScript library, and I designed and built the front end of the site using CSS and the Bootstrap framework."
 	        )
 	      );
 	    }
@@ -25644,7 +25649,7 @@
 
 
 	// module
-	exports.push([module.id, ".portfolio {\n  margin-top: 93px;\n  font-family: 'Old Standard TT', serif;\n}\n\n.projects {\n  margin: 50px;\n}\n\n.portfolio_title {\n  font-size: 3em;\n  font-weight: 400;\n  text-transform: lowercase;\n  margin: 0;\n  line-height: 48px;\n}\n\n.portfolio_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.portfolio_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 5px 0;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.portfolio_text {\n  margin-top: 8px;\n}\n", ""]);
+	exports.push([module.id, ".portfolio {\n  margin-top: 93px;\n  font-family: 'Old Standard TT', serif;\n}\n\n.projects {\n  margin: 50px;\n}\n\n.portfolio_title {\n  font-size: 3em;\n  font-weight: 400;\n  margin: 0;\n  line-height: 48px;\n}\n\n.portfolio_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.portfolio_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 5px 0;\n}\n\n.portfolio_link {\n  text-decoration: underline;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.portfolio_text {\n  margin-top: 8px;\n}\n", ""]);
 
 	// exports
 

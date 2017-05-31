@@ -10,7 +10,6 @@
 .portfolio_title {
   font-size: 3em;
   font-weight: 400;
-  text-transform: lowercase;
   margin: 0;
   line-height: 48px;
 }
@@ -26,6 +25,10 @@
   font-family: 'Open Sans', sans-serif;
   font-style: italic;
   margin: 5px 0;
+}
+
+.portfolio_link {
+  text-decoration: underline;
 }
 
 .bold {

@@ -26105,7 +26105,7 @@
 
 
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, ".gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: auto;\n  width: 100%;\n}\n\n.gallery li {\n  display: inline;\n}\n", ""]);
 
 	// exports
 

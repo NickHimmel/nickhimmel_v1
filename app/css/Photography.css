@@ -1,0 +1,11 @@
+.gallery {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.gallery li {
+  display: inline;
+}

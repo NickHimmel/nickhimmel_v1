@@ -25354,6 +25354,36 @@
 	            "li",
 	            null,
 	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg" })
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/003_Nick_Himmel_A_Museum_Of_Curiosities.jpg" })
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/004_Nick_Himmel_The_Cyclone.jpg" })
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/005_Nick_Himmel_Day_Of_The_Sharks.jpg" })
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/006_Nick_Himmel_Empire_Service_Metal.jpg" })
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/007_Nick_Himmel_While_You_Were_Gone.jpg" })
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg" })
 	          )
 	        )
 	      );
@@ -26105,7 +26135,7 @@
 
 
 	// module
-	exports.push([module.id, ".gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: auto;\n  width: 100%;\n}\n\n.gallery li {\n  display: inline;\n}\n", ""]);
+	exports.push([module.id, ".gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: auto;\n  width: 100%;\n  max-width: 1080px;\n}\n\n.gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 100%;\n}\n", ""]);
 
 	// exports
 

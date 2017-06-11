@@ -4,8 +4,14 @@
   white-space: nowrap;
   overflow-x: auto;
   width: 100%;
+  max-width: 1080px;
 }
 
 .gallery li {
   display: inline;
+  border: none;
+}
+
+.images {
+  width: 100%;
 }

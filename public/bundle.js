@@ -25341,6 +25341,20 @@
 	          "p",
 	          { className: "portfolio_text" },
 	          "For my thesis I created composite images that featured places I have lived, memories I have of growing up in New York and bits of New York City history. I combined built models with landscapes I photographed and added textures. The models were built primarily from coffee stirrers and hot glue. The eight images span from morning to night."
+	        ),
+	        _react2.default.createElement(
+	          "ul",
+	          { className: "gallery" },
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg" })
+	          ),
+	          _react2.default.createElement(
+	            "li",
+	            null,
+	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg" })
+	          )
 	        )
 	      );
 	    }
@@ -25422,8 +25436,8 @@
 	        ),
 	        _react2.default.createElement(
 	          "video",
-	          { width: "480", controls: true },
-	          _react2.default.createElement("source", { src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4", type: "video/mp4" })
+	          { width: "100%", controls: true },
+	          _react2.default.createElement("source", { src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4", type: "video/mp4", e: true })
 	        )
 	      );
 	    }
@@ -25668,7 +25682,7 @@
 
 
 	// module
-	exports.push([module.id, ".footer {\n  position:fixed;\n  left:0px;\n  bottom:0px;\n  height:100px;\n  width:100%;\n  text-align: right;\n}\n\n.footer_links {\n  font-size: .75em;\n  margin-top: 64px;\n  margin-right: 50px;\n}\n\n.footer_links li {\n  border-right: none;\n  padding: 5px;\n}\n\n.middle_dot {\n  color: #8da2d9;\n  padding: 0;\n}\n", ""]);
+	exports.push([module.id, ".footer {\n  display: none;\n  position:fixed;\n  left:0px;\n  bottom:0px;\n  height:100px;\n  width:100%;\n  text-align: right;\n}\n\n.footer_links {\n  font-size: .75em;\n  margin-top: 64px;\n  margin-right: 50px;\n}\n\n.footer_links li {\n  border-right: none;\n  padding: 5px;\n}\n\n.middle_dot {\n  color: #8da2d9;\n  padding: 0;\n}\n", ""]);
 
 	// exports
 

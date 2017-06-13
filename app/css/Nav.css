@@ -1,5 +1,13 @@
+.name {
+  font-size: 1em;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
 .nav {
   position: fixed;
+  z-index: 1;
   width: 100%;
   height: 82px;
   top: 0px;

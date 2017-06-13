@@ -1,10 +1,13 @@
+.gallery-container {
+  position: relative;
+}
+
 .gallery {
   margin: 0;
   padding: 0;
   white-space: nowrap;
   overflow-x: auto;
   width: 100%;
-  max-width: 1080px;
 }
 
 .gallery li {
@@ -14,4 +17,20 @@
 
 .images {
   width: 100%;
+  max-width: 1080px;
+}
+
+.arrows {
+  margin: 0;
+  padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.right-arrow, .left-arrow {
+  background-color: #fff;
 }

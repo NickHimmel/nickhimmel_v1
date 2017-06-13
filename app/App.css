@@ -7,7 +7,7 @@ Body {
 a {
   color: #8da2d9;
   text-decoration: none;
-  padding: 0 5px 5px 5px;
+  padding: 5px;
 }
 
 a:hover {
@@ -27,13 +27,6 @@ li {
 
 li:last-child {
   border: none;
-}
-
-.name {
-  font-size: 1em;
-  font-weight: 800;
-  letter-spacing: 3px;
-  text-transform: uppercase;
 }
 
 @import url("css/SplashPage.css");

@@ -25343,47 +25343,66 @@
 	          "For my thesis I created composite images that featured places I have lived, memories I have of growing up in New York and bits of New York City history. I combined built models with landscapes I photographed and added textures. The models were built primarily from coffee stirrers and hot glue. The eight images span from morning to night."
 	        ),
 	        _react2.default.createElement(
-	          "ul",
-	          { className: "gallery" },
+	          "div",
+	          { className: "gallery-container" },
 	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg" })
+	            "ul",
+	            { className: "gallery" },
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg" })
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg" })
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/003_Nick_Himmel_A_Museum_Of_Curiosities.jpg" })
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/004_Nick_Himmel_The_Cyclone.jpg" })
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/005_Nick_Himmel_Day_Of_The_Sharks.jpg" })
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/006_Nick_Himmel_Empire_Service_Metal.jpg" })
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/007_Nick_Himmel_While_You_Were_Gone.jpg" })
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg" })
+	            )
 	          ),
 	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg" })
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/003_Nick_Himmel_A_Museum_Of_Curiosities.jpg" })
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/004_Nick_Himmel_The_Cyclone.jpg" })
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/005_Nick_Himmel_Day_Of_The_Sharks.jpg" })
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/006_Nick_Himmel_Empire_Service_Metal.jpg" })
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/007_Nick_Himmel_While_You_Were_Gone.jpg" })
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg" })
+	            "div",
+	            { className: "arrows" },
+	            _react2.default.createElement(
+	              "a",
+	              { className: "right-arrow" },
+	              "\u203A"
+	            ),
+	            _react2.default.createElement("br", null),
+	            _react2.default.createElement(
+	              "a",
+	              { className: "left-arrow" },
+	              "\u2039"
+	            )
 	          )
 	        )
 	      );
@@ -25575,7 +25594,7 @@
 	exports.i(__webpack_require__(232), "");
 
 	// module
-	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: #8da2d9;\n  text-decoration: none;\n  padding: 0 5px 5px 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n\n.name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n", ""]);
+	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: #8da2d9;\n  text-decoration: none;\n  padding: 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n", ""]);
 
 	// exports
 
@@ -25685,7 +25704,7 @@
 
 
 	// module
-	exports.push([module.id, ".nav {\n  position: fixed;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n", ""]);
+	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n", ""]);
 
 	// exports
 
@@ -26135,7 +26154,7 @@
 
 
 	// module
-	exports.push([module.id, ".gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: auto;\n  width: 100%;\n  max-width: 1080px;\n}\n\n.gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 100%;\n}\n", ""]);
+	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n.gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: auto;\n  width: 100%;\n}\n\n.gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 100%;\n  max-width: 1080px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 10px;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 2em;\n  cursor: pointer;\n  position: absolute;\n  top: 50%;\n  right: 0;\n}\n\n.right-arrow, .left-arrow {\n  background-color: #fff;\n}\n", ""]);
 
 	// exports
 

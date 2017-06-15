@@ -6,7 +6,8 @@
   margin: 0;
   padding: 0;
   white-space: nowrap;
-  overflow-x: auto;
+  overflow-x: scroll;
+  overflow-y: hidden;
   width: 100%;
 }
 
@@ -16,21 +17,26 @@
 }
 
 .images {
-  width: 100%;
+  width: 90%;
   max-width: 1080px;
 }
 
 .arrows {
   margin: 0;
-  padding: 10px;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2em;
-  cursor: pointer;
+  padding: 0;
   position: absolute;
-  top: 50%;
-  right: 0;
+  top: 40%;
+  right: -10px;
 }
 
 .right-arrow, .left-arrow {
+  display: block;
+  margin: 20px 0;
+  padding: 0 10px;
+  padding-bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  cursor: pointer;
   background-color: #fff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }

@@ -25397,7 +25397,6 @@
 	              { className: "right-arrow" },
 	              "\u203A"
 	            ),
-	            _react2.default.createElement("br", null),
 	            _react2.default.createElement(
 	              "a",
 	              { className: "left-arrow" },
@@ -25565,7 +25564,7 @@
 	var options = {}
 	options.transform = transform
 	// add the styles to the DOM
-	var update = __webpack_require__(230)(content, options);
+	var update = __webpack_require__(231)(content, options);
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -25591,7 +25590,7 @@
 	exports.i(__webpack_require__(227), "");
 	exports.i(__webpack_require__(228), "");
 	exports.i(__webpack_require__(229), "");
-	exports.i(__webpack_require__(232), "");
+	exports.i(__webpack_require__(230), "");
 
 	// module
 	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: #8da2d9;\n  text-decoration: none;\n  padding: 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n", ""]);
@@ -25741,6 +25740,20 @@
 /* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	exports = module.exports = __webpack_require__(225)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n.gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n.gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 90%;\n  max-width: 1080px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 40%;\n  right: -10px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  margin: 20px 0;\n  padding: 0 10px;\n  padding-bottom: 5px;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.2em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);\n}\n", ""]);
+
+	// exports
+
+
+/***/ }),
+/* 231 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	/*
 		MIT License http://www.opensource.org/licenses/mit-license.php
 		Author Tobias Koppers @sokra
@@ -25775,7 +25788,7 @@
 		singletonElement = null,
 		singletonCounter = 0,
 		styleElementsInsertedAtTop = [],
-		fixUrls = __webpack_require__(231);
+		fixUrls = __webpack_require__(232);
 
 	module.exports = function(list, options) {
 		if(false) {
@@ -26051,7 +26064,7 @@
 
 
 /***/ }),
-/* 231 */
+/* 232 */
 /***/ (function(module, exports) {
 
 	
@@ -26143,20 +26156,6 @@
 		// send back the fixed css
 		return fixedCss;
 	};
-
-
-/***/ }),
-/* 232 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(225)(undefined);
-	// imports
-
-
-	// module
-	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n.gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: auto;\n  width: 100%;\n}\n\n.gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 100%;\n  max-width: 1080px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 10px;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 2em;\n  cursor: pointer;\n  position: absolute;\n  top: 50%;\n  right: 0;\n}\n\n.right-arrow, .left-arrow {\n  background-color: #fff;\n}\n", ""]);
-
-	// exports
 
 
 /***/ })

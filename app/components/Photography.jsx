@@ -20,8 +20,8 @@ class Photography extends React.Component {
             <li><img className="images" src="https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg"/></li>
           </ul>
           <div className="arrows">
-          <a className="right-arrow">›</a><br/>
-          <a className="left-arrow">‹</a>
+            <a className="right-arrow">&rsaquo;</a>
+            <a className="left-arrow">&lsaquo;</a>
           </div>
         </div>
       </div>

@@ -25745,7 +25745,7 @@
 
 
 	// module
-	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n.gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n.gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 90%;\n  max-width: 1080px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 40%;\n  right: -10px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  margin: 20px 0;\n  padding: 0 10px;\n  padding-bottom: 5px;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.2em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);\n}\n", ""]);
+	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n.gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n.gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 90%;\n  max-width: 1080px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 50%;\n  right: -9px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  width: 17px;\n  padding: 0;\n  text-align: center;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.3em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);\n}\n\n.left-arrow {\n  margin-top: 10px;\n}\n", ""]);
 
 	// exports
 

@@ -25,3 +25,21 @@
   float: right;
   margin-right: 50px;
 }
+
+@media (max-width: 600px) {
+  .nav {
+    height: 100px;
+  }
+
+  .nav_name {
+    float: none;
+    margin: auto;
+    padding: 12px 0;
+    text-align: center;
+  }
+  .nav_links {
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+}

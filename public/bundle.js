@@ -25282,7 +25282,7 @@
 /* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -25293,6 +25293,10 @@
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
+
+	var _PhotoProjectOne = __webpack_require__(234);
+
+	var _PhotoProjectOne2 = _interopRequireDefault(_PhotoProjectOne);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25312,98 +25316,12 @@
 	  }
 
 	  _createClass(Photography, [{
-	    key: "render",
+	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        "div",
-	        { className: "projects" },
-	        _react2.default.createElement(
-	          "h1",
-	          { className: "portfolio_title" },
-	          "nycthemeron"
-	        ),
-	        _react2.default.createElement(
-	          "h2",
-	          { className: "portfolio_subtitle" },
-	          "Thesis for MPS in digital photography at SVA, 2008"
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          { className: "portfolio_description" },
-	          _react2.default.createElement(
-	            "span",
-	            { className: "bold" },
-	            "Nyc \xB7 the \xB7 me \xB7 ron:"
-	          ),
-	          " Greek meaning 24 consecutive hours and is the composite of the words for night and day"
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          { className: "portfolio_text" },
-	          "For my thesis I created composite images that featured places I have lived, memories I have of growing up in New York and bits of New York City history. I combined built models with landscapes I photographed and added textures. The models were built primarily from coffee stirrers and hot glue. The eight images span from morning to night."
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "gallery-container" },
-	          _react2.default.createElement(
-	            "ul",
-	            { className: "gallery" },
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg" })
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg" })
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/003_Nick_Himmel_A_Museum_Of_Curiosities.jpg" })
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/004_Nick_Himmel_The_Cyclone.jpg" })
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/005_Nick_Himmel_Day_Of_The_Sharks.jpg" })
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/006_Nick_Himmel_Empire_Service_Metal.jpg" })
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/007_Nick_Himmel_While_You_Were_Gone.jpg" })
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg" })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "arrows" },
-	            _react2.default.createElement(
-	              "a",
-	              { className: "right-arrow" },
-	              "\u203A"
-	            ),
-	            _react2.default.createElement(
-	              "a",
-	              { className: "left-arrow" },
-	              "\u2039"
-	            )
-	          )
-	        )
+	        'div',
+	        null,
+	        _react2.default.createElement(_PhotoProjectOne2.default, null)
 	      );
 	    }
 	  }]);
@@ -25451,20 +25369,20 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "projects" },
+	        { className: "project" },
 	        _react2.default.createElement(
 	          "h1",
-	          { className: "portfolio_title" },
+	          { className: "project_title" },
 	          "mypolitician"
 	        ),
 	        _react2.default.createElement(
 	          "h2",
-	          { className: "portfolio_subtitle" },
+	          { className: "project_subtitle" },
 	          "Final project for Dev Bootcamp"
 	        ),
 	        _react2.default.createElement(
 	          "p",
-	          { className: "portfolio_description" },
+	          { className: "project_description" },
 	          _react2.default.createElement(
 	            "span",
 	            { className: "bold" },
@@ -25479,7 +25397,7 @@
 	        ),
 	        _react2.default.createElement(
 	          "p",
-	          { className: "portfolio_text" },
+	          { className: "project_text" },
 	          "This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows constituents which bills the lawmaker introduced, their vote history, and their Twitter stream, and provides links to their social media pages.iI built the map, utilizing the D3.js JavaScript library, and I designed and built the front end of the site using CSS and the Bootstrap framework."
 	        ),
 	        _react2.default.createElement(
@@ -25590,6 +25508,7 @@
 	exports.i(__webpack_require__(227), "");
 	exports.i(__webpack_require__(228), "");
 	exports.i(__webpack_require__(229), "");
+	exports.i(__webpack_require__(235), "");
 	exports.i(__webpack_require__(230), "");
 
 	// module
@@ -25717,7 +25636,7 @@
 
 
 	// module
-	exports.push([module.id, ".portfolio {\n  margin-top: 93px;\n  font-family: 'Old Standard TT', serif;\n}\n\n.projects {\n  margin: 50px;\n}\n\n.portfolio_title {\n  font-size: 3em;\n  font-weight: 400;\n  margin: 0;\n  line-height: 48px;\n}\n\n.portfolio_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.portfolio_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 5px 0;\n}\n\n.portfolio_link {\n  text-decoration: underline;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.portfolio_text {\n  margin-top: 8px;\n  font-family: 'Open Sans', sans-serif;\n}\n", ""]);
+	exports.push([module.id, ".portfolio {\n  margin-top: 93px;\n  font-family: 'Old Standard TT', serif;\n}\n", ""]);
 
 	// exports
 
@@ -26156,6 +26075,156 @@
 		// send back the fixed css
 		return fixedCss;
 	};
+
+
+/***/ }),
+/* 233 */,
+/* 234 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var PhotoProjectOne = function (_React$Component) {
+	  _inherits(PhotoProjectOne, _React$Component);
+
+	  function PhotoProjectOne() {
+	    _classCallCheck(this, PhotoProjectOne);
+
+	    return _possibleConstructorReturn(this, (PhotoProjectOne.__proto__ || Object.getPrototypeOf(PhotoProjectOne)).apply(this, arguments));
+	  }
+
+	  _createClass(PhotoProjectOne, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { className: "project" },
+	        _react2.default.createElement(
+	          "h1",
+	          { className: "project_title" },
+	          "nycthemeron"
+	        ),
+	        _react2.default.createElement(
+	          "h2",
+	          { className: "project_subtitle" },
+	          "Thesis for MPS in digital photography at SVA, 2008"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          { className: "project_description" },
+	          _react2.default.createElement(
+	            "span",
+	            { className: "bold" },
+	            "Nyc \xB7 the \xB7 me \xB7 ron:"
+	          ),
+	          " Greek meaning 24 consecutive hours and is the composite of the words for night and day"
+	        ),
+	        _react2.default.createElement(
+	          "p",
+	          { className: "project_text" },
+	          "For my thesis I created composite images that featured places I have lived, memories I have of growing up in New York and bits of New York City history. I combined built models with landscapes I photographed and added textures. The models were built primarily from coffee stirrers and hot glue. The eight images span from morning to night."
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "gallery-container" },
+	          _react2.default.createElement(
+	            "ul",
+	            { className: "gallery" },
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg" })
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg" })
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/003_Nick_Himmel_A_Museum_Of_Curiosities.jpg" })
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/004_Nick_Himmel_The_Cyclone.jpg" })
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/005_Nick_Himmel_Day_Of_The_Sharks.jpg" })
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/006_Nick_Himmel_Empire_Service_Metal.jpg" })
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/007_Nick_Himmel_While_You_Were_Gone.jpg" })
+	            ),
+	            _react2.default.createElement(
+	              "li",
+	              null,
+	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg" })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "arrows" },
+	            _react2.default.createElement(
+	              "a",
+	              { className: "right-arrow" },
+	              "\u203A"
+	            ),
+	            _react2.default.createElement(
+	              "a",
+	              { className: "left-arrow" },
+	              "\u2039"
+	            )
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return PhotoProjectOne;
+	}(_react2.default.Component);
+
+	exports.default = PhotoProjectOne;
+
+/***/ }),
+/* 235 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(225)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".project {\n  margin: 50px;\n}\n\n.project_title {\n  font-size: 3em;\n  font-weight: 400;\n  margin: 0;\n  line-height: 48px;\n}\n\n.project_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.project_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 5px 0;\n}\n\n.project_link {\n  text-decoration: underline;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.project_text {\n  margin-top: 8px;\n  font-family: 'Open Sans', sans-serif;\n}\n", ""]);
+
+	// exports
 
 
 /***/ })

@@ -25312,6 +25312,12 @@
 	  }
 
 	  _createClass(Photography, [{
+	    key: "handleClick",
+	    value: function handleClick(e) {
+	      e.preventDefault();
+	      console.log(e);
+	    }
+	  }, {
 	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
@@ -25394,7 +25400,7 @@
 	            { className: "arrows" },
 	            _react2.default.createElement(
 	              "a",
-	              { className: "right-arrow" },
+	              { className: "right-arrow", onClick: this.handleClick },
 	              "\u203A"
 	            ),
 	            _react2.default.createElement(

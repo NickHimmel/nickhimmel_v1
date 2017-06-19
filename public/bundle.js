@@ -24904,7 +24904,7 @@
 	        { className: 'splashpage' },
 	        _react2.default.createElement(
 	          'h1',
-	          { className: 'main_name name' },
+	          { className: 'splashpage_name name' },
 	          'Nick Himmel'
 	        ),
 	        _react2.default.createElement(
@@ -24912,7 +24912,7 @@
 	          null,
 	          _react2.default.createElement(
 	            'h2',
-	            { className: 'main_header' },
+	            { className: 'splashpage_header' },
 	            _react2.default.createElement(
 	              _reactRouter.Link,
 	              { to: '/code', activeClassName: 'active' },
@@ -24922,13 +24922,13 @@
 	            )
 	          )
 	        ),
-	        _react2.default.createElement('div', { className: 'main_line' }),
+	        _react2.default.createElement('div', { className: 'splashpage_line' }),
 	        _react2.default.createElement(
 	          'div',
 	          null,
 	          _react2.default.createElement(
 	            'h2',
-	            { className: 'main_header' },
+	            { className: 'splashpage_header' },
 	            _react2.default.createElement(
 	              _reactRouter.Link,
 	              { to: '/photography', activeClassName: 'active' },
@@ -25258,7 +25258,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        null,
+	        { className: 'Main' },
 	        _react2.default.createElement(_Footer2.default, null),
 	        _react2.default.createElement(_PhotoProjectOne2.default, null),
 	        _react2.default.createElement(_Nav2.default, null)
@@ -25813,7 +25813,7 @@
 
 
 	// module
-	exports.push([module.id, ".splashpage {\n  text-align: center;\n  margin-top: 82px;\n}\n\n.main_name {\n  margin: auto;\n  padding: 5px 0;\n  color: #FFF;\n  background: #8da2d9;\n  width: 168px;\n}\n\n.main_name:hover {\n  color:#8da2d9;\n  background: #ffff00\n}\n\n.main_header {\n  font-family: 'Old Standard TT', serif;\n  font-weight: 400;\n  font-size: 5em;\n  line-height: 78px;\n  letter-spacing: 3px;\n}\n\n.main_line {\n  margin: auto;\n  border-top: solid 6px #8da2d9;\n  width: 82px;\n}\n", ""]);
+	exports.push([module.id, ".splashpage {\n  text-align: center;\n  margin-top: 82px;\n}\n\n.splashpage_name {\n  margin: auto;\n  padding: 5px 0;\n  color: #FFF;\n  background: #8da2d9;\n  width: 168px;\n}\n\n.splashpage_name:hover {\n  color:#8da2d9;\n  background: #ffff00\n}\n\n.splashpage_header {\n  font-family: 'Old Standard TT', serif;\n  font-weight: 400;\n  font-size: 5em;\n  line-height: 78px;\n  letter-spacing: 3px;\n}\n\n.splashpage_line {\n  margin: auto;\n  border-top: solid 6px #8da2d9;\n  width: 82px;\n}\n", ""]);
 
 	// exports
 

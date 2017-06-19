@@ -5,13 +5,13 @@ class SplashPage extends React.Component {
   render() {
     return (
       <div className="splashpage">
-          <h1 className="main_name name">Nick Himmel</h1>
+          <h1 className="splashpage_name name">Nick Himmel</h1>
         <div>
-          <h2 className="main_header"><Link to="/code" activeClassName="active">web<br />development</Link></h2>
+          <h2 className="splashpage_header"><Link to="/code" activeClassName="active">web<br />development</Link></h2>
         </div>
-        <div className="main_line"></div>
+        <div className="splashpage_line"></div>
         <div>
-          <h2 className="main_header"><Link to="/photography" activeClassName="active">photography</Link></h2>
+          <h2 className="splashpage_header"><Link to="/photography" activeClassName="active">photography</Link></h2>
         </div>
         <div>
           <ul>

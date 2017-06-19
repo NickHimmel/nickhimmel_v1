@@ -60,7 +60,7 @@
 
 	var _SplashPage2 = _interopRequireDefault(_SplashPage);
 
-	var _Code = __webpack_require__(224);
+	var _Code = __webpack_require__(217);
 
 	var _Code2 = _interopRequireDefault(_Code);
 
@@ -68,11 +68,11 @@
 
 	var _Photography2 = _interopRequireDefault(_Photography);
 
-	var _About = __webpack_require__(225);
+	var _About = __webpack_require__(224);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _App = __webpack_require__(226);
+	var _App = __webpack_require__(225);
 
 	var _App2 = _interopRequireDefault(_App);
 
@@ -24990,7 +24990,103 @@
 	exports.default = SplashPage;
 
 /***/ }),
-/* 217 */,
+/* 217 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Nav = __webpack_require__(218);
+
+	var _Nav2 = _interopRequireDefault(_Nav);
+
+	var _Footer = __webpack_require__(219);
+
+	var _Footer2 = _interopRequireDefault(_Footer);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Code = function (_React$Component) {
+	  _inherits(Code, _React$Component);
+
+	  function Code() {
+	    _classCallCheck(this, Code);
+
+	    return _possibleConstructorReturn(this, (Code.__proto__ || Object.getPrototypeOf(Code)).apply(this, arguments));
+	  }
+
+	  _createClass(Code, [{
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'main' },
+	        _react2.default.createElement(_Nav2.default, null),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'project' },
+	          _react2.default.createElement(
+	            'h1',
+	            { className: 'project_title' },
+	            'mypolitician'
+	          ),
+	          _react2.default.createElement(
+	            'h2',
+	            { className: 'project_subtitle' },
+	            'Final project for Dev Bootcamp'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'project_description' },
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'bold' },
+	              'Technologies used:'
+	            ),
+	            'Ruby on Rails, React, D3; ',
+	            _react2.default.createElement(
+	              'a',
+	              { className: 'portfolio_link', href: 'https://github.com/NickHimmel/myPolitician' },
+	              'Code on Github'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'project_text' },
+	            'This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows constituents which bills the lawmaker introduced, their vote history, and their Twitter stream, and provides links to their social media pages.iI built the map, utilizing the D3.js JavaScript library, and I designed and built the front end of the site using CSS and the Bootstrap framework.'
+	          ),
+	          _react2.default.createElement(
+	            'video',
+	            { width: '100%', controls: true },
+	            _react2.default.createElement('source', { src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4', type: 'video/mp4', e: true })
+	          )
+	        ),
+	        _react2.default.createElement(_Footer2.default, null)
+	      );
+	    }
+	  }]);
+
+	  return Code;
+	}(_react2.default.Component);
+
+	exports.default = Code;
+
+/***/ }),
 /* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25542,103 +25638,6 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Nav = __webpack_require__(218);
-
-	var _Nav2 = _interopRequireDefault(_Nav);
-
-	var _Footer = __webpack_require__(219);
-
-	var _Footer2 = _interopRequireDefault(_Footer);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Code = function (_React$Component) {
-	  _inherits(Code, _React$Component);
-
-	  function Code() {
-	    _classCallCheck(this, Code);
-
-	    return _possibleConstructorReturn(this, (Code.__proto__ || Object.getPrototypeOf(Code)).apply(this, arguments));
-	  }
-
-	  _createClass(Code, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'main' },
-	        _react2.default.createElement(_Nav2.default, null),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'project' },
-	          _react2.default.createElement(
-	            'h1',
-	            { className: 'project_title' },
-	            'mypolitician'
-	          ),
-	          _react2.default.createElement(
-	            'h2',
-	            { className: 'project_subtitle' },
-	            'Final project for Dev Bootcamp'
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            { className: 'project_description' },
-	            _react2.default.createElement(
-	              'span',
-	              { className: 'bold' },
-	              'Technologies used:'
-	            ),
-	            'Ruby on Rails, React, D3; ',
-	            _react2.default.createElement(
-	              'a',
-	              { className: 'portfolio_link', href: 'https://github.com/NickHimmel/myPolitician' },
-	              'Code on Github'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'p',
-	            { className: 'project_text' },
-	            'This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows constituents which bills the lawmaker introduced, their vote history, and their Twitter stream, and provides links to their social media pages.iI built the map, utilizing the D3.js JavaScript library, and I designed and built the front end of the site using CSS and the Bootstrap framework.'
-	          ),
-	          _react2.default.createElement(
-	            'video',
-	            { width: '100%', controls: true },
-	            _react2.default.createElement('source', { src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4', type: 'video/mp4', e: true })
-	          )
-	        ),
-	        _react2.default.createElement(_Footer2.default, null)
-	      );
-	    }
-	  }]);
-
-	  return Code;
-	}(_react2.default.Component);
-
-	exports.default = Code;
-
-/***/ }),
-/* 225 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25677,13 +25676,13 @@
 	exports.default = About;
 
 /***/ }),
-/* 226 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(227);
+	var content = __webpack_require__(226);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// Prepare cssTransformation
 	var transform;
@@ -25691,14 +25690,14 @@
 	var options = {}
 	options.transform = transform
 	// add the styles to the DOM
-	var update = __webpack_require__(235)(content, options);
+	var update = __webpack_require__(228)(content, options);
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!../node_modules/css-loader/index.js!./App.css", function() {
-				var newContent = require("!!../node_modules/css-loader/index.js!./App.css");
+			module.hot.accept("!!../../node_modules/css-loader/index.js!./App.css", function() {
+				var newContent = require("!!../../node_modules/css-loader/index.js!./App.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -25708,17 +25707,17 @@
 	}
 
 /***/ }),
-/* 227 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(228)(undefined);
+	exports = module.exports = __webpack_require__(227)(undefined);
 	// imports
-	exports.i(__webpack_require__(229), "");
-	exports.i(__webpack_require__(237), "");
 	exports.i(__webpack_require__(230), "");
+	exports.i(__webpack_require__(231), "");
 	exports.i(__webpack_require__(232), "");
 	exports.i(__webpack_require__(233), "");
 	exports.i(__webpack_require__(234), "");
+	exports.i(__webpack_require__(235), "");
 
 	// module
 	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: #8da2d9;\n  text-decoration: none;\n  padding: 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n", ""]);
@@ -25727,7 +25726,7 @@
 
 
 /***/ }),
-/* 228 */
+/* 227 */
 /***/ (function(module, exports) {
 
 	/*
@@ -25809,78 +25808,7 @@
 
 
 /***/ }),
-/* 229 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(228)(undefined);
-	// imports
-
-
-	// module
-	exports.push([module.id, ".splashpage {\n  text-align: center;\n  margin-top: 82px;\n}\n\n.splashpage_name {\n  margin: auto;\n  padding: 5px 0;\n  color: #FFF;\n  background: #8da2d9;\n  width: 168px;\n}\n\n.splashpage_name:hover {\n  color:#8da2d9;\n  background: #ffff00\n}\n\n.splashpage_header {\n  font-family: 'Old Standard TT', serif;\n  font-weight: 400;\n  font-size: 5em;\n  line-height: 78px;\n  letter-spacing: 3px;\n}\n\n.splashpage_line {\n  margin: auto;\n  border-top: solid 6px #8da2d9;\n  width: 82px;\n}\n", ""]);
-
-	// exports
-
-
-/***/ }),
-/* 230 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(228)(undefined);
-	// imports
-
-
-	// module
-	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n@media (max-width: 600px) {\n  .nav {\n    height: 100px;\n  }\n\n  .nav_name {\n    float: none;\n    margin: auto;\n    padding: 12px 0;\n    text-align: center;\n  }\n  .nav_links {\n    float: none;\n    margin: auto;\n    text-align: center;\n  }\n}\n", ""]);
-
-	// exports
-
-
-/***/ }),
-/* 231 */,
-/* 232 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(228)(undefined);
-	// imports
-
-
-	// module
-	exports.push([module.id, ".footer {\n  display: none;\n  position:fixed;\n  left:0px;\n  bottom:0px;\n  height:100px;\n  width:100%;\n  text-align: right;\n}\n\n.footer_links {\n  font-size: .75em;\n  margin-top: 64px;\n  margin-right: 50px;\n}\n\n.footer_links li {\n  border-right: none;\n  padding: 5px;\n}\n\n.middle_dot {\n  color: #8da2d9;\n  padding: 0;\n}\n", ""]);
-
-	// exports
-
-
-/***/ }),
-/* 233 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(228)(undefined);
-	// imports
-
-
-	// module
-	exports.push([module.id, ".project {\n  margin: 50px;\n}\n\n.project_title, .project_subtitle {\n  font-family: 'Old Standard TT', serif;\n}\n\n.project_title {\n  font-size: 3em;\n  font-weight: 400;\n  margin: 0;\n  line-height: 48px;\n}\n\n.project_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.project_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 5px 0;\n}\n\n.project_link {\n  text-decoration: underline;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.project_text {\n  margin-top: 8px;\n  font-family: 'Open Sans', sans-serif;\n}\n", ""]);
-
-	// exports
-
-
-/***/ }),
-/* 234 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(228)(undefined);
-	// imports
-
-
-	// module
-	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n.gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n.gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 90%;\n  max-width: 1080px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 45%;\n  right: -9px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  width: 17px;\n  padding: 0;\n  text-align: center;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.3em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);\n}\n\n.left-arrow {\n  margin-top: 10px;\n}\n", ""]);
-
-	// exports
-
-
-/***/ }),
-/* 235 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*
@@ -25917,7 +25845,7 @@
 		singletonElement = null,
 		singletonCounter = 0,
 		styleElementsInsertedAtTop = [],
-		fixUrls = __webpack_require__(236);
+		fixUrls = __webpack_require__(229);
 
 	module.exports = function(list, options) {
 		if(false) {
@@ -26193,7 +26121,7 @@
 
 
 /***/ }),
-/* 236 */
+/* 229 */
 /***/ (function(module, exports) {
 
 	
@@ -26288,15 +26216,85 @@
 
 
 /***/ }),
-/* 237 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(228)(undefined);
+	exports = module.exports = __webpack_require__(227)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".splashpage {\n  text-align: center;\n  margin-top: 82px;\n}\n\n.splashpage_name {\n  margin: auto;\n  padding: 5px 0;\n  color: #FFF;\n  background: #8da2d9;\n  width: 168px;\n}\n\n.splashpage_name:hover {\n  color:#8da2d9;\n  background: #ffff00\n}\n\n.splashpage_header {\n  font-family: 'Old Standard TT', serif;\n  font-weight: 400;\n  font-size: 5em;\n  line-height: 78px;\n  letter-spacing: 3px;\n}\n\n.splashpage_line {\n  margin: auto;\n  border-top: solid 6px #8da2d9;\n  width: 82px;\n}\n", ""]);
+
+	// exports
+
+
+/***/ }),
+/* 231 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(227)(undefined);
 	// imports
 
 
 	// module
 	exports.push([module.id, ".main {\n  margin-top: 93px;\n}\n", ""]);
+
+	// exports
+
+
+/***/ }),
+/* 232 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(227)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n@media (max-width: 600px) {\n  .nav {\n    height: 100px;\n  }\n\n  .nav_name {\n    float: none;\n    margin: auto;\n    padding: 12px 0;\n    text-align: center;\n  }\n  .nav_links {\n    float: none;\n    margin: auto;\n    text-align: center;\n  }\n}\n", ""]);
+
+	// exports
+
+
+/***/ }),
+/* 233 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(227)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".footer {\n  display: none;\n  position:fixed;\n  left:0px;\n  bottom:0px;\n  height:100px;\n  width:100%;\n  text-align: right;\n}\n\n.footer_links {\n  font-size: .75em;\n  margin-top: 64px;\n  margin-right: 50px;\n}\n\n.footer_links li {\n  border-right: none;\n  padding: 5px;\n}\n\n.middle_dot {\n  color: #8da2d9;\n  padding: 0;\n}\n", ""]);
+
+	// exports
+
+
+/***/ }),
+/* 234 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(227)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".project {\n  margin: 50px;\n}\n\n.project_title, .project_subtitle {\n  font-family: 'Old Standard TT', serif;\n}\n\n.project_title {\n  font-size: 3em;\n  font-weight: 400;\n  margin: 0;\n  line-height: 48px;\n}\n\n.project_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.project_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 5px 0;\n}\n\n.project_link {\n  text-decoration: underline;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.project_text {\n  margin-top: 8px;\n  font-family: 'Open Sans', sans-serif;\n}\n", ""]);
+
+	// exports
+
+
+/***/ }),
+/* 235 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(227)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n.gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n.gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 90%;\n  max-width: 1080px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 45%;\n  right: -9px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  width: 17px;\n  padding: 0;\n  text-align: center;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.3em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);\n}\n\n.left-arrow {\n  margin-top: 10px;\n}\n", ""]);
 
 	// exports
 

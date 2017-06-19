@@ -4,8 +4,8 @@ import {Route, Router, IndexRoute, hashHistory} from 'react-router';
 import SplashPage from 'app/components/SplashPage.jsx'
 import Code from 'app/components/Code.jsx';
 import Photography from 'app/components/Photography.jsx';
-import About from 'app/components/About.jsx'
-import styles from './App.css'
+import About from 'app/components/About.jsx';
+import Styles from 'app/styles/App.css';
 
 ReactDOM.render(
   <Router history={hashHistory}>

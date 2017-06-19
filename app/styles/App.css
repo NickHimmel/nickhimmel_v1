@@ -29,9 +29,10 @@ li:last-child {
   border: none;
 }
 
-@import url("css/SplashPage.css");
-@import url("css/Main.css");
-@import url("css/Nav.css");
-@import url("css/Footer.css");
-@import url("css/Project.css");
-@import url("css/Photography.css");
+
+@import url("components/SplashPage.css");
+@import url("components/Main.css");
+@import url("components/Nav.css");
+@import url("components/Footer.css");
+@import url("components/Project.css");
+@import url("components/Photography.css");

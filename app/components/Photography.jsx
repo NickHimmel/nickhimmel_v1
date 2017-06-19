@@ -6,7 +6,7 @@ import PhotoProjectOne from 'app/components/PhotoProjectOne.jsx';
 class Photography extends React.Component {
   render() {
     return (
-      <div className="Main">
+      <div className="main">
         <Footer />
         <PhotoProjectOne />
         <Nav />

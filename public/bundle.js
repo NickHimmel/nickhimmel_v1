@@ -25258,7 +25258,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'Main' },
+	        { className: 'main' },
 	        _react2.default.createElement(_Footer2.default, null),
 	        _react2.default.createElement(_PhotoProjectOne2.default, null),
 	        _react2.default.createElement(_Nav2.default, null)
@@ -25572,42 +25572,46 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'project' },
+	        { className: 'main' },
 	        _react2.default.createElement(_Nav2.default, null),
 	        _react2.default.createElement(
-	          'h1',
-	          { className: 'project_title' },
-	          'mypolitician'
-	        ),
-	        _react2.default.createElement(
-	          'h2',
-	          { className: 'project_subtitle' },
-	          'Final project for Dev Bootcamp'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'project_description' },
+	          'div',
+	          { className: 'project' },
 	          _react2.default.createElement(
-	            'span',
-	            { className: 'bold' },
-	            'Technologies used:'
+	            'h1',
+	            { className: 'project_title' },
+	            'mypolitician'
 	          ),
-	          'Ruby on Rails, React, D3; ',
 	          _react2.default.createElement(
-	            'a',
-	            { className: 'portfolio_link', href: 'https://github.com/NickHimmel/myPolitician' },
-	            'Code on Github'
+	            'h2',
+	            { className: 'project_subtitle' },
+	            'Final project for Dev Bootcamp'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'project_description' },
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'bold' },
+	              'Technologies used:'
+	            ),
+	            'Ruby on Rails, React, D3; ',
+	            _react2.default.createElement(
+	              'a',
+	              { className: 'portfolio_link', href: 'https://github.com/NickHimmel/myPolitician' },
+	              'Code on Github'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'project_text' },
+	            'This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows constituents which bills the lawmaker introduced, their vote history, and their Twitter stream, and provides links to their social media pages.iI built the map, utilizing the D3.js JavaScript library, and I designed and built the front end of the site using CSS and the Bootstrap framework.'
+	          ),
+	          _react2.default.createElement(
+	            'video',
+	            { width: '100%', controls: true },
+	            _react2.default.createElement('source', { src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4', type: 'video/mp4', e: true })
 	          )
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'project_text' },
-	          'This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows constituents which bills the lawmaker introduced, their vote history, and their Twitter stream, and provides links to their social media pages.iI built the map, utilizing the D3.js JavaScript library, and I designed and built the front end of the site using CSS and the Bootstrap framework.'
-	        ),
-	        _react2.default.createElement(
-	          'video',
-	          { width: '100%', controls: true },
-	          _react2.default.createElement('source', { src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4', type: 'video/mp4', e: true })
 	        ),
 	        _react2.default.createElement(_Footer2.default, null)
 	      );
@@ -25710,8 +25714,8 @@
 	exports = module.exports = __webpack_require__(228)(undefined);
 	// imports
 	exports.i(__webpack_require__(229), "");
+	exports.i(__webpack_require__(237), "");
 	exports.i(__webpack_require__(230), "");
-	exports.i(__webpack_require__(231), "");
 	exports.i(__webpack_require__(232), "");
 	exports.i(__webpack_require__(233), "");
 	exports.i(__webpack_require__(234), "");
@@ -25833,20 +25837,7 @@
 
 
 /***/ }),
-/* 231 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(228)(undefined);
-	// imports
-
-
-	// module
-	exports.push([module.id, ".portfolio {\n  margin-top: 93px;\n  font-family: 'Old Standard TT', serif;\n}\n", ""]);
-
-	// exports
-
-
-/***/ }),
+/* 231 */,
 /* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25869,7 +25860,7 @@
 
 
 	// module
-	exports.push([module.id, ".project {\n  margin: 50px;\n}\n\n.project_title {\n  font-size: 3em;\n  font-weight: 400;\n  margin: 0;\n  line-height: 48px;\n}\n\n.project_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.project_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 5px 0;\n}\n\n.project_link {\n  text-decoration: underline;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.project_text {\n  margin-top: 8px;\n  font-family: 'Open Sans', sans-serif;\n}\n", ""]);
+	exports.push([module.id, ".project {\n  margin: 50px;\n}\n\n.project_title, .project_subtitle {\n  font-family: 'Old Standard TT', serif;\n}\n\n.project_title {\n  font-size: 3em;\n  font-weight: 400;\n  margin: 0;\n  line-height: 48px;\n}\n\n.project_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.project_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 5px 0;\n}\n\n.project_link {\n  text-decoration: underline;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.project_text {\n  margin-top: 8px;\n  font-family: 'Open Sans', sans-serif;\n}\n", ""]);
 
 	// exports
 
@@ -26294,6 +26285,20 @@
 		// send back the fixed css
 		return fixedCss;
 	};
+
+
+/***/ }),
+/* 237 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(228)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".main {\n  margin-top: 93px;\n}\n", ""]);
+
+	// exports
 
 
 /***/ })

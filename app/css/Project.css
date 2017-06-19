@@ -2,6 +2,10 @@
   margin: 50px;
 }
 
+.project_title, .project_subtitle {
+  font-family: 'Old Standard TT', serif;
+}
+
 .project_title {
   font-size: 3em;
   font-weight: 400;

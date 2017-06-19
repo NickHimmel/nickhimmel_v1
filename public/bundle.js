@@ -25367,7 +25367,7 @@
 	          _react2.default.createElement(
 	            'h1',
 	            { className: 'project_title' },
-	            'nycthemeron'
+	            this.state.project_title
 	          ),
 	          _react2.default.createElement(
 	            'h2',

@@ -7,9 +7,6 @@ class Portfolio extends React.Component {
     return (
       <div>
         <Nav />
-        <div className="portfolio">
-          {this.props.children}
-        </div>
         <Footer />
       </div>
     )

@@ -60,17 +60,13 @@
 
 	var _SplashPage2 = _interopRequireDefault(_SplashPage);
 
-	var _Portfolio = __webpack_require__(217);
+	var _Code = __webpack_require__(224);
 
-	var _Portfolio2 = _interopRequireDefault(_Portfolio);
+	var _Code2 = _interopRequireDefault(_Code);
 
 	var _Photography = __webpack_require__(220);
 
 	var _Photography2 = _interopRequireDefault(_Photography);
-
-	var _Code = __webpack_require__(224);
-
-	var _Code2 = _interopRequireDefault(_Code);
 
 	var _About = __webpack_require__(225);
 
@@ -24919,7 +24915,7 @@
 	            { className: 'main_header' },
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/portfolio/code', activeClassName: 'active' },
+	              { to: '/code', activeClassName: 'active' },
 	              'web',
 	              _react2.default.createElement('br', null),
 	              'development'
@@ -24935,7 +24931,7 @@
 	            { className: 'main_header' },
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/portfolio/photography', activeClassName: 'active' },
+	              { to: '/photography', activeClassName: 'active' },
 	              'photography'
 	            )
 	          )
@@ -24978,7 +24974,7 @@
 	              null,
 	              _react2.default.createElement(
 	                _reactRouter.Link,
-	                { to: '/portfolio/about', activeClassName: 'active' },
+	                { to: '/about', activeClassName: 'active' },
 	                'About'
 	              )
 	            )
@@ -24994,69 +24990,7 @@
 	exports.default = SplashPage;
 
 /***/ }),
-/* 217 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _Nav = __webpack_require__(218);
-
-	var _Nav2 = _interopRequireDefault(_Nav);
-
-	var _Footer = __webpack_require__(219);
-
-	var _Footer2 = _interopRequireDefault(_Footer);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Portfolio = function (_React$Component) {
-	  _inherits(Portfolio, _React$Component);
-
-	  function Portfolio() {
-	    _classCallCheck(this, Portfolio);
-
-	    return _possibleConstructorReturn(this, (Portfolio.__proto__ || Object.getPrototypeOf(Portfolio)).apply(this, arguments));
-	  }
-
-	  _createClass(Portfolio, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(_Nav2.default, null),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'portfolio' },
-	          this.props.children
-	        ),
-	        _react2.default.createElement(_Footer2.default, null)
-	      );
-	    }
-	  }]);
-
-	  return Portfolio;
-	}(_react2.default.Component);
-
-	exports.default = Portfolio;
-
-/***/ }),
+/* 217 */,
 /* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25290,6 +25224,14 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _Nav = __webpack_require__(218);
+
+	var _Nav2 = _interopRequireDefault(_Nav);
+
+	var _Footer = __webpack_require__(219);
+
+	var _Footer2 = _interopRequireDefault(_Footer);
+
 	var _PhotoProjectOne = __webpack_require__(221);
 
 	var _PhotoProjectOne2 = _interopRequireDefault(_PhotoProjectOne);
@@ -25317,7 +25259,9 @@
 	      return _react2.default.createElement(
 	        'div',
 	        null,
-	        _react2.default.createElement(_PhotoProjectOne2.default, null)
+	        _react2.default.createElement(_Footer2.default, null),
+	        _react2.default.createElement(_PhotoProjectOne2.default, null),
+	        _react2.default.createElement(_Nav2.default, null)
 	      );
 	    }
 	  }]);
@@ -25586,7 +25530,7 @@
 /* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -25597,6 +25541,14 @@
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
+
+	var _Nav = __webpack_require__(218);
+
+	var _Nav2 = _interopRequireDefault(_Nav);
+
+	var _Footer = __webpack_require__(219);
+
+	var _Footer2 = _interopRequireDefault(_Footer);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25616,46 +25568,48 @@
 	  }
 
 	  _createClass(Code, [{
-	    key: "render",
+	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        "div",
-	        { className: "project" },
+	        'div',
+	        { className: 'project' },
+	        _react2.default.createElement(_Nav2.default, null),
 	        _react2.default.createElement(
-	          "h1",
-	          { className: "project_title" },
-	          "mypolitician"
+	          'h1',
+	          { className: 'project_title' },
+	          'mypolitician'
 	        ),
 	        _react2.default.createElement(
-	          "h2",
-	          { className: "project_subtitle" },
-	          "Final project for Dev Bootcamp"
+	          'h2',
+	          { className: 'project_subtitle' },
+	          'Final project for Dev Bootcamp'
 	        ),
 	        _react2.default.createElement(
-	          "p",
-	          { className: "project_description" },
+	          'p',
+	          { className: 'project_description' },
 	          _react2.default.createElement(
-	            "span",
-	            { className: "bold" },
-	            "Technologies used:"
+	            'span',
+	            { className: 'bold' },
+	            'Technologies used:'
 	          ),
-	          "Ruby on Rails, React, D3; ",
+	          'Ruby on Rails, React, D3; ',
 	          _react2.default.createElement(
-	            "a",
-	            { className: "portfolio_link", href: "https://github.com/NickHimmel/myPolitician" },
-	            "Code on Github"
+	            'a',
+	            { className: 'portfolio_link', href: 'https://github.com/NickHimmel/myPolitician' },
+	            'Code on Github'
 	          )
 	        ),
 	        _react2.default.createElement(
-	          "p",
-	          { className: "project_text" },
-	          "This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows constituents which bills the lawmaker introduced, their vote history, and their Twitter stream, and provides links to their social media pages.iI built the map, utilizing the D3.js JavaScript library, and I designed and built the front end of the site using CSS and the Bootstrap framework."
+	          'p',
+	          { className: 'project_text' },
+	          'This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows constituents which bills the lawmaker introduced, their vote history, and their Twitter stream, and provides links to their social media pages.iI built the map, utilizing the D3.js JavaScript library, and I designed and built the front end of the site using CSS and the Bootstrap framework.'
 	        ),
 	        _react2.default.createElement(
-	          "video",
-	          { width: "100%", controls: true },
-	          _react2.default.createElement("source", { src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4", type: "video/mp4", e: true })
-	        )
+	          'video',
+	          { width: '100%', controls: true },
+	          _react2.default.createElement('source', { src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4', type: 'video/mp4', e: true })
+	        ),
+	        _react2.default.createElement(_Footer2.default, null)
 	      );
 	    }
 	  }]);

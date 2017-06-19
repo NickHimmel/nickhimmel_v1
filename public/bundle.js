@@ -25343,10 +25343,15 @@
 	var Photography = function (_React$Component) {
 	  _inherits(Photography, _React$Component);
 
-	  function Photography() {
+	  function Photography(props) {
 	    _classCallCheck(this, Photography);
 
-	    return _possibleConstructorReturn(this, (Photography.__proto__ || Object.getPrototypeOf(Photography)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (Photography.__proto__ || Object.getPrototypeOf(Photography)).call(this, props));
+
+	    _this.state = {
+	      project_title: "nycthemeron"
+	    };
+	    return _this;
 	  }
 
 	  _createClass(Photography, [{
@@ -25356,7 +25361,84 @@
 	        'div',
 	        { className: 'main' },
 	        _react2.default.createElement(_Footer2.default, null),
-	        _react2.default.createElement(_PhotoProjectOne2.default, null),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'project' },
+	          _react2.default.createElement(
+	            'h1',
+	            { className: 'project_title' },
+	            'nycthemeron'
+	          ),
+	          _react2.default.createElement(
+	            'h2',
+	            { className: 'project_subtitle' },
+	            'Thesis for MPS in digital photography at SVA, 2008'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'project_description' },
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'bold' },
+	              'Nyc \xB7 the \xB7 me \xB7 ron:'
+	            ),
+	            ' Greek meaning 24 consecutive hours and is the composite of the words for night and day'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'project_text' },
+	            'For my thesis I created composite images that featured places I have lived, memories I have of growing up in New York and bits of New York City history. I combined built models with landscapes I photographed and added textures. The models were built primarily from coffee stirrers and hot glue. The eight images span from morning to night.'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'gallery-container' },
+	            _react2.default.createElement(
+	              'ul',
+	              { className: 'gallery' },
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement('img', { className: 'images', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg' })
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement('img', { className: 'images', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg' })
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement('img', { className: 'images', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/003_Nick_Himmel_A_Museum_Of_Curiosities.jpg' })
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement('img', { className: 'images', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/004_Nick_Himmel_The_Cyclone.jpg' })
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement('img', { className: 'images', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/005_Nick_Himmel_Day_Of_The_Sharks.jpg' })
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement('img', { className: 'images', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/006_Nick_Himmel_Empire_Service_Metal.jpg' })
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement('img', { className: 'images', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/007_Nick_Himmel_While_You_Were_Gone.jpg' })
+	              ),
+	              _react2.default.createElement(
+	                'li',
+	                null,
+	                _react2.default.createElement('img', { className: 'images', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg' })
+	              )
+	            ),
+	            _react2.default.createElement('div', { className: 'arrows' })
+	          )
+	        ),
 	        _react2.default.createElement(_Nav2.default, null)
 	      );
 	    }

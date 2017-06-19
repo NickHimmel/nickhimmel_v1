@@ -3,7 +3,7 @@ import RightArrow from 'app/components/RightArrow.jsx';
 import LeftArrow from 'app/components/LeftArrow.jsx';
 
 class PhotoProjectOne extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props);
     this.handleSlide = this.handleSlide.bind(this);
   }

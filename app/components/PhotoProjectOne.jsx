@@ -1,6 +1,15 @@
 import React from 'react';
+import RightArrow from 'app/components/RightArrow.jsx';
+import LeftArrow from 'app/components/LeftArrow.jsx';
 
 class PhotoProjectOne extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleSlide = this.handleSlide.bind(this);
+  }
+  handleSlide(direction) {
+    alert("Hello" + direction)
+  }
   render() {
     return (
       <div  className="project">
@@ -20,8 +29,8 @@ class PhotoProjectOne extends React.Component {
             <li><img className="images" src="https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg"/></li>
           </ul>
           <div className="arrows">
-            <a className="right-arrow">&rsaquo;</a>
-            <a className="left-arrow">&lsaquo;</a>
+            <RightArrow onSlide={this.handleSlide.bind(this)}/>
+            <LeftArrow />
           </div>
         </div>
       </div>

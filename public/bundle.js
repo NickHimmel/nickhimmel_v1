@@ -68,15 +68,15 @@
 
 	var _Photography2 = _interopRequireDefault(_Photography);
 
-	var _Code = __webpack_require__(221);
+	var _Code = __webpack_require__(224);
 
 	var _Code2 = _interopRequireDefault(_Code);
 
-	var _About = __webpack_require__(222);
+	var _About = __webpack_require__(225);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _App = __webpack_require__(223);
+	var _App = __webpack_require__(226);
 
 	var _App2 = _interopRequireDefault(_App);
 
@@ -86,13 +86,9 @@
 	  _reactRouter.Router,
 	  { history: _reactRouter.hashHistory },
 	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _SplashPage2.default }),
-	  _react2.default.createElement(
-	    _reactRouter.Route,
-	    { path: '/portfolio', component: _Portfolio2.default },
-	    _react2.default.createElement(_reactRouter.Route, { path: 'code', component: _Code2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'photography', component: _Photography2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'about', component: _About2.default })
-	  )
+	  _react2.default.createElement(_reactRouter.Route, { path: '/code', component: _Code2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/photography', component: _Photography2.default }),
+	  _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default })
 	), document.getElementById('app'));
 
 /***/ }),
@@ -25294,7 +25290,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _PhotoProjectOne = __webpack_require__(234);
+	var _PhotoProjectOne = __webpack_require__(221);
 
 	var _PhotoProjectOne2 = _interopRequireDefault(_PhotoProjectOne);
 
@@ -25333,6 +25329,261 @@
 
 /***/ }),
 /* 221 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _RightArrow = __webpack_require__(222);
+
+	var _RightArrow2 = _interopRequireDefault(_RightArrow);
+
+	var _LeftArrow = __webpack_require__(223);
+
+	var _LeftArrow2 = _interopRequireDefault(_LeftArrow);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var PhotoProjectOne = function (_React$Component) {
+	  _inherits(PhotoProjectOne, _React$Component);
+
+	  function PhotoProjectOne(props) {
+	    _classCallCheck(this, PhotoProjectOne);
+
+	    var _this = _possibleConstructorReturn(this, (PhotoProjectOne.__proto__ || Object.getPrototypeOf(PhotoProjectOne)).call(this, props));
+
+	    _this.handleSlide = _this.handleSlide.bind(_this);
+	    return _this;
+	  }
+
+	  _createClass(PhotoProjectOne, [{
+	    key: 'handleSlide',
+	    value: function handleSlide(direction) {
+	      alert("Hello" + direction);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'project' },
+	        _react2.default.createElement(
+	          'h1',
+	          { className: 'project_title' },
+	          'nycthemeron'
+	        ),
+	        _react2.default.createElement(
+	          'h2',
+	          { className: 'project_subtitle' },
+	          'Thesis for MPS in digital photography at SVA, 2008'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          { className: 'project_description' },
+	          _react2.default.createElement(
+	            'span',
+	            { className: 'bold' },
+	            'Nyc \xB7 the \xB7 me \xB7 ron:'
+	          ),
+	          ' Greek meaning 24 consecutive hours and is the composite of the words for night and day'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          { className: 'project_text' },
+	          'For my thesis I created composite images that featured places I have lived, memories I have of growing up in New York and bits of New York City history. I combined built models with landscapes I photographed and added textures. The models were built primarily from coffee stirrers and hot glue. The eight images span from morning to night.'
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'gallery-container' },
+	          _react2.default.createElement(
+	            'ul',
+	            { className: 'gallery' },
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { className: 'images', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { className: 'images', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { className: 'images', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/003_Nick_Himmel_A_Museum_Of_Curiosities.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { className: 'images', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/004_Nick_Himmel_The_Cyclone.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { className: 'images', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/005_Nick_Himmel_Day_Of_The_Sharks.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { className: 'images', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/006_Nick_Himmel_Empire_Service_Metal.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { className: 'images', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/007_Nick_Himmel_While_You_Were_Gone.jpg' })
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement('img', { className: 'images', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg' })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'arrows' },
+	            _react2.default.createElement(_RightArrow2.default, { onSlide: this.handleSlide.bind(this) }),
+	            _react2.default.createElement(_LeftArrow2.default, null)
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return PhotoProjectOne;
+	}(_react2.default.Component);
+
+	exports.default = PhotoProjectOne;
+
+/***/ }),
+/* 222 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var RightArrow = function (_React$Component) {
+	  _inherits(RightArrow, _React$Component);
+
+	  function RightArrow(props) {
+	    _classCallCheck(this, RightArrow);
+
+	    return _possibleConstructorReturn(this, (RightArrow.__proto__ || Object.getPrototypeOf(RightArrow)).call(this, props));
+	  }
+
+	  _createClass(RightArrow, [{
+	    key: "handleClick",
+	    value: function handleClick(e) {
+	      e.preventDefault();
+	      console.log(this.props.onSlide);
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "a",
+	          { className: "right-arrow", onClick: this.handleClick },
+	          "\u203A"
+	        )
+	      );
+	    }
+	  }]);
+
+	  return RightArrow;
+	}(_react2.default.Component);
+
+	exports.default = RightArrow;
+
+/***/ }),
+/* 223 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var LeftArrow = function (_React$Component) {
+	  _inherits(LeftArrow, _React$Component);
+
+	  function LeftArrow() {
+	    _classCallCheck(this, LeftArrow);
+
+	    return _possibleConstructorReturn(this, (LeftArrow.__proto__ || Object.getPrototypeOf(LeftArrow)).apply(this, arguments));
+	  }
+
+	  _createClass(LeftArrow, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "a",
+	          { className: "left-arrow" },
+	          "\u2039"
+	        )
+	      );
+	    }
+	  }]);
+
+	  return LeftArrow;
+	}(_react2.default.Component);
+
+	exports.default = LeftArrow;
+
+/***/ }),
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25415,7 +25666,7 @@
 	exports.default = Code;
 
 /***/ }),
-/* 222 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25468,13 +25719,13 @@
 	exports.default = About;
 
 /***/ }),
-/* 223 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(224);
+	var content = __webpack_require__(227);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// Prepare cssTransformation
 	var transform;
@@ -25482,7 +25733,7 @@
 	var options = {}
 	options.transform = transform
 	// add the styles to the DOM
-	var update = __webpack_require__(231)(content, options);
+	var update = __webpack_require__(235)(content, options);
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -25499,17 +25750,17 @@
 	}
 
 /***/ }),
-/* 224 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(225)(undefined);
+	exports = module.exports = __webpack_require__(228)(undefined);
 	// imports
-	exports.i(__webpack_require__(226), "");
-	exports.i(__webpack_require__(227), "");
-	exports.i(__webpack_require__(228), "");
 	exports.i(__webpack_require__(229), "");
-	exports.i(__webpack_require__(235), "");
 	exports.i(__webpack_require__(230), "");
+	exports.i(__webpack_require__(231), "");
+	exports.i(__webpack_require__(232), "");
+	exports.i(__webpack_require__(233), "");
+	exports.i(__webpack_require__(234), "");
 
 	// module
 	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: #8da2d9;\n  text-decoration: none;\n  padding: 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n", ""]);
@@ -25518,7 +25769,7 @@
 
 
 /***/ }),
-/* 225 */
+/* 228 */
 /***/ (function(module, exports) {
 
 	/*
@@ -25600,10 +25851,10 @@
 
 
 /***/ }),
-/* 226 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(225)(undefined);
+	exports = module.exports = __webpack_require__(228)(undefined);
 	// imports
 
 
@@ -25614,10 +25865,10 @@
 
 
 /***/ }),
-/* 227 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(225)(undefined);
+	exports = module.exports = __webpack_require__(228)(undefined);
 	// imports
 
 
@@ -25628,10 +25879,10 @@
 
 
 /***/ }),
-/* 228 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(225)(undefined);
+	exports = module.exports = __webpack_require__(228)(undefined);
 	// imports
 
 
@@ -25642,10 +25893,10 @@
 
 
 /***/ }),
-/* 229 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(225)(undefined);
+	exports = module.exports = __webpack_require__(228)(undefined);
 	// imports
 
 
@@ -25656,10 +25907,24 @@
 
 
 /***/ }),
-/* 230 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(225)(undefined);
+	exports = module.exports = __webpack_require__(228)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".project {\n  margin: 50px;\n}\n\n.project_title {\n  font-size: 3em;\n  font-weight: 400;\n  margin: 0;\n  line-height: 48px;\n}\n\n.project_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.project_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 5px 0;\n}\n\n.project_link {\n  text-decoration: underline;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.project_text {\n  margin-top: 8px;\n  font-family: 'Open Sans', sans-serif;\n}\n", ""]);
+
+	// exports
+
+
+/***/ }),
+/* 234 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(228)(undefined);
 	// imports
 
 
@@ -25670,7 +25935,7 @@
 
 
 /***/ }),
-/* 231 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*
@@ -25707,7 +25972,7 @@
 		singletonElement = null,
 		singletonCounter = 0,
 		styleElementsInsertedAtTop = [],
-		fixUrls = __webpack_require__(232);
+		fixUrls = __webpack_require__(236);
 
 	module.exports = function(list, options) {
 		if(false) {
@@ -25983,7 +26248,7 @@
 
 
 /***/ }),
-/* 232 */
+/* 236 */
 /***/ (function(module, exports) {
 
 	
@@ -26075,156 +26340,6 @@
 		// send back the fixed css
 		return fixedCss;
 	};
-
-
-/***/ }),
-/* 233 */,
-/* 234 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var PhotoProjectOne = function (_React$Component) {
-	  _inherits(PhotoProjectOne, _React$Component);
-
-	  function PhotoProjectOne() {
-	    _classCallCheck(this, PhotoProjectOne);
-
-	    return _possibleConstructorReturn(this, (PhotoProjectOne.__proto__ || Object.getPrototypeOf(PhotoProjectOne)).apply(this, arguments));
-	  }
-
-	  _createClass(PhotoProjectOne, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        { className: "project" },
-	        _react2.default.createElement(
-	          "h1",
-	          { className: "project_title" },
-	          "nycthemeron"
-	        ),
-	        _react2.default.createElement(
-	          "h2",
-	          { className: "project_subtitle" },
-	          "Thesis for MPS in digital photography at SVA, 2008"
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          { className: "project_description" },
-	          _react2.default.createElement(
-	            "span",
-	            { className: "bold" },
-	            "Nyc \xB7 the \xB7 me \xB7 ron:"
-	          ),
-	          " Greek meaning 24 consecutive hours and is the composite of the words for night and day"
-	        ),
-	        _react2.default.createElement(
-	          "p",
-	          { className: "project_text" },
-	          "For my thesis I created composite images that featured places I have lived, memories I have of growing up in New York and bits of New York City history. I combined built models with landscapes I photographed and added textures. The models were built primarily from coffee stirrers and hot glue. The eight images span from morning to night."
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "gallery-container" },
-	          _react2.default.createElement(
-	            "ul",
-	            { className: "gallery" },
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg" })
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg" })
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/003_Nick_Himmel_A_Museum_Of_Curiosities.jpg" })
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/004_Nick_Himmel_The_Cyclone.jpg" })
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/005_Nick_Himmel_Day_Of_The_Sharks.jpg" })
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/006_Nick_Himmel_Empire_Service_Metal.jpg" })
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/007_Nick_Himmel_While_You_Were_Gone.jpg" })
-	            ),
-	            _react2.default.createElement(
-	              "li",
-	              null,
-	              _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg" })
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "div",
-	            { className: "arrows" },
-	            _react2.default.createElement(
-	              "a",
-	              { className: "right-arrow" },
-	              "\u203A"
-	            ),
-	            _react2.default.createElement(
-	              "a",
-	              { className: "left-arrow" },
-	              "\u2039"
-	            )
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return PhotoProjectOne;
-	}(_react2.default.Component);
-
-	exports.default = PhotoProjectOne;
-
-/***/ }),
-/* 235 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(225)(undefined);
-	// imports
-
-
-	// module
-	exports.push([module.id, ".project {\n  margin: 50px;\n}\n\n.project_title {\n  font-size: 3em;\n  font-weight: 400;\n  margin: 0;\n  line-height: 48px;\n}\n\n.project_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.project_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 5px 0;\n}\n\n.project_link {\n  text-decoration: underline;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.project_text {\n  margin-top: 8px;\n  font-family: 'Open Sans', sans-serif;\n}\n", ""]);
-
-	// exports
 
 
 /***/ })

@@ -25048,7 +25048,7 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/portfolio/code', activeClassName: 'active' },
+	              { to: '/code', activeClassName: 'active' },
 	              'Web Development'
 	            )
 	          ),
@@ -25057,7 +25057,7 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/portfolio/photography', activeClassName: 'active' },
+	              { to: '/photography', activeClassName: 'active' },
 	              'Photography'
 	            )
 	          ),
@@ -25066,7 +25066,7 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/portfolio/about', activeClassName: 'active' },
+	              { to: '/about', activeClassName: 'active' },
 	              'About'
 	            )
 	          )
@@ -25129,7 +25129,7 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/portfolio/code', activeClassName: 'active' },
+	              { to: '/code', activeClassName: 'active' },
 	              'Web Development'
 	            )
 	          ),
@@ -25138,7 +25138,7 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/portfolio/photography', activeClassName: 'active' },
+	              { to: '/photography', activeClassName: 'active' },
 	              'Photography'
 	            )
 	          ),
@@ -25194,7 +25194,7 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/portfolio/about', activeClassName: 'active' },
+	              { to: '/about', activeClassName: 'active' },
 	              'About'
 	            )
 	          )

@@ -18,7 +18,7 @@ class Photography extends React.Component {
     };
   }
   render() {
-    let images = this.state.projectImages.map((images) => {return "<img className='images' src=" + images + "/>"});
+    let images = this.state.projectImages.map((images) => {return <li> <img className="images" src={images}/> </li>});
     return (
       <div className="main">
         <Footer />
@@ -27,7 +27,7 @@ class Photography extends React.Component {
           <h2 className="project_subtitle">{this.state.projectSubtitle}</h2>
           <p className="project_description"><span className="bold">{this.state.projectDescriptionBold}</span>{this.state.projectDescription}</p>
           <p className="project_text">{this.state.projectText}</p>
-          <Gallery />
+          <Gallery images={images}/>
         </div>
         <Nav />
       </div>

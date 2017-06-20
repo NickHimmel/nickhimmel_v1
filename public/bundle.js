@@ -25371,7 +25371,13 @@
 	    key: 'render',
 	    value: function render() {
 	      var images = this.state.projectImages.map(function (images) {
-	        return "<img className='images' src=" + images + "/>";
+	        return _react2.default.createElement(
+	          'li',
+	          null,
+	          ' ',
+	          _react2.default.createElement('img', { className: 'images', src: images }),
+	          ' '
+	        );
 	      });
 	      return _react2.default.createElement(
 	        'div',
@@ -25405,7 +25411,7 @@
 	            { className: 'project_text' },
 	            this.state.projectText
 	          ),
-	          _react2.default.createElement(_Gallery2.default, null)
+	          _react2.default.createElement(_Gallery2.default, { images: images })
 	        ),
 	        _react2.default.createElement(_Nav2.default, null)
 	      );
@@ -26412,52 +26418,14 @@
 	  _createClass(Gallery, [{
 	    key: "render",
 	    value: function render() {
+	      var images = this.props.images;
 	      return _react2.default.createElement(
 	        "div",
 	        { className: "gallery-container" },
 	        _react2.default.createElement(
 	          "ul",
 	          { className: "gallery" },
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg" })
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg" })
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/003_Nick_Himmel_A_Museum_Of_Curiosities.jpg" })
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/004_Nick_Himmel_The_Cyclone.jpg" })
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/005_Nick_Himmel_Day_Of_The_Sharks.jpg" })
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/006_Nick_Himmel_Empire_Service_Metal.jpg" })
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/007_Nick_Himmel_While_You_Were_Gone.jpg" })
-	          ),
-	          _react2.default.createElement(
-	            "li",
-	            null,
-	            _react2.default.createElement("img", { className: "images", src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg" })
-	          )
+	          images
 	        ),
 	        _react2.default.createElement("div", { className: "arrows" })
 	      );

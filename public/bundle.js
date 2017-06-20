@@ -25332,6 +25332,10 @@
 
 	var _PhotoProjectOne2 = _interopRequireDefault(_PhotoProjectOne);
 
+	var _photoProjects = __webpack_require__(236);
+
+	var _photoProjects2 = _interopRequireDefault(_photoProjects);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25349,7 +25353,8 @@
 	    var _this = _possibleConstructorReturn(this, (Photography.__proto__ || Object.getPrototypeOf(Photography)).call(this, props));
 
 	    _this.state = {
-	      project_title: "nycthemeron"
+	      project_title: _photoProjects2.default.projects[0].projectTitle,
+	      project_subtitle: _photoProjects2.default.projects[0].projectSubtitle
 	    };
 	    return _this;
 	  }
@@ -26380,6 +26385,29 @@
 
 	// exports
 
+
+/***/ }),
+/* 236 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    projects: [{
+	        projectTitle: "nycthemeron",
+	        projectSubtitle: "Thesis for MPS in digital photography at SVA, 2008"
+	    }]
+	};
 
 /***/ })
 /******/ ]);

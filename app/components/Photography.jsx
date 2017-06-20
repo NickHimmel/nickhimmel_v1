@@ -1,14 +1,16 @@
 import React from 'react';
-import Nav from 'app/components/Nav.jsx'
-import Footer from 'app/components/Footer.jsx'
+import Nav from 'app/components/Nav.jsx';
+import Footer from 'app/components/Footer.jsx';
 import PhotoProjectOne from 'app/components/PhotoProjectOne.jsx';
+import PhotoProjects from 'app/actions/photoProjects.js';
 
 class Photography extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      project_title: "nycthemeron",
-    }
+      project_title: PhotoProjects.projects[0].projectTitle,
+      project_subtitle: PhotoProjects.projects[0].projectSubtitle
+    };
   }
   render() {
     return (

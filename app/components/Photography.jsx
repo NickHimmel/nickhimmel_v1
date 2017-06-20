@@ -7,7 +7,7 @@ class Photography extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      project_title: "nycthemeron"
+      project_title: "nycthemeron",
     }
   }
   render() {

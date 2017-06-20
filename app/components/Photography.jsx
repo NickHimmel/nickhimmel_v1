@@ -12,14 +12,17 @@ class Photography extends React.Component {
       projectSubtitle: PhotoProjects.projects[0].projectSubtitle,
       projectDescriptionBold: PhotoProjects.projects[0].projectDescriptionBold,
       projectDescription: PhotoProjects.projects[0].projectDescription,
-      projectText: PhotoProjects.projects[0].projectText
+      projectText: PhotoProjects.projects[0].projectText,
+      projectImages: PhotoProjects.projects[0].projectImages
     };
   }
   render() {
+    let images = this.state.projectImages.map((images) => {return "<img className='images' src=" + images + "/>"});
     return (
       <div className="main">
         <Footer />
         <div  className="project">
+          <h1>{images}</h1>
           <h1 className="project_title">{this.state.projectTitle}</h1>
           <h2 className="project_subtitle">{this.state.projectSubtitle}</h2>
           <p className="project_description"><span className="bold">{this.state.projectDescriptionBold}</span>{this.state.projectDescription}</p>

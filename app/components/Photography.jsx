@@ -8,8 +8,11 @@ class Photography extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      project_title: PhotoProjects.projects[0].projectTitle,
-      project_subtitle: PhotoProjects.projects[0].projectSubtitle
+      projectTitle: PhotoProjects.projects[0].projectTitle,
+      projectSubtitle: PhotoProjects.projects[0].projectSubtitle,
+      projectDescriptionBold: PhotoProjects.projects[0].projectDescriptionBold,
+      projectDescription: PhotoProjects.projects[0].projectDescription,
+      projectText: PhotoProjects.projects[0].projectText
     };
   }
   render() {
@@ -17,10 +20,10 @@ class Photography extends React.Component {
       <div className="main">
         <Footer />
         <div  className="project">
-          <h1 className="project_title">{this.state.project_title}</h1>
-          <h2 className="project_subtitle">Thesis for MPS in digital photography at SVA, 2008</h2>
-          <p className="project_description"><span className="bold">Nyc · the · me · ron:</span> Greek meaning 24 consecutive hours and is the composite of the words for night and day</p>
-          <p className="project_text">For my thesis I created composite images that featured places I have lived, memories I have of growing up in New York and bits of New York City history. I combined built models with landscapes I photographed and added textures. The models were built primarily from coffee stirrers and hot glue. The eight images span from morning to night.</p>
+          <h1 className="project_title">{this.state.projectTitle}</h1>
+          <h2 className="project_subtitle">{this.state.projectSubtitle}</h2>
+          <p className="project_description"><span className="bold">{this.state.projectDescriptionBold}</span>{this.state.projectDescription}</p>
+          <p className="project_text">{this.state.projectText}</p>
           <div className="gallery-container">
             <ul className="gallery">
               <li><img className="images" src="https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg"/></li>

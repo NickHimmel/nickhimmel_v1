@@ -25353,8 +25353,11 @@
 	    var _this = _possibleConstructorReturn(this, (Photography.__proto__ || Object.getPrototypeOf(Photography)).call(this, props));
 
 	    _this.state = {
-	      project_title: _photoProjects2.default.projects[0].projectTitle,
-	      project_subtitle: _photoProjects2.default.projects[0].projectSubtitle
+	      projectTitle: _photoProjects2.default.projects[0].projectTitle,
+	      projectSubtitle: _photoProjects2.default.projects[0].projectSubtitle,
+	      projectDescriptionBold: _photoProjects2.default.projects[0].projectDescriptionBold,
+	      projectDescription: _photoProjects2.default.projects[0].projectDescription,
+	      projectText: _photoProjects2.default.projects[0].projectText
 	    };
 	    return _this;
 	  }
@@ -25372,12 +25375,12 @@
 	          _react2.default.createElement(
 	            'h1',
 	            { className: 'project_title' },
-	            this.state.project_title
+	            this.state.projectTitle
 	          ),
 	          _react2.default.createElement(
 	            'h2',
 	            { className: 'project_subtitle' },
-	            'Thesis for MPS in digital photography at SVA, 2008'
+	            this.state.projectSubtitle
 	          ),
 	          _react2.default.createElement(
 	            'p',
@@ -25385,14 +25388,14 @@
 	            _react2.default.createElement(
 	              'span',
 	              { className: 'bold' },
-	              'Nyc \xB7 the \xB7 me \xB7 ron:'
+	              this.state.projectDescriptionBold
 	            ),
-	            ' Greek meaning 24 consecutive hours and is the composite of the words for night and day'
+	            this.state.projectDescription
 	          ),
 	          _react2.default.createElement(
 	            'p',
 	            { className: 'project_text' },
-	            'For my thesis I created composite images that featured places I have lived, memories I have of growing up in New York and bits of New York City history. I combined built models with landscapes I photographed and added textures. The models were built primarily from coffee stirrers and hot glue. The eight images span from morning to night.'
+	            this.state.projectText
 	          ),
 	          _react2.default.createElement(
 	            'div',
@@ -26405,7 +26408,10 @@
 	exports.default = {
 	    projects: [{
 	        projectTitle: "nycthemeron",
-	        projectSubtitle: "Thesis for MPS in digital photography at SVA, 2008"
+	        projectSubtitle: "Thesis for MPS in digital photography at SVA, 2008",
+	        projectDescriptionBold: "Nyc · the · me · ron:",
+	        projectDescription: " Greek meaning 24 consecutive hours and is the composite of the words for night and day",
+	        projectText: "For my thesis I created composite images that featured places I have lived, memories I have of growing up in New York and bits of New York City history. I combined built models with landscapes I photographed and added textures. The models were built primarily from coffee stirrers and hot glue. The eight images span from morning to night."
 	    }]
 	};
 

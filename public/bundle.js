@@ -25013,6 +25013,10 @@
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
+	var _projects = __webpack_require__(238);
+
+	var _projects2 = _interopRequireDefault(_projects);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25024,10 +25028,21 @@
 	var Code = function (_React$Component) {
 	  _inherits(Code, _React$Component);
 
-	  function Code() {
+	  function Code(props) {
 	    _classCallCheck(this, Code);
 
-	    return _possibleConstructorReturn(this, (Code.__proto__ || Object.getPrototypeOf(Code)).apply(this, arguments));
+	    var _this = _possibleConstructorReturn(this, (Code.__proto__ || Object.getPrototypeOf(Code)).call(this, props));
+
+	    _this.state = {
+	      projectTitle: _projects2.default.code[0].projectTitle,
+	      projectSubtitle: _projects2.default.code[0].projectSubtitle,
+	      projectDescriptionBold: _projects2.default.code[0].projectDescriptionBold,
+	      projectDescription: _projects2.default.code[0].projectDescription,
+	      projectLink: _projects2.default.code[0].projectLink,
+	      projectText: _projects2.default.code[0].projectText,
+	      projectImages: _projects2.default.code[0].projectImages
+	    };
+	    return _this;
 	  }
 
 	  _createClass(Code, [{
@@ -25043,12 +25058,12 @@
 	          _react2.default.createElement(
 	            'h1',
 	            { className: 'project_title' },
-	            'mypolitician'
+	            this.state.projectTitle
 	          ),
 	          _react2.default.createElement(
 	            'h2',
 	            { className: 'project_subtitle' },
-	            'Final project for Dev Bootcamp'
+	            this.state.projectSubtitle
 	          ),
 	          _react2.default.createElement(
 	            'p',
@@ -25056,24 +25071,24 @@
 	            _react2.default.createElement(
 	              'span',
 	              { className: 'bold' },
-	              'Technologies used:'
+	              this.state.projectDescriptionBold
 	            ),
-	            'Ruby on Rails, React, D3; ',
+	            this.state.projectDescription,
 	            _react2.default.createElement(
 	              'a',
-	              { className: 'portfolio_link', href: 'https://github.com/NickHimmel/myPolitician' },
+	              { className: 'portfolio_link', href: this.state.projectLink },
 	              'Code on Github'
 	            )
 	          ),
 	          _react2.default.createElement(
 	            'p',
 	            { className: 'project_text' },
-	            'This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows constituents which bills the lawmaker introduced, their vote history, and their Twitter stream, and provides links to their social media pages.iI built the map, utilizing the D3.js JavaScript library, and I designed and built the front end of the site using CSS and the Bootstrap framework.'
+	            this.state.projectText
 	          ),
 	          _react2.default.createElement(
 	            'video',
 	            { width: '100%', controls: true },
-	            _react2.default.createElement('source', { src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4', type: 'video/mp4', e: true })
+	            _react2.default.createElement('source', { src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4', type: 'video/mp4' })
 	          )
 	        ),
 	        _react2.default.createElement(_Footer2.default, null)
@@ -25357,12 +25372,12 @@
 	    var _this = _possibleConstructorReturn(this, (Photography.__proto__ || Object.getPrototypeOf(Photography)).call(this, props));
 
 	    _this.state = {
-	      projectTitle: _projects2.default.photoProjects[0].projectTitle,
-	      projectSubtitle: _projects2.default.photoProjects[0].projectSubtitle,
-	      projectDescriptionBold: _projects2.default.photoProjects[0].projectDescriptionBold,
-	      projectDescription: _projects2.default.photoProjects[0].projectDescription,
-	      projectText: _projects2.default.photoProjects[0].projectText,
-	      projectImages: _projects2.default.photoProjects[0].projectImages
+	      projectTitle: _projects2.default.photo[0].projectTitle,
+	      projectSubtitle: _projects2.default.photo[0].projectSubtitle,
+	      projectDescriptionBold: _projects2.default.photo[0].projectDescriptionBold,
+	      projectDescription: _projects2.default.photo[0].projectDescription,
+	      projectText: _projects2.default.photo[0].projectText,
+	      projectImages: _projects2.default.photo[0].projectImages
 	    };
 	    return _this;
 	  }
@@ -26428,7 +26443,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	exports.default = {
-	    photoProjects: [{
+	    photo: [{
 	        projectTitle: "nycthemeron",
 	        projectSubtitle: "Thesis for MPS in digital photography at SVA, 2008",
 	        projectDescriptionBold: "Nyc · the · me · ron:",
@@ -26436,7 +26451,15 @@
 	        projectText: "For my thesis I created composite images that featured places I have lived, memories I have of growing up in New York and bits of New York City history. I combined built models with landscapes I photographed and added textures. The models were built primarily from coffee stirrers and hot glue. The eight images span from morning to night.",
 	        projectImages: ["https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/003_Nick_Himmel_A_Museum_Of_Curiosities.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/004_Nick_Himmel_The_Cyclone.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/005_Nick_Himmel_Day_Of_The_Sharks.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/006_Nick_Himmel_Empire_Service_Metal.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/007_Nick_Himmel_While_You_Were_Gone.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg"]
 	    }],
-	    codeProjects: []
+	    code: [{
+	        projectTitle: "mypolitician",
+	        projectSubtitle: "Final project for Dev Bootcamp",
+	        projectDescriptionBold: "Technologies used: ",
+	        projectDescription: "Ruby on Rails, React, D3; ",
+	        projectLink: "https://github.com/NickHimmel/myPolitician",
+	        projectText: "This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows constituents which bills the lawmaker introduced, their vote history, and their Twitter stream, and provides links to their social media pages.iI built the map, utilizing the D3.js JavaScript library, and I designed and built the front end of the site using CSS and the Bootstrap framework.",
+	        projectVideo: ["https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4"]
+	    }]
 	};
 
 /***/ })

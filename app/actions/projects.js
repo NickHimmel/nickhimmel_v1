@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default {
-    photoProjects: [
+    photo: [
         {
             projectTitle: "nycthemeron",
             projectSubtitle: "Thesis for MPS in digital photography at SVA, 2008",
@@ -20,7 +20,17 @@ export default {
             ]
         }
     ],
-    codeProjects: [
-      
+    code: [
+      {
+          projectTitle: "mypolitician",
+          projectSubtitle: "Final project for Dev Bootcamp",
+          projectDescriptionBold: "Technologies used: ",
+          projectDescription: "Ruby on Rails, React, D3; ",
+          projectLink: "https://github.com/NickHimmel/myPolitician",
+          projectText: "This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows constituents which bills the lawmaker introduced, their vote history, and their Twitter stream, and provides links to their social media pages.iI built the map, utilizing the D3.js JavaScript library, and I designed and built the front end of the site using CSS and the Bootstrap framework.",
+          projectVideo: [
+            "https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4"
+          ]
+      }
     ]
 };

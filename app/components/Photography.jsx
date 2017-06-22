@@ -9,12 +9,12 @@ class Photography extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      projectTitle: Projects.photoProjects[0].projectTitle,
-      projectSubtitle: Projects.photoProjects[0].projectSubtitle,
-      projectDescriptionBold: Projects.photoProjects[0].projectDescriptionBold,
-      projectDescription: Projects.photoProjects[0].projectDescription,
-      projectText: Projects.photoProjects[0].projectText,
-      projectImages: Projects.photoProjects[0].projectImages
+      projectTitle: Projects.photo[0].projectTitle,
+      projectSubtitle: Projects.photo[0].projectSubtitle,
+      projectDescriptionBold: Projects.photo[0].projectDescriptionBold,
+      projectDescription: Projects.photo[0].projectDescription,
+      projectText: Projects.photo[0].projectText,
+      projectImages: Projects.photo[0].projectImages
     };
   }
   render() {

@@ -3,18 +3,18 @@ import Nav from 'app/components/Nav.jsx';
 import Footer from 'app/components/Footer.jsx';
 import PhotoProjectOne from 'app/components/PhotoProjectOne.jsx';
 import Gallery from 'app/components/Gallery.jsx'
-import PhotoProjects from 'app/actions/photoProjects.js';
+import Projects from 'app/actions/projects.js';
 
 class Photography extends React.Component {
   constructor (props) {
     super(props);
     this.state = {
-      projectTitle: PhotoProjects.projects[0].projectTitle,
-      projectSubtitle: PhotoProjects.projects[0].projectSubtitle,
-      projectDescriptionBold: PhotoProjects.projects[0].projectDescriptionBold,
-      projectDescription: PhotoProjects.projects[0].projectDescription,
-      projectText: PhotoProjects.projects[0].projectText,
-      projectImages: PhotoProjects.projects[0].projectImages
+      projectTitle: Projects.photoProjects[0].projectTitle,
+      projectSubtitle: Projects.photoProjects[0].projectSubtitle,
+      projectDescriptionBold: Projects.photoProjects[0].projectDescriptionBold,
+      projectDescription: Projects.photoProjects[0].projectDescription,
+      projectText: Projects.photoProjects[0].projectText,
+      projectImages: Projects.photoProjects[0].projectImages
     };
   }
   render() {

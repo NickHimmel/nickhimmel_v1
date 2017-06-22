@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default {
-    projects: [
+    photoProjects: [
         {
             projectTitle: "nycthemeron",
             projectSubtitle: "Thesis for MPS in digital photography at SVA, 2008",
@@ -19,5 +19,8 @@ export default {
               "https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg"
             ]
         }
+    ],
+    codeProjects: [
+      
     ]
 };

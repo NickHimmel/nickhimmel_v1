@@ -25336,9 +25336,9 @@
 
 	var _Gallery2 = _interopRequireDefault(_Gallery);
 
-	var _photoProjects = __webpack_require__(236);
+	var _projects = __webpack_require__(238);
 
-	var _photoProjects2 = _interopRequireDefault(_photoProjects);
+	var _projects2 = _interopRequireDefault(_projects);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -25357,12 +25357,12 @@
 	    var _this = _possibleConstructorReturn(this, (Photography.__proto__ || Object.getPrototypeOf(Photography)).call(this, props));
 
 	    _this.state = {
-	      projectTitle: _photoProjects2.default.projects[0].projectTitle,
-	      projectSubtitle: _photoProjects2.default.projects[0].projectSubtitle,
-	      projectDescriptionBold: _photoProjects2.default.projects[0].projectDescriptionBold,
-	      projectDescription: _photoProjects2.default.projects[0].projectDescription,
-	      projectText: _photoProjects2.default.projects[0].projectText,
-	      projectImages: _photoProjects2.default.projects[0].projectImages
+	      projectTitle: _projects2.default.photoProjects[0].projectTitle,
+	      projectSubtitle: _projects2.default.photoProjects[0].projectSubtitle,
+	      projectDescriptionBold: _projects2.default.photoProjects[0].projectDescriptionBold,
+	      projectDescription: _projects2.default.photoProjects[0].projectDescription,
+	      projectText: _projects2.default.photoProjects[0].projectText,
+	      projectImages: _projects2.default.photoProjects[0].projectImages
 	    };
 	    return _this;
 	  }
@@ -26356,33 +26356,7 @@
 
 
 /***/ }),
-/* 236 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    projects: [{
-	        projectTitle: "nycthemeron",
-	        projectSubtitle: "Thesis for MPS in digital photography at SVA, 2008",
-	        projectDescriptionBold: "Nyc · the · me · ron:",
-	        projectDescription: " Greek meaning 24 consecutive hours and is the composite of the words for night and day",
-	        projectText: "For my thesis I created composite images that featured places I have lived, memories I have of growing up in New York and bits of New York City history. I combined built models with landscapes I photographed and added textures. The models were built primarily from coffee stirrers and hot glue. The eight images span from morning to night.",
-	        projectImages: ["https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/003_Nick_Himmel_A_Museum_Of_Curiosities.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/004_Nick_Himmel_The_Cyclone.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/005_Nick_Himmel_Day_Of_The_Sharks.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/006_Nick_Himmel_Empire_Service_Metal.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/007_Nick_Himmel_While_You_Were_Gone.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg"]
-	    }]
-	};
-
-/***/ }),
+/* 236 */,
 /* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26436,6 +26410,34 @@
 	}(_react2.default.Component);
 
 	exports.default = Gallery;
+
+/***/ }),
+/* 238 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    photoProjects: [{
+	        projectTitle: "nycthemeron",
+	        projectSubtitle: "Thesis for MPS in digital photography at SVA, 2008",
+	        projectDescriptionBold: "Nyc · the · me · ron:",
+	        projectDescription: " Greek meaning 24 consecutive hours and is the composite of the words for night and day",
+	        projectText: "For my thesis I created composite images that featured places I have lived, memories I have of growing up in New York and bits of New York City history. I combined built models with landscapes I photographed and added textures. The models were built primarily from coffee stirrers and hot glue. The eight images span from morning to night.",
+	        projectImages: ["https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/003_Nick_Himmel_A_Museum_Of_Curiosities.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/004_Nick_Himmel_The_Cyclone.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/005_Nick_Himmel_Day_Of_The_Sharks.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/006_Nick_Himmel_Empire_Service_Metal.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/007_Nick_Himmel_While_You_Were_Gone.jpg", "https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg"]
+	    }],
+	    codeProjects: []
+	};
 
 /***/ })
 /******/ ]);

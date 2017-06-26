@@ -18,7 +18,13 @@ class Photography extends React.Component {
     };
   }
   render() {
-    let images = this.state.projectImages.map((images) => {return <li> <img className="images" src={images}/> </li>});
+    let renderImages = () => {
+      return this.state.projectImages.map((image) => {
+        return (
+          <Gallery key={image.id} {...image}/>
+        );
+      });
+    };
     return (
       <div className="main">
         <Footer />
@@ -27,7 +33,11 @@ class Photography extends React.Component {
           <h2 className="project_subtitle">{this.state.projectSubtitle}</h2>
           <p className="project_description"><span className="bold">{this.state.projectDescriptionBold}</span>{this.state.projectDescription}</p>
           <p className="project_text">{this.state.projectText}</p>
-          <Gallery images={images}/>
+          <div className="gallery-container">
+            <ul className="gallery">
+              {renderImages()}
+            </ul>
+          </div>
         </div>
         <Nav />
       </div>

@@ -2,15 +2,9 @@ import React from 'react';
 
 class Gallery extends React.Component {
   render() {
-    let images = this.props.images;
+    let {link} = this.props;
     return (
-      <div className="gallery-container">
-        <ul className="gallery">
-          {images}
-        </ul>
-        <div className="arrows">
-        </div>
-      </div>
+          <li> <img className="images" src={link}/> </li>
     )
   }
 }

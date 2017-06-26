@@ -4,6 +4,8 @@ import Footer from 'app/components/Footer.jsx';
 import PhotoProjectOne from 'app/components/PhotoProjectOne.jsx';
 import Gallery from 'app/components/Gallery.jsx'
 import Projects from 'app/actions/projects.js';
+import RightArrow from 'app/components/RightArrow.jsx';
+import LeftArrow from 'app/components/LeftArrow.jsx';
 
 class Photography extends React.Component {
   constructor (props) {
@@ -37,6 +39,10 @@ class Photography extends React.Component {
             <ul className="gallery">
               {renderImages()}
             </ul>
+            <div className="arrows">
+              <RightArrow />
+              <LeftArrow />
+            </div>
           </div>
         </div>
         <Nav />

@@ -25393,6 +25393,14 @@
 
 	var _projects2 = _interopRequireDefault(_projects);
 
+	var _RightArrow = __webpack_require__(223);
+
+	var _RightArrow2 = _interopRequireDefault(_RightArrow);
+
+	var _LeftArrow = __webpack_require__(224);
+
+	var _LeftArrow2 = _interopRequireDefault(_LeftArrow);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25469,6 +25477,12 @@
 	              'ul',
 	              { className: 'gallery' },
 	              renderImages()
+	            ),
+	            _react2.default.createElement(
+	              'div',
+	              { className: 'arrows' },
+	              _react2.default.createElement(_RightArrow2.default, null),
+	              _react2.default.createElement(_LeftArrow2.default, null)
 	            )
 	          )
 	        ),
@@ -25635,52 +25649,23 @@
 	  value: true
 	});
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var RightArrow = function (_React$Component) {
-	  _inherits(RightArrow, _React$Component);
-
-	  function RightArrow(props) {
-	    _classCallCheck(this, RightArrow);
-
-	    return _possibleConstructorReturn(this, (RightArrow.__proto__ || Object.getPrototypeOf(RightArrow)).call(this, props));
-	  }
-
-	  _createClass(RightArrow, [{
-	    key: "handleClick",
-	    value: function handleClick(e) {
-	      e.preventDefault();
-	      console.log(this.props.onSlide);
-	    }
-	  }, {
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        null,
-	        _react2.default.createElement(
-	          "a",
-	          { className: "right-arrow", onClick: this.handleClick },
-	          "\u203A"
-	        )
-	      );
-	    }
-	  }]);
-
-	  return RightArrow;
-	}(_react2.default.Component);
+	var RightArrow = function RightArrow() {
+	  return _react2.default.createElement(
+	    "div",
+	    null,
+	    _react2.default.createElement(
+	      "a",
+	      { className: "right-arrow" },
+	      "\u203A"
+	    )
+	  );
+	};
 
 	exports.default = RightArrow;
 

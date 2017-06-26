@@ -25342,7 +25342,7 @@
 	        projectDescriptionBold: "Nyc · the · me · ron:",
 	        projectDescription: " Greek meaning 24 consecutive hours and is the composite of the words for night and day",
 	        projectText: "For my thesis I created composite images that featured places I have lived, memories I have of growing up in New York and bits of New York City history. I combined built models with landscapes I photographed and added textures. The models were built primarily from coffee stirrers and hot glue. The eight images span from morning to night.",
-	        projectImages: [{ id: 1, link: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg" }, { id: 2, link: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg" }, { id: 3, link: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/003_Nick_Himmel_A_Museum_Of_Curiosities.jpg" }, { id: 4, link: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/004_Nick_Himmel_The_Cyclone.jpg" }, { id: 5, link: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/005_Nick_Himmel_Day_Of_The_Sharks.jpg" }, { id: 6, link: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/006_Nick_Himmel_Empire_Service_Metal.jpg" }, { id: 7, link: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/007_Nick_Himmel_While_You_Were_Gone.jpg" }, { id: 8, link: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg" }]
+	        projectImages: [{ id: 1, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg", alt: "A Corner in The Past" }, { id: 2, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg", alt: "El and Lucida" }, { id: 3, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/003_Nick_Himmel_A_Museum_Of_Curiosities.jpg", alt: "A Museum of Curiosities" }, { id: 4, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/004_Nick_Himmel_The_Cyclone.jpg", alt: "The_Cyclone" }, { id: 5, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/005_Nick_Himmel_Day_Of_The_Sharks.jpg", alt: "Day_Of_The_Sharks" }, { id: 6, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/006_Nick_Himmel_Empire_Service_Metal.jpg", alt: "Empire_Service_Metal" }, { id: 7, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/007_Nick_Himmel_While_You_Were_Gone.jpg", alt: "While_You_Were_Gone" }, { id: 8, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg", alt: "A_Dream_Of_A_House" }]
 	    }],
 	    code: [{
 	        projectTitle: "mypolitician",
@@ -25773,13 +25773,15 @@
 	  _createClass(Gallery, [{
 	    key: "render",
 	    value: function render() {
-	      var link = this.props.link;
+	      var _props = this.props,
+	          src = _props.src,
+	          alt = _props.alt;
 
 	      return _react2.default.createElement(
 	        "li",
 	        null,
 	        " ",
-	        _react2.default.createElement("img", { className: "images", src: link }),
+	        _react2.default.createElement("img", { className: "images", src: src, alt: alt }),
 	        " "
 	      );
 	    }

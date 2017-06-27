@@ -68,11 +68,11 @@
 
 	var _Photography2 = _interopRequireDefault(_Photography);
 
-	var _About = __webpack_require__(226);
+	var _About = __webpack_require__(227);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _App = __webpack_require__(227);
+	var _App = __webpack_require__(228);
 
 	var _App2 = _interopRequireDefault(_App);
 
@@ -25365,8 +25365,6 @@
 	  value: true
 	});
 
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(1);
@@ -25393,14 +25391,6 @@
 
 	var _projects2 = _interopRequireDefault(_projects);
 
-	var _RightArrow = __webpack_require__(223);
-
-	var _RightArrow2 = _interopRequireDefault(_RightArrow);
-
-	var _LeftArrow = __webpack_require__(224);
-
-	var _LeftArrow2 = _interopRequireDefault(_LeftArrow);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25412,10 +25402,10 @@
 	var Photography = function (_React$Component) {
 	  _inherits(Photography, _React$Component);
 
-	  function Photography(props) {
+	  function Photography() {
 	    _classCallCheck(this, Photography);
 
-	    var _this = _possibleConstructorReturn(this, (Photography.__proto__ || Object.getPrototypeOf(Photography)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (Photography.__proto__ || Object.getPrototypeOf(Photography)).call(this));
 
 	    _this.state = {
 	      projectTitle: _projects2.default.photo[0].projectTitle,
@@ -25431,13 +25421,6 @@
 	  _createClass(Photography, [{
 	    key: 'render',
 	    value: function render() {
-	      var _this2 = this;
-
-	      var renderImages = function renderImages() {
-	        return _this2.state.projectImages.map(function (image) {
-	          return _react2.default.createElement(_Gallery2.default, _extends({ key: image.id }, image));
-	        });
-	      };
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'main' },
@@ -25470,21 +25453,7 @@
 	            { className: 'project_text' },
 	            this.state.projectText
 	          ),
-	          _react2.default.createElement(
-	            'div',
-	            { className: 'gallery-container' },
-	            _react2.default.createElement(
-	              'ul',
-	              { className: 'gallery' },
-	              renderImages()
-	            ),
-	            _react2.default.createElement(
-	              'div',
-	              { className: 'arrows' },
-	              _react2.default.createElement(_RightArrow2.default, null),
-	              _react2.default.createElement(_LeftArrow2.default, null)
-	            )
-	          )
+	          _react2.default.createElement(_Gallery2.default, { images: this.state.projectImages })
 	        ),
 	        _react2.default.createElement(_Nav2.default, null)
 	      );
@@ -25726,6 +25695,85 @@
 /* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _GalleryImage = __webpack_require__(226);
+
+	var _GalleryImage2 = _interopRequireDefault(_GalleryImage);
+
+	var _RightArrow = __webpack_require__(223);
+
+	var _RightArrow2 = _interopRequireDefault(_RightArrow);
+
+	var _LeftArrow = __webpack_require__(224);
+
+	var _LeftArrow2 = _interopRequireDefault(_LeftArrow);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Gallery = function (_React$Component) {
+	  _inherits(Gallery, _React$Component);
+
+	  function Gallery(props) {
+	    _classCallCheck(this, Gallery);
+
+	    return _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this, props));
+	  }
+
+	  _createClass(Gallery, [{
+	    key: 'render',
+	    value: function render() {
+	      var images = this.props.images;
+	      var renderImages = function renderImages(images) {
+	        return images.map(function (image) {
+	          return _react2.default.createElement(_GalleryImage2.default, _extends({ key: image.id }, image));
+	        });
+	      };
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'gallery-container' },
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'gallery' },
+	          renderImages(images)
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'arrows' },
+	          _react2.default.createElement(_RightArrow2.default, null),
+	          _react2.default.createElement(_LeftArrow2.default, null)
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Gallery;
+	}(_react2.default.Component);
+
+	exports.default = Gallery;
+
+/***/ }),
+/* 226 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
@@ -25746,16 +25794,16 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Gallery = function (_React$Component) {
-	  _inherits(Gallery, _React$Component);
+	var GalleryImage = function (_React$Component) {
+	  _inherits(GalleryImage, _React$Component);
 
-	  function Gallery() {
-	    _classCallCheck(this, Gallery);
+	  function GalleryImage() {
+	    _classCallCheck(this, GalleryImage);
 
-	    return _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).apply(this, arguments));
+	    return _possibleConstructorReturn(this, (GalleryImage.__proto__ || Object.getPrototypeOf(GalleryImage)).apply(this, arguments));
 	  }
 
-	  _createClass(Gallery, [{
+	  _createClass(GalleryImage, [{
 	    key: "render",
 	    value: function render() {
 	      var _props = this.props,
@@ -25772,13 +25820,13 @@
 	    }
 	  }]);
 
-	  return Gallery;
+	  return GalleryImage;
 	}(_react2.default.Component);
 
-	exports.default = Gallery;
+	exports.default = GalleryImage;
 
 /***/ }),
-/* 226 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25831,13 +25879,13 @@
 	exports.default = About;
 
 /***/ }),
-/* 227 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(228);
+	var content = __webpack_require__(229);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// Prepare cssTransformation
 	var transform;
@@ -25845,7 +25893,7 @@
 	var options = {}
 	options.transform = transform
 	// add the styles to the DOM
-	var update = __webpack_require__(236)(content, options);
+	var update = __webpack_require__(237)(content, options);
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -25862,17 +25910,17 @@
 	}
 
 /***/ }),
-/* 228 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(229)(undefined);
+	exports = module.exports = __webpack_require__(230)(undefined);
 	// imports
-	exports.i(__webpack_require__(230), "");
 	exports.i(__webpack_require__(231), "");
 	exports.i(__webpack_require__(232), "");
 	exports.i(__webpack_require__(233), "");
 	exports.i(__webpack_require__(234), "");
 	exports.i(__webpack_require__(235), "");
+	exports.i(__webpack_require__(236), "");
 
 	// module
 	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: #8da2d9;\n  text-decoration: none;\n  padding: 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n", ""]);
@@ -25881,7 +25929,7 @@
 
 
 /***/ }),
-/* 229 */
+/* 230 */
 /***/ (function(module, exports) {
 
 	/*
@@ -25963,10 +26011,10 @@
 
 
 /***/ }),
-/* 230 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(229)(undefined);
+	exports = module.exports = __webpack_require__(230)(undefined);
 	// imports
 
 
@@ -25977,10 +26025,10 @@
 
 
 /***/ }),
-/* 231 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(229)(undefined);
+	exports = module.exports = __webpack_require__(230)(undefined);
 	// imports
 
 
@@ -25991,10 +26039,10 @@
 
 
 /***/ }),
-/* 232 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(229)(undefined);
+	exports = module.exports = __webpack_require__(230)(undefined);
 	// imports
 
 
@@ -26005,10 +26053,10 @@
 
 
 /***/ }),
-/* 233 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(229)(undefined);
+	exports = module.exports = __webpack_require__(230)(undefined);
 	// imports
 
 
@@ -26019,10 +26067,10 @@
 
 
 /***/ }),
-/* 234 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(229)(undefined);
+	exports = module.exports = __webpack_require__(230)(undefined);
 	// imports
 
 
@@ -26033,10 +26081,10 @@
 
 
 /***/ }),
-/* 235 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(229)(undefined);
+	exports = module.exports = __webpack_require__(230)(undefined);
 	// imports
 
 
@@ -26047,7 +26095,7 @@
 
 
 /***/ }),
-/* 236 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*
@@ -26084,7 +26132,7 @@
 		singletonElement = null,
 		singletonCounter = 0,
 		styleElementsInsertedAtTop = [],
-		fixUrls = __webpack_require__(237);
+		fixUrls = __webpack_require__(238);
 
 	module.exports = function(list, options) {
 		if(false) {
@@ -26360,7 +26408,7 @@
 
 
 /***/ }),
-/* 237 */
+/* 238 */
 /***/ (function(module, exports) {
 
 	

@@ -1,15 +1,13 @@
 import React from 'react';
-import Nav from 'app/components/Nav.jsx';
-import Footer from 'app/components/Footer.jsx';
-import PhotoProjectOne from 'app/components/PhotoProjectOne.jsx';
-import Gallery from 'app/components/Gallery.jsx'
+import Nav from 'Nav.jsx';
+import Footer from 'Footer.jsx';
+import PhotoProjectOne from 'PhotoProjectOne.jsx';
+import Gallery from 'Gallery.jsx'
 import Projects from 'app/actions/projects.js';
-import RightArrow from 'app/components/RightArrow.jsx';
-import LeftArrow from 'app/components/LeftArrow.jsx';
 
 class Photography extends React.Component {
-  constructor (props) {
-    super(props);
+  constructor () {
+    super();
     this.state = {
       projectTitle: Projects.photo[0].projectTitle,
       projectSubtitle: Projects.photo[0].projectSubtitle,
@@ -20,13 +18,6 @@ class Photography extends React.Component {
     };
   }
   render() {
-    let renderImages = () => {
-      return this.state.projectImages.map((image) => {
-        return (
-          <Gallery key={image.id} {...image}/>
-        );
-      });
-    };
     return (
       <div className="main">
         <Footer />
@@ -35,15 +26,7 @@ class Photography extends React.Component {
           <h2 className="project_subtitle">{this.state.projectSubtitle}</h2>
           <p className="project_description"><span className="bold">{this.state.projectDescriptionBold}</span>{this.state.projectDescription}</p>
           <p className="project_text">{this.state.projectText}</p>
-          <div className="gallery-container">
-            <ul className="gallery">
-              {renderImages()}
-            </ul>
-            <div className="arrows">
-              <RightArrow />
-              <LeftArrow />
-            </div>
-          </div>
+          <Gallery images={this.state.projectImages}/>
         </div>
         <Nav />
       </div>

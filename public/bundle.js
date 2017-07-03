@@ -25612,7 +25612,7 @@
 /* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -25624,14 +25624,16 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var RightArrow = function RightArrow() {
+	var RightArrow = function RightArrow(props) {
 	  return _react2.default.createElement(
-	    "div",
+	    'div',
 	    null,
 	    _react2.default.createElement(
-	      "a",
-	      { className: "right-arrow" },
-	      "\u203A"
+	      'a',
+	      { className: 'right-arrow', onClick: function onClick() {
+	          props.onClick('right');
+	        } },
+	      '\u203A'
 	    )
 	  );
 	};
@@ -25642,13 +25644,11 @@
 /* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(1);
 
@@ -25656,38 +25656,19 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var LeftArrow = function (_React$Component) {
-	  _inherits(LeftArrow, _React$Component);
-
-	  function LeftArrow() {
-	    _classCallCheck(this, LeftArrow);
-
-	    return _possibleConstructorReturn(this, (LeftArrow.__proto__ || Object.getPrototypeOf(LeftArrow)).apply(this, arguments));
-	  }
-
-	  _createClass(LeftArrow, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        null,
-	        _react2.default.createElement(
-	          "a",
-	          { className: "left-arrow" },
-	          "\u2039"
-	        )
-	      );
-	    }
-	  }]);
-
-	  return LeftArrow;
-	}(_react2.default.Component);
+	var LeftArrow = function LeftArrow(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'a',
+	      { className: 'left-arrow', onClick: function onClick() {
+	          props.onClick('left');
+	        } },
+	      '\u2039'
+	    )
+	  );
+	};
 
 	exports.default = LeftArrow;
 
@@ -25735,10 +25716,30 @@
 	  function Gallery(props) {
 	    _classCallCheck(this, Gallery);
 
-	    return _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this, props));
+
+	    _this.handleClick = _this.handleClick.bind(_this);
+	    return _this;
 	  }
 
 	  _createClass(Gallery, [{
+	    key: 'handleClick',
+	    value: function handleClick(direction) {
+	      var galleryDiv = document.getElementById('gallery');
+	      var scrollAmount = 0;
+	      var slideTimer = setInterval(function () {
+	        if (direction === 'right') {
+	          galleryDiv.scrollLeft += 10;
+	        } else {
+	          galleryDiv.scrollLeft -= 10;
+	        };
+	        scrollAmount += 10;
+	        if (scrollAmount >= 100) {
+	          window.clearInterval(slideTimer);
+	        }
+	      }, 15);
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      var images = this.props.images;
@@ -25752,14 +25753,14 @@
 	        { className: 'gallery-container' },
 	        _react2.default.createElement(
 	          'ul',
-	          { className: 'gallery' },
+	          { id: 'gallery' },
 	          renderImages(images)
 	        ),
 	        _react2.default.createElement(
 	          'div',
 	          { className: 'arrows' },
-	          _react2.default.createElement(_RightArrow2.default, null),
-	          _react2.default.createElement(_LeftArrow2.default, null)
+	          _react2.default.createElement(_RightArrow2.default, { onClick: this.handleClick }),
+	          _react2.default.createElement(_LeftArrow2.default, { onClick: this.handleClick })
 	        )
 	      );
 	    }
@@ -26065,7 +26066,7 @@
 
 
 	// module
-	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n.gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n.gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 90%;\n  max-width: 1080px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 45%;\n  right: -9px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  width: 17px;\n  padding: 0;\n  text-align: center;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.3em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);\n}\n\n.left-arrow {\n  margin-top: 10px;\n}\n", ""]);
+	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n#gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n#gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 90%;\n  max-width: 1080px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 45%;\n  right: -9px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  width: 17px;\n  padding: 0;\n  text-align: center;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.3em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);\n}\n\n.left-arrow {\n  margin-top: 10px;\n}\n", ""]);
 
 	// exports
 

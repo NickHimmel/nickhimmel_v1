@@ -1,11 +1,9 @@
 import React from 'react';
 
-class LeftArrow extends React.Component {
-  render() {
-    return (
-      <div><a className="left-arrow">&lsaquo;</a></div>
-    )
-  }
+const LeftArrow = (props) => {
+  return (
+    <div><a className='left-arrow' onClick={() => {props.onClick('left')}}>&lsaquo;</a></div>
+  );
 }
 
 export default LeftArrow;

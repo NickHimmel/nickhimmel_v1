@@ -10,9 +10,7 @@ import Styles from 'app/styles/App.css';
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path="/" component={SplashPage}></Route>
-    <Route path="/code" component={Code}></Route>
-    <Route path="/photography" component={Photography}></Route>
-    <Route path="/about" component={About}></Route>
+    <Route path="/:project" component={Main}/>
   </Router>,
   document.getElementById('app')
 );

@@ -82,9 +82,7 @@
 	  _reactRouter.Router,
 	  { history: _reactRouter.hashHistory },
 	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _SplashPage2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/code', component: _Code2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/photography', component: _Photography2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default })
+	  _react2.default.createElement(_reactRouter.Route, { path: '/:project', component: Main })
 	), document.getElementById('app'));
 
 /***/ }),

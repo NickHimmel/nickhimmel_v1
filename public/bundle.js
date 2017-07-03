@@ -24917,7 +24917,7 @@
 	            { className: 'splashpage_header' },
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/code', activeClassName: 'active' },
+	              { to: '/' + 'code', activeClassName: 'active' },
 	              'web',
 	              _react2.default.createElement('br', null),
 	              'development'
@@ -24933,7 +24933,7 @@
 	            { className: 'splashpage_header' },
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/photography', activeClassName: 'active' },
+	              { to: '/' + 'photography', activeClassName: 'active' },
 	              'photography'
 	            )
 	          )
@@ -24944,6 +24944,33 @@
 	          _react2.default.createElement(
 	            'ul',
 	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://www.linkedin.com/in/nick-himmel' },
+	                'LinkedIn'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://www.instagram.com/himmelnick/' },
+	                'Instagram'
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              _react2.default.createElement(
+	                'a',
+	                { href: 'https://github.com/NickHimmel' },
+	                'GitHub'
+	              )
+	            ),
 	            _react2.default.createElement(
 	              'li',
 	              null,
@@ -26464,42 +26491,29 @@
 	  value: true
 	});
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _Nav = __webpack_require__(218);
+
+	var _Nav2 = _interopRequireDefault(_Nav);
+
+	var _Footer = __webpack_require__(219);
+
+	var _Footer2 = _interopRequireDefault(_Footer);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Main = function (_React$Component) {
-	  _inherits(Main, _React$Component);
-
-	  function Main() {
-	    _classCallCheck(this, Main);
-
-	    return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
-	  }
-
-	  _createClass(Main, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        null,
-	        'Main'
-	      );
-	    }
-	  }]);
-
-	  return Main;
-	}(_react2.default.Component);
+	var Main = function Main(props) {
+	  debugger;
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'main' },
+	    _react2.default.createElement(_Nav2.default, null),
+	    _react2.default.createElement(_Footer2.default, null)
+	  );
+	};
 
 	exports.default = Main;
 

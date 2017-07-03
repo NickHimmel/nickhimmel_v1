@@ -1,11 +1,16 @@
 import React from 'react';
+import Nav from 'Nav.jsx';
+import Footer from 'Footer.jsx';
 
-class Main extends React.Component {
-  render() {
+
+const Main = (props) => {
+  debugger
     return (
-      <div>Main</div>
-    )
-  }
+      <div className="main">
+        <Nav />
+        <Footer />
+      </div>
+    );
 }
 
 export default Main;

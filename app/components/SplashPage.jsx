@@ -11,7 +11,7 @@ class SplashPage extends React.Component {
         </div>
         <div className="splashpage_line"></div>
         <div>
-          <h2 className="splashpage_header"><Link to={ `/${'photography'}`} activeClassName="active">photography</Link></h2>
+          <h2 className="splashpage_header"><Link to={`/${'photography'}`} activeClassName="active">photography</Link></h2>
         </div>
         <div>
           <ul>

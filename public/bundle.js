@@ -24933,7 +24933,7 @@
 	            { className: 'splashpage_header' },
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/' + 'photography', activeClassName: 'active' },
+	              { to: '/' + 'photo', activeClassName: 'active' },
 	              'photography'
 	            )
 	          )
@@ -25161,7 +25161,7 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/code', activeClassName: 'active' },
+	              { to: '/' + 'code', activeClassName: 'active' },
 	              'Web Development'
 	            )
 	          ),
@@ -25170,7 +25170,7 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/photography', activeClassName: 'active' },
+	              { to: '/' + 'photo', activeClassName: 'active' },
 	              'Photography'
 	            )
 	          ),

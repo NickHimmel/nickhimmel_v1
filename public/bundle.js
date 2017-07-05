@@ -64,6 +64,10 @@
 
 	var _Main2 = _interopRequireDefault(_Main);
 
+	var _Project = __webpack_require__(240);
+
+	var _Project2 = _interopRequireDefault(_Project);
+
 	var _About = __webpack_require__(227);
 
 	var _About2 = _interopRequireDefault(_About);
@@ -77,9 +81,13 @@
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.hashHistory },
-	  _react2.default.createElement(_reactRouter.Route, { path: '/', component: _SplashPage2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/:project', component: _Main2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default })
+	  _react2.default.createElement(
+	    _reactRouter.Route,
+	    { path: '/', component: _Main2.default },
+	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _SplashPage2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/:project', component: _Project2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default })
+	  )
 	), document.getElementById('app'));
 
 /***/ }),
@@ -25242,10 +25250,200 @@
 /***/ }),
 /* 221 */,
 /* 222 */,
-/* 223 */,
-/* 224 */,
-/* 225 */,
-/* 226 */,
+/* 223 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var RightArrow = function RightArrow(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'a',
+	      { className: 'right-arrow', onClick: function onClick() {
+	          props.onClick('right');
+	        } },
+	      '\u203A'
+	    )
+	  );
+	};
+
+	exports.default = RightArrow;
+
+/***/ }),
+/* 224 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var LeftArrow = function LeftArrow(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'a',
+	      { className: 'left-arrow', onClick: function onClick() {
+	          props.onClick('left');
+	        } },
+	      '\u2039'
+	    )
+	  );
+	};
+
+	exports.default = LeftArrow;
+
+/***/ }),
+/* 225 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _GalleryImage = __webpack_require__(226);
+
+	var _GalleryImage2 = _interopRequireDefault(_GalleryImage);
+
+	var _RightArrow = __webpack_require__(223);
+
+	var _RightArrow2 = _interopRequireDefault(_RightArrow);
+
+	var _LeftArrow = __webpack_require__(224);
+
+	var _LeftArrow2 = _interopRequireDefault(_LeftArrow);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Gallery = function (_React$Component) {
+	  _inherits(Gallery, _React$Component);
+
+	  function Gallery(props) {
+	    _classCallCheck(this, Gallery);
+
+	    var _this = _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this, props));
+
+	    _this.handleClick = _this.handleClick.bind(_this);
+	    return _this;
+	  }
+
+	  _createClass(Gallery, [{
+	    key: 'handleClick',
+	    value: function handleClick(direction) {
+	      var galleryDiv = document.getElementById('gallery');
+	      var scrollAmount = 0;
+	      var slideTimer = setInterval(function () {
+	        if (direction === 'right') {
+	          galleryDiv.scrollLeft += 10;
+	        } else {
+	          galleryDiv.scrollLeft -= 10;
+	        };
+	        scrollAmount += 10;
+	        if (scrollAmount >= 100) {
+	          window.clearInterval(slideTimer);
+	        }
+	      }, 15);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      var images = this.props.images;
+	      var renderImages = function renderImages(images) {
+	        return images.map(function (image) {
+	          return _react2.default.createElement(_GalleryImage2.default, _extends({ key: image.id }, image));
+	        });
+	      };
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'gallery-container' },
+	        _react2.default.createElement(
+	          'ul',
+	          { id: 'gallery' },
+	          renderImages(images)
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'arrows' },
+	          _react2.default.createElement(_RightArrow2.default, { onClick: this.handleClick }),
+	          _react2.default.createElement(_LeftArrow2.default, { onClick: this.handleClick })
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Gallery;
+	}(_react2.default.Component);
+
+	exports.default = Gallery;
+
+/***/ }),
+/* 226 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var GalleryImage = function GalleryImage(_ref) {
+	  var src = _ref.src,
+	      alt = _ref.alt;
+
+	  return _react2.default.createElement(
+	    "li",
+	    null,
+	    " ",
+	    _react2.default.createElement("img", { className: "images", src: src, alt: alt }),
+	    " "
+	  );
+	};
+
+	exports.default = GalleryImage;
+
+/***/ }),
 /* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25964,23 +26162,17 @@
 	  function Main() {
 	    _classCallCheck(this, Main);
 
-	    var _this = _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).call(this));
-
-	    _this.state = {
-	      projectNumber: 0
-	    };
-	    return _this;
+	    return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
 	  }
 
 	  _createClass(Main, [{
 	    key: 'render',
 	    value: function render() {
-	      var projectType = this.props.params.project;
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'main' },
 	        _react2.default.createElement(_Nav2.default, null),
-	        _react2.default.createElement(_Project2.default, { project: projectType, projectNumber: this.state.projectNumber }),
+	        _react2.default.createElement(_Project2.default, null),
 	        _react2.default.createElement(_Footer2.default, null)
 	      );
 	    }
@@ -26001,9 +26193,15 @@
 	  value: true
 	});
 
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
+
+	var _Gallery = __webpack_require__(225);
+
+	var _Gallery2 = _interopRequireDefault(_Gallery);
 
 	var _projects = __webpack_require__(220);
 
@@ -26011,14 +26209,40 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var Project = function Project(props) {
-	  var projectObject = _projects2.default[props.project][props.projectNumber];
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    projectObject.projectTitle
-	  );
-	};
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Project = function (_React$Component) {
+	  _inherits(Project, _React$Component);
+
+	  function Project(props) {
+	    _classCallCheck(this, Project);
+
+	    return _possibleConstructorReturn(this, (Project.__proto__ || Object.getPrototypeOf(Project)).call(this, props));
+	  }
+
+	  _createClass(Project, [{
+	    key: 'componentDidMount',
+	    value: function componentDidMount() {
+	      var projectsObject = this.props.params.project;
+	      console.log("Component Did Mount!");
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        'Test'
+	      );
+	    }
+	  }]);
+
+	  return Project;
+	}(_react2.default.Component);
 
 	exports.default = Project;
 

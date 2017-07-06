@@ -8,6 +8,7 @@ class Gallery extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this)
   }
+
   handleClick (direction) {
     let galleryDiv = document.getElementById('gallery');
     var scrollAmount = 0;
@@ -24,6 +25,7 @@ class Gallery extends React.Component {
       }
     },15);
   }
+  
   render() {
     let images = this.props.images;
     let renderImages = (images) => {

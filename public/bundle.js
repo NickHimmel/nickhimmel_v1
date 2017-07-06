@@ -64,9 +64,13 @@
 
 	var _Main2 = _interopRequireDefault(_Main);
 
-	var _Project = __webpack_require__(240);
+	var _Code = __webpack_require__(217);
 
-	var _Project2 = _interopRequireDefault(_Project);
+	var _Code2 = _interopRequireDefault(_Code);
+
+	var _Photo = __webpack_require__(241);
+
+	var _Photo2 = _interopRequireDefault(_Photo);
 
 	var _About = __webpack_require__(227);
 
@@ -85,7 +89,8 @@
 	    _reactRouter.Route,
 	    { path: '/', component: _Main2.default },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _SplashPage2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/:project', component: _Project2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/code', component: _Code2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/photo', component: _Photo2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/about', component: _About2.default })
 	  )
 	), document.getElementById('app'));
@@ -24918,7 +24923,7 @@
 	            { className: 'splashpage_header' },
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/' + 'code', activeClassName: 'active' },
+	              { to: '/code', activeClassName: 'active' },
 	              'web',
 	              _react2.default.createElement('br', null),
 	              'development'
@@ -24934,7 +24939,7 @@
 	            { className: 'splashpage_header' },
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/' + 'photo', activeClassName: 'active' },
+	              { to: '/photo', activeClassName: 'active' },
 	              'photography'
 	            )
 	          )
@@ -24993,7 +24998,77 @@
 	exports.default = SplashPage;
 
 /***/ }),
-/* 217 */,
+/* 217 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Nav = __webpack_require__(218);
+
+	var _Nav2 = _interopRequireDefault(_Nav);
+
+	var _Project = __webpack_require__(240);
+
+	var _Project2 = _interopRequireDefault(_Project);
+
+	var _Footer = __webpack_require__(219);
+
+	var _Footer2 = _interopRequireDefault(_Footer);
+
+	var _projects = __webpack_require__(220);
+
+	var _projects2 = _interopRequireDefault(_projects);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Code = function (_React$Component) {
+	  _inherits(Code, _React$Component);
+
+	  function Code(props) {
+	    _classCallCheck(this, Code);
+
+	    var _this = _possibleConstructorReturn(this, (Code.__proto__ || Object.getPrototypeOf(Code)).call(this, props));
+
+	    _this.state = _projects2.default.code[0];
+	    return _this;
+	  }
+
+	  _createClass(Code, [{
+	    key: 'render',
+	    value: function render() {
+	      var project = this.state;
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'main' },
+	        _react2.default.createElement(_Nav2.default, null),
+	        _react2.default.createElement(_Project2.default, project),
+	        _react2.default.createElement(_Footer2.default, null)
+	      );
+	    }
+	  }]);
+
+	  return Code;
+	}(_react2.default.Component);
+
+	exports.default = Code;
+
+/***/ }),
 /* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25051,7 +25126,7 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/' + 'code', activeClassName: 'active' },
+	              { to: '/code', activeClassName: 'active' },
 	              'Web Development'
 	            )
 	          ),
@@ -25060,7 +25135,7 @@
 	            null,
 	            _react2.default.createElement(
 	              _reactRouter.Link,
-	              { to: '/' + 'photo', activeClassName: 'active' },
+	              { to: '/photo', activeClassName: 'active' },
 	              'Photography'
 	            )
 	          ),
@@ -26150,6 +26225,62 @@
 /* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Project = function Project(_ref) {
+	  var projectTitle = _ref.projectTitle,
+	      projectSubtitle = _ref.projectSubtitle,
+	      projectDescriptionBold = _ref.projectDescriptionBold,
+	      projectDescription = _ref.projectDescription,
+	      projectText = _ref.projectText;
+
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "project" },
+	    _react2.default.createElement(
+	      "h1",
+	      { className: "project_title" },
+	      projectTitle
+	    ),
+	    _react2.default.createElement(
+	      "h2",
+	      { className: "project_subtitle" },
+	      projectSubtitle
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      { className: "project_description" },
+	      _react2.default.createElement(
+	        "span",
+	        { className: "bold" },
+	        projectDescriptionBold
+	      ),
+	      projectDescription
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      { className: "project_text" },
+	      projectText
+	    )
+	  );
+	};
+
+	exports.default = Project;
+
+/***/ }),
+/* 241 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
@@ -26165,6 +26296,10 @@
 	var _Nav = __webpack_require__(218);
 
 	var _Nav2 = _interopRequireDefault(_Nav);
+
+	var _Project = __webpack_require__(240);
+
+	var _Project2 = _interopRequireDefault(_Project);
 
 	var _Gallery = __webpack_require__(225);
 
@@ -26186,38 +26321,36 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Project = function (_React$Component) {
-	  _inherits(Project, _React$Component);
+	var Photo = function (_React$Component) {
+	  _inherits(Photo, _React$Component);
 
-	  function Project(props) {
-	    _classCallCheck(this, Project);
+	  function Photo() {
+	    _classCallCheck(this, Photo);
 
-	    return _possibleConstructorReturn(this, (Project.__proto__ || Object.getPrototypeOf(Project)).call(this, props));
+	    var _this = _possibleConstructorReturn(this, (Photo.__proto__ || Object.getPrototypeOf(Photo)).call(this));
+
+	    _this.state = _projects2.default.photo[0];
+	    return _this;
 	  }
 
-	  _createClass(Project, [{
-	    key: 'componentDidMount',
-	    value: function componentDidMount() {
-	      var projectsObject = this.props.params.project;
-	      debugger;
-	      console.log("Component Did Mount!");
-	    }
-	  }, {
+	  _createClass(Photo, [{
 	    key: 'render',
 	    value: function render() {
+	      var project = this.state;
 	      return _react2.default.createElement(
 	        'div',
-	        null,
-	        _react2.default.createElement(_Nav2.default, null),
-	        _react2.default.createElement(_Footer2.default, null)
+	        { className: 'main' },
+	        _react2.default.createElement(_Footer2.default, null),
+	        _react2.default.createElement(_Project2.default, project),
+	        _react2.default.createElement(_Nav2.default, null)
 	      );
 	    }
 	  }]);
 
-	  return Project;
+	  return Photo;
 	}(_react2.default.Component);
 
-	exports.default = Project;
+	exports.default = Photo;
 
 /***/ })
 /******/ ]);

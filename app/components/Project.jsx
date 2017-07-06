@@ -1,26 +1,14 @@
 import React from 'react';
-import Nav from 'Nav.jsx';
-import Gallery from 'Gallery.jsx'
-import Footer from 'Footer.jsx';
-import Projects from 'app/actions/projects.js';
 
-class Project extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  componentDidMount() {
-    let projectsObject = this.props.params.project
-    debugger
-    console.log("Component Did Mount!")
-  }
-  render() {
-    return (
-      <div>
-        <Nav />
-        <Footer />
-      </div>
-    );
-  }
+const Project = ({projectTitle, projectSubtitle, projectDescriptionBold, projectDescription, projectText}) => {
+  return (
+    <div  className="project">
+      <h1 className="project_title">{projectTitle}</h1>
+      <h2 className="project_subtitle">{projectSubtitle}</h2>
+      <p className="project_description"><span className="bold">{projectDescriptionBold}</span>{projectDescription}</p>
+      <p className="project_text">{projectText}</p>
+    </div>
+  )
 }
 
 export default Project;

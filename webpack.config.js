@@ -6,6 +6,10 @@ module.exports = {
   },
   resolve: {
     root: __dirname,
+    modulesDirectories: [
+      'node_modules',
+      './app/components'
+    ],
     alias: {
     },
     extensions: ['', '.js', '.jsx']
@@ -23,6 +27,10 @@ module.exports = {
       {
         test:/\.css$/,
         loader: 'style-loader!css-loader'
+      },
+      {
+        test: /\.(png|jpg)$/,
+        loader: 'url-loader?limit=20000'
       }
     ]
   }

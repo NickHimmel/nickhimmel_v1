@@ -1,0 +1,45 @@
+.name {
+  font-size: 1em;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 82px;
+  top: 0px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.nav_name {
+  float: left;
+  margin-left: 45px;
+  margin-top: 27px;
+}
+
+.nav_links {
+  float: right;
+  margin-right: 50px;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    height: 100px;
+  }
+
+  .nav_name {
+    float: none;
+    margin: auto;
+    padding: 12px 0;
+    text-align: center;
+  }
+  .nav_links {
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+}

@@ -25778,7 +25778,7 @@
 	exports.i(__webpack_require__(235), "");
 	exports.i(__webpack_require__(236), "");
 	exports.i(__webpack_require__(237), "");
-	exports.i(__webpack_require__(238), "");
+	exports.i(__webpack_require__(249), "");
 
 	// module
 	exports.push([module.id, "\n", ""]);
@@ -25939,20 +25939,7 @@
 
 
 /***/ }),
-/* 238 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(232)(undefined);
-	// imports
-
-
-	// module
-	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n#gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n#gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 90%;\n  max-width: 1080px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 45%;\n  right: -9px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  width: 17px;\n  padding: 0;\n  text-align: center;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.3em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);\n}\n\n.left-arrow {\n  margin-top: 10px;\n}\n", ""]);
-
-	// exports
-
-
-/***/ }),
+/* 238 */,
 /* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -26358,6 +26345,28 @@
 		// send back the fixed css
 		return fixedCss;
 	};
+
+
+/***/ }),
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(232)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n#gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n#gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 80%;\n  max-width: 950px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 45%;\n  right: -9px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  width: 17px;\n  padding: 0;\n  text-align: center;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.3em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);\n}\n\n.left-arrow {\n  margin-top: 10px;\n}\n", ""]);
+
+	// exports
 
 
 /***/ })

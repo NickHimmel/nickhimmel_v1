@@ -44,3 +44,19 @@
 .left-arrow {
   margin-top: 10px;
 }
+
+@media (max-width: 600px) {
+  #gallery li {
+    text-align: center;
+    display: block;
+    padding: 0;
+  }
+
+  .images {
+    width: 100%;
+  }
+
+  .arrows {
+    display: none;
+  }
+}

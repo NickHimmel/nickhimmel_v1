@@ -26364,7 +26364,7 @@
 
 
 	// module
-	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n#gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n#gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 80%;\n  max-width: 950px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 45%;\n  right: -9px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  width: 17px;\n  padding: 0;\n  text-align: center;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.3em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);\n}\n\n.left-arrow {\n  margin-top: 10px;\n}\n", ""]);
+	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n#gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n#gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 80%;\n  max-width: 950px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 45%;\n  right: -9px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  width: 17px;\n  padding: 0;\n  text-align: center;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.3em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);\n}\n\n.left-arrow {\n  margin-top: 10px;\n}\n\n@media (max-width: 600px) {\n  #gallery li {\n    text-align: center;\n    display: block;\n    padding: 0;\n  }\n\n  .images {\n    width: 100%;\n  }\n\n  .arrows {\n    display: none;\n  }\n}\n", ""]);
 
 	// exports
 

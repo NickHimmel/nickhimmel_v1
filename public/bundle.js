@@ -25510,10 +25510,28 @@
 	    var _this = _possibleConstructorReturn(this, (Photo.__proto__ || Object.getPrototypeOf(Photo)).call(this));
 
 	    _this.state = _projects2.default.photo[0];
+	    _this.handleClick = _this.handleClick.bind(_this);
 	    return _this;
 	  }
 
 	  _createClass(Photo, [{
+	    key: 'handleClick',
+	    value: function handleClick(direction) {
+	      var galleryDiv = document.getElementById('gallery');
+	      var scrollAmount = 0;
+	      var slideTimer = setInterval(function () {
+	        if (direction === 'right') {
+	          galleryDiv.scrollLeft += 10;
+	        } else {
+	          galleryDiv.scrollLeft -= 10;
+	        };
+	        scrollAmount += 10;
+	        if (scrollAmount >= 100) {
+	          window.clearInterval(slideTimer);
+	        }
+	      }, 15);
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      var project = this.state;
@@ -25525,7 +25543,7 @@
 	          'div',
 	          { className: 'project' },
 	          _react2.default.createElement(_Project2.default, project),
-	          _react2.default.createElement(_Gallery2.default, { images: this.state.projectImages })
+	          _react2.default.createElement(_Gallery2.default, { images: this.state.projectImages, onClick: this.handleClick })
 	        ),
 	        _react2.default.createElement(_Footer2.default, null)
 	      );
@@ -25549,8 +25567,6 @@
 
 	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -25569,70 +25585,29 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Gallery = function (_React$Component) {
-	  _inherits(Gallery, _React$Component);
-
-	  function Gallery(props) {
-	    _classCallCheck(this, Gallery);
-
-	    var _this = _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).call(this, props));
-
-	    _this.handleClick = _this.handleClick.bind(_this);
-	    return _this;
-	  }
-
-	  _createClass(Gallery, [{
-	    key: 'handleClick',
-	    value: function handleClick(direction) {
-	      var galleryDiv = document.getElementById('gallery');
-	      var scrollAmount = 0;
-	      var slideTimer = setInterval(function () {
-	        if (direction === 'right') {
-	          galleryDiv.scrollLeft += 10;
-	        } else {
-	          galleryDiv.scrollLeft -= 10;
-	        };
-	        scrollAmount += 10;
-	        if (scrollAmount >= 100) {
-	          window.clearInterval(slideTimer);
-	        }
-	      }, 15);
-	    }
-	  }, {
-	    key: 'render',
-	    value: function render() {
-	      var images = this.props.images;
-	      var renderImages = function renderImages(images) {
-	        return images.map(function (image) {
-	          return _react2.default.createElement(_GalleryImage2.default, _extends({ key: image.id }, image));
-	        });
-	      };
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'gallery-container' },
-	        _react2.default.createElement(
-	          'ul',
-	          { id: 'gallery' },
-	          renderImages(images)
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'arrows' },
-	          _react2.default.createElement(_RightArrow2.default, { onClick: this.handleClick }),
-	          _react2.default.createElement(_LeftArrow2.default, { onClick: this.handleClick })
-	        )
-	      );
-	    }
-	  }]);
-
-	  return Gallery;
-	}(_react2.default.Component);
+	var Gallery = function Gallery(props) {
+	  var images = props.images;
+	  var renderImages = function renderImages(images) {
+	    return images.map(function (image) {
+	      return _react2.default.createElement(_GalleryImage2.default, _extends({ key: image.id }, image));
+	    });
+	  };
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'gallery-container' },
+	    _react2.default.createElement(
+	      'ul',
+	      { id: 'gallery' },
+	      renderImages(images)
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'arrows' },
+	      _react2.default.createElement(_RightArrow2.default, { onClick: props.onClick }),
+	      _react2.default.createElement(_LeftArrow2.default, { onClick: props.onClick })
+	    )
+	  );
+	};
 
 	exports.default = Gallery;
 

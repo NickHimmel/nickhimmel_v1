@@ -14,9 +14,9 @@ const SplashPage = () => {
       </div>
       <div>
         <ul>
-          <li><a href="https://www.linkedin.com/in/nick-himmel">LinkedIn</a></li>
-          <li><a href="https://www.instagram.com/himmelnick/">Instagram</a></li>
-          <li><a href="https://github.com/NickHimmel">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/nick-himmel" target="_blank">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/himmelnick/" target="_blank">Instagram</a></li>
+          <li><a href="https://github.com/NickHimmel" target="_blank">GitHub</a></li>
           <li><Link to="/about" activeClassName="active">About</Link></li>
         </ul>
       </div>

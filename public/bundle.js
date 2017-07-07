@@ -24936,7 +24936,7 @@
 	          null,
 	          _react2.default.createElement(
 	            'a',
-	            { href: 'https://www.linkedin.com/in/nick-himmel' },
+	            { href: 'https://www.linkedin.com/in/nick-himmel', target: '_blank' },
 	            'LinkedIn'
 	          )
 	        ),
@@ -24945,7 +24945,7 @@
 	          null,
 	          _react2.default.createElement(
 	            'a',
-	            { href: 'https://www.instagram.com/himmelnick/' },
+	            { href: 'https://www.instagram.com/himmelnick/', target: '_blank' },
 	            'Instagram'
 	          )
 	        ),
@@ -24954,7 +24954,7 @@
 	          null,
 	          _react2.default.createElement(
 	            'a',
-	            { href: 'https://github.com/NickHimmel' },
+	            { href: 'https://github.com/NickHimmel', target: '_blank' },
 	            'GitHub'
 	          )
 	        ),
@@ -25891,7 +25891,7 @@
 
 
 	// module
-	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: #8da2d9;\n  text-decoration: none;\n  padding: 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n\n.main {\n  margin-top: 93px;\n}\n", ""]);
+	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: #8da2d9;\n  text-decoration: none;\n  padding: 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n", ""]);
 
 	// exports
 
@@ -25905,7 +25905,7 @@
 
 
 	// module
-	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n@media (max-width: 600px) {\n  .nav {\n    height: 100px;\n  }\n\n  .nav_name {\n    float: none;\n    margin: auto;\n    padding: 12px 0;\n    text-align: center;\n  }\n  .nav_links {\n    float: none;\n    margin: auto;\n    text-align: center;\n  }\n}\n", ""]);
+	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n@media (max-width: 600px) {\n  .nav {\n    height: 100px;\n  }\n\n  .nav_name {\n    float: none;\n    margin: auto;\n    padding: 12px 0;\n    text-align: center;\n  }\n  .nav_links {\n    float: none;\n    margin: auto;\n    text-align: center;\n  }\n}\n", ""]);
 
 	// exports
 
@@ -25919,7 +25919,7 @@
 
 
 	// module
-	exports.push([module.id, ".footer {\n  display: none;\n  position:fixed;\n  left:0px;\n  bottom:0px;\n  height:100px;\n  width:100%;\n  text-align: right;\n}\n\n.footer_links {\n  font-size: .75em;\n  margin-top: 64px;\n  margin-right: 50px;\n}\n\n.footer_links li {\n  border-right: none;\n  padding: 5px;\n}\n\n.middle_dot {\n  color: #8da2d9;\n  padding: 0;\n}\n", ""]);
+	exports.push([module.id, ".footer {\n  position:fixed;\n  left:0px;\n  bottom:0px;\n  height:100px;\n  width:100%;\n  text-align: right;\n}\n\n.footer_links {\n  font-size: .75em;\n  margin-top: 64px;\n  margin-right: 50px;\n}\n\n.footer_links li {\n  border-right: none;\n  padding: 5px;\n}\n\n.middle_dot {\n  color: #8da2d9;\n  padding: 0;\n}\n", ""]);
 
 	// exports
 

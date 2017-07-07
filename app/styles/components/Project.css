@@ -38,3 +38,9 @@
   margin-top: 8px;
   font-family: 'Open Sans', sans-serif;
 }
+
+@media (max-width: 600px) {
+  .project {
+    margin: 25px;
+  }
+}

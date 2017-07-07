@@ -14747,7 +14747,7 @@
 	 *
 	 * @providesModule shallowEqual
 	 * @typechecks
-	 *
+	 * 
 	 */
 
 	'use strict';
@@ -22972,7 +22972,7 @@
 	 * nested.
 	 *
 	 *   import { Route, createRoutesFromReactChildren } from 'react-router'
-	 *
+	 *   
 	 *   const routes = createRoutesFromReactChildren(
 	 *     <Route component={App}>
 	 *       <Route path="home" component={Dashboard}/>
@@ -24879,8 +24879,6 @@
 	  value: true
 	});
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -24889,111 +24887,90 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var SplashPage = function (_React$Component) {
-	  _inherits(SplashPage, _React$Component);
-
-	  function SplashPage() {
-	    _classCallCheck(this, SplashPage);
-
-	    return _possibleConstructorReturn(this, (SplashPage.__proto__ || Object.getPrototypeOf(SplashPage)).apply(this, arguments));
-	  }
-
-	  _createClass(SplashPage, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'splashpage' },
+	var SplashPage = function SplashPage() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'splashpage' },
+	    _react2.default.createElement(
+	      'h1',
+	      { className: 'splashpage_name name' },
+	      'Nick Himmel'
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'h2',
+	        { className: 'splashpage_header' },
 	        _react2.default.createElement(
-	          'h1',
-	          { className: 'splashpage_name name' },
-	          'Nick Himmel'
-	        ),
+	          _reactRouter.Link,
+	          { to: '/code', activeClassName: 'active' },
+	          'web',
+	          _react2.default.createElement('br', null),
+	          'development'
+	        )
+	      )
+	    ),
+	    _react2.default.createElement('div', { className: 'splashpage_line' }),
+	    _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'h2',
+	        { className: 'splashpage_header' },
 	        _react2.default.createElement(
-	          'div',
+	          _reactRouter.Link,
+	          { to: '/photo', activeClassName: 'active' },
+	          'photography'
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'ul',
+	        null,
+	        _react2.default.createElement(
+	          'li',
 	          null,
 	          _react2.default.createElement(
-	            'h2',
-	            { className: 'splashpage_header' },
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/code', activeClassName: 'active' },
-	              'web',
-	              _react2.default.createElement('br', null),
-	              'development'
-	            )
+	            'a',
+	            { href: 'https://www.linkedin.com/in/nick-himmel' },
+	            'LinkedIn'
 	          )
 	        ),
-	        _react2.default.createElement('div', { className: 'splashpage_line' }),
 	        _react2.default.createElement(
-	          'div',
+	          'li',
 	          null,
 	          _react2.default.createElement(
-	            'h2',
-	            { className: 'splashpage_header' },
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/photo', activeClassName: 'active' },
-	              'photography'
-	            )
+	            'a',
+	            { href: 'https://www.instagram.com/himmelnick/' },
+	            'Instagram'
 	          )
 	        ),
 	        _react2.default.createElement(
-	          'div',
+	          'li',
 	          null,
 	          _react2.default.createElement(
-	            'ul',
-	            null,
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                'a',
-	                { href: 'https://www.linkedin.com/in/nick-himmel' },
-	                'LinkedIn'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                'a',
-	                { href: 'https://www.instagram.com/himmelnick/' },
-	                'Instagram'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                'a',
-	                { href: 'https://github.com/NickHimmel' },
-	                'GitHub'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/about', activeClassName: 'active' },
-	                'About'
-	              )
-	            )
+	            'a',
+	            { href: 'https://github.com/NickHimmel' },
+	            'GitHub'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: '/about', activeClassName: 'active' },
+	            'About'
 	          )
 	        )
-	      );
-	    }
-	  }]);
-
-	  return SplashPage;
-	}(_react2.default.Component);
+	      )
+	    )
+	  );
+	};
 
 	exports.default = SplashPage;
 
@@ -25796,8 +25773,8 @@
 
 	exports = module.exports = __webpack_require__(232)(undefined);
 	// imports
-	exports.i(__webpack_require__(233), "");
 	exports.i(__webpack_require__(234), "");
+	exports.i(__webpack_require__(233), "");
 	exports.i(__webpack_require__(235), "");
 	exports.i(__webpack_require__(236), "");
 	exports.i(__webpack_require__(237), "");
@@ -25994,7 +25971,7 @@
 		isOldIE = memoize(function() {
 			// Test for IE <= 9 as proposed by Browserhacks
 			// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
-			// Tests for existence of standard globals is to allow style-loader
+			// Tests for existence of standard globals is to allow style-loader 
 			// to operate correctly into non-standard environments
 			// @see https://github.com/webpack-contrib/style-loader/issues/177
 			return window && document && document.all && !window.atob;
@@ -26160,13 +26137,13 @@
 		// If a transform function was defined, run it on the css
 		if (options.transform && obj.css) {
 		    transformResult = options.transform(obj.css);
-
+		    
 		    if (transformResult) {
 		    	// If transform returns a value, use that instead of the original css.
 		    	// This allows running runtime transformations on the css.
 		    	obj.css = transformResult;
 		    } else {
-		    	// If the transform function returns a falsy value, don't add this css.
+		    	// If the transform function returns a falsy value, don't add this css. 
 		    	// This allows conditional loading of css
 		    	return function() {
 		    		// noop
@@ -26292,7 +26269,7 @@
 /* 240 */
 /***/ (function(module, exports) {
 
-
+	
 	/**
 	 * When source maps are enabled, `style-loader` uses a link element with a data-uri to
 	 * embed the css on the page. This breaks all relative urls because now they are relative to a

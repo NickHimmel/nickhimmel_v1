@@ -60,23 +60,23 @@
 
 	var _SplashPage2 = _interopRequireDefault(_SplashPage);
 
-	var _Main = __webpack_require__(239);
+	var _Main = __webpack_require__(217);
 
 	var _Main2 = _interopRequireDefault(_Main);
 
-	var _Code = __webpack_require__(217);
+	var _Code = __webpack_require__(218);
 
 	var _Code2 = _interopRequireDefault(_Code);
 
-	var _Photo = __webpack_require__(241);
+	var _Photo = __webpack_require__(224);
 
 	var _Photo2 = _interopRequireDefault(_Photo);
 
-	var _About = __webpack_require__(227);
+	var _About = __webpack_require__(229);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _App = __webpack_require__(228);
+	var _App = __webpack_require__(230);
 
 	var _App2 = _interopRequireDefault(_App);
 
@@ -25001,6 +25001,32 @@
 /* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Main = function Main(props) {
+	  return _react2.default.createElement(
+	    "div",
+	    { className: "main" },
+	    props.children
+	  );
+	};
+
+	exports.default = Main;
+
+/***/ }),
+/* 218 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
@@ -25013,19 +25039,23 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _Nav = __webpack_require__(218);
+	var _Nav = __webpack_require__(219);
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
-	var _Project = __webpack_require__(240);
+	var _Project = __webpack_require__(220);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
-	var _Footer = __webpack_require__(219);
+	var _Video = __webpack_require__(221);
+
+	var _Video2 = _interopRequireDefault(_Video);
+
+	var _Footer = __webpack_require__(222);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _projects = __webpack_require__(220);
+	var _projects = __webpack_require__(223);
 
 	var _projects2 = _interopRequireDefault(_projects);
 
@@ -25046,10 +25076,16 @@
 	    var _this = _possibleConstructorReturn(this, (Code.__proto__ || Object.getPrototypeOf(Code)).call(this, props));
 
 	    _this.state = _projects2.default.code[0];
+	    _this.handleClick = _this.handleClick.bind(_this);
 	    return _this;
 	  }
 
 	  _createClass(Code, [{
+	    key: 'handleClick',
+	    value: function handleClick() {
+	      alert("Yaha!");
+	    }
+	  }, {
 	    key: 'render',
 	    value: function render() {
 	      var project = this.state;
@@ -25057,7 +25093,12 @@
 	        'div',
 	        { className: 'main' },
 	        _react2.default.createElement(_Nav2.default, null),
-	        _react2.default.createElement(_Project2.default, project),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'project' },
+	          _react2.default.createElement(_Project2.default, project),
+	          _react2.default.createElement(_Video2.default, { video: this.state.projectVideo, onClick: this.handleClick })
+	        ),
 	        _react2.default.createElement(_Footer2.default, null)
 	      );
 	    }
@@ -25069,7 +25110,7 @@
 	exports.default = Code;
 
 /***/ }),
-/* 218 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25159,7 +25200,96 @@
 	exports.default = Nav;
 
 /***/ }),
-/* 219 */
+/* 220 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Project = function Project(_ref) {
+	  var projectTitle = _ref.projectTitle,
+	      projectSubtitle = _ref.projectSubtitle,
+	      projectDescriptionBold = _ref.projectDescriptionBold,
+	      projectDescription = _ref.projectDescription,
+	      projectText = _ref.projectText;
+
+	  return _react2.default.createElement(
+	    "div",
+	    null,
+	    _react2.default.createElement(
+	      "h1",
+	      { className: "project_title" },
+	      projectTitle
+	    ),
+	    _react2.default.createElement(
+	      "h2",
+	      { className: "project_subtitle" },
+	      projectSubtitle
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      { className: "project_description" },
+	      _react2.default.createElement(
+	        "span",
+	        { className: "bold" },
+	        projectDescriptionBold
+	      ),
+	      projectDescription
+	    ),
+	    _react2.default.createElement(
+	      "p",
+	      { className: "project_text" },
+	      projectText
+	    )
+	  );
+	};
+
+	exports.default = Project;
+
+/***/ }),
+/* 221 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Video = function Video(props) {
+
+	  return _react2.default.createElement(
+	    "div",
+	    null,
+	    _react2.default.createElement(
+	      "video",
+	      { width: "100%", controls: true, onClick: function onClick() {
+	          props.onClick();
+	        } },
+	      _react2.default.createElement("source", { src: props.video, type: "video/mp4" })
+	    )
+	  );
+	};
+
+	exports.default = Video;
+
+/***/ }),
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25287,7 +25417,7 @@
 	exports.default = Footer;
 
 /***/ }),
-/* 220 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25323,40 +25453,6 @@
 	};
 
 /***/ }),
-/* 221 */,
-/* 222 */,
-/* 223 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var RightArrow = function RightArrow(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(
-	      'a',
-	      { className: 'right-arrow', onClick: function onClick() {
-	          props.onClick('right');
-	        } },
-	      '\u203A'
-	    )
-	  );
-	};
-
-	exports.default = RightArrow;
-
-/***/ }),
 /* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25366,27 +25462,75 @@
 	  value: true
 	});
 
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _Nav = __webpack_require__(219);
+
+	var _Nav2 = _interopRequireDefault(_Nav);
+
+	var _Project = __webpack_require__(220);
+
+	var _Project2 = _interopRequireDefault(_Project);
+
+	var _Gallery = __webpack_require__(225);
+
+	var _Gallery2 = _interopRequireDefault(_Gallery);
+
+	var _Footer = __webpack_require__(222);
+
+	var _Footer2 = _interopRequireDefault(_Footer);
+
+	var _projects = __webpack_require__(223);
+
+	var _projects2 = _interopRequireDefault(_projects);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var LeftArrow = function LeftArrow(props) {
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(
-	      'a',
-	      { className: 'left-arrow', onClick: function onClick() {
-	          props.onClick('left');
-	        } },
-	      '\u2039'
-	    )
-	  );
-	};
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	exports.default = LeftArrow;
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Photo = function (_React$Component) {
+	  _inherits(Photo, _React$Component);
+
+	  function Photo() {
+	    _classCallCheck(this, Photo);
+
+	    var _this = _possibleConstructorReturn(this, (Photo.__proto__ || Object.getPrototypeOf(Photo)).call(this));
+
+	    _this.state = _projects2.default.photo[0];
+	    return _this;
+	  }
+
+	  _createClass(Photo, [{
+	    key: 'render',
+	    value: function render() {
+	      var project = this.state;
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'main' },
+	        _react2.default.createElement(_Nav2.default, null),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'project' },
+	          _react2.default.createElement(_Project2.default, project),
+	          _react2.default.createElement(_Gallery2.default, { images: this.state.projectImages })
+	        ),
+	        _react2.default.createElement(_Footer2.default, null)
+	      );
+	    }
+	  }]);
+
+	  return Photo;
+	}(_react2.default.Component);
+
+	exports.default = Photo;
 
 /***/ }),
 /* 225 */
@@ -25410,11 +25554,11 @@
 
 	var _GalleryImage2 = _interopRequireDefault(_GalleryImage);
 
-	var _RightArrow = __webpack_require__(223);
+	var _RightArrow = __webpack_require__(227);
 
 	var _RightArrow2 = _interopRequireDefault(_RightArrow);
 
-	var _LeftArrow = __webpack_require__(224);
+	var _LeftArrow = __webpack_require__(228);
 
 	var _LeftArrow2 = _interopRequireDefault(_LeftArrow);
 
@@ -25528,6 +25672,70 @@
 	  value: true
 	});
 
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var RightArrow = function RightArrow(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'a',
+	      { className: 'right-arrow', onClick: function onClick() {
+	          props.onClick('right');
+	        } },
+	      '\u203A'
+	    )
+	  );
+	};
+
+	exports.default = RightArrow;
+
+/***/ }),
+/* 228 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var LeftArrow = function LeftArrow(props) {
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'a',
+	      { className: 'left-arrow', onClick: function onClick() {
+	          props.onClick('left');
+	        } },
+	      '\u2039'
+	    )
+	  );
+	};
+
+	exports.default = LeftArrow;
+
+/***/ }),
+/* 229 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(1);
@@ -25572,13 +25780,13 @@
 	exports.default = About;
 
 /***/ }),
-/* 228 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(229);
+	var content = __webpack_require__(231);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// Prepare cssTransformation
 	var transform;
@@ -25586,7 +25794,7 @@
 	var options = {}
 	options.transform = transform
 	// add the styles to the DOM
-	var update = __webpack_require__(237)(content, options);
+	var update = __webpack_require__(239)(content, options);
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -25603,17 +25811,17 @@
 	}
 
 /***/ }),
-/* 229 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(230)(undefined);
+	exports = module.exports = __webpack_require__(232)(undefined);
 	// imports
-	exports.i(__webpack_require__(231), "");
-	exports.i(__webpack_require__(232), "");
 	exports.i(__webpack_require__(233), "");
 	exports.i(__webpack_require__(234), "");
 	exports.i(__webpack_require__(235), "");
 	exports.i(__webpack_require__(236), "");
+	exports.i(__webpack_require__(237), "");
+	exports.i(__webpack_require__(238), "");
 
 	// module
 	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: #8da2d9;\n  text-decoration: none;\n  padding: 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n", ""]);
@@ -25622,7 +25830,7 @@
 
 
 /***/ }),
-/* 230 */
+/* 232 */
 /***/ (function(module, exports) {
 
 	/*
@@ -25704,10 +25912,10 @@
 
 
 /***/ }),
-/* 231 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(230)(undefined);
+	exports = module.exports = __webpack_require__(232)(undefined);
 	// imports
 
 
@@ -25718,10 +25926,10 @@
 
 
 /***/ }),
-/* 232 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(230)(undefined);
+	exports = module.exports = __webpack_require__(232)(undefined);
 	// imports
 
 
@@ -25732,10 +25940,10 @@
 
 
 /***/ }),
-/* 233 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(230)(undefined);
+	exports = module.exports = __webpack_require__(232)(undefined);
 	// imports
 
 
@@ -25746,10 +25954,10 @@
 
 
 /***/ }),
-/* 234 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(230)(undefined);
+	exports = module.exports = __webpack_require__(232)(undefined);
 	// imports
 
 
@@ -25760,10 +25968,10 @@
 
 
 /***/ }),
-/* 235 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(230)(undefined);
+	exports = module.exports = __webpack_require__(232)(undefined);
 	// imports
 
 
@@ -25774,10 +25982,10 @@
 
 
 /***/ }),
-/* 236 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(230)(undefined);
+	exports = module.exports = __webpack_require__(232)(undefined);
 	// imports
 
 
@@ -25788,7 +25996,7 @@
 
 
 /***/ }),
-/* 237 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*
@@ -25825,7 +26033,7 @@
 		singletonElement = null,
 		singletonCounter = 0,
 		styleElementsInsertedAtTop = [],
-		fixUrls = __webpack_require__(238);
+		fixUrls = __webpack_require__(240);
 
 	module.exports = function(list, options) {
 		if(false) {
@@ -26101,7 +26309,7 @@
 
 
 /***/ }),
-/* 238 */
+/* 240 */
 /***/ (function(module, exports) {
 
 	
@@ -26194,163 +26402,6 @@
 		return fixedCss;
 	};
 
-
-/***/ }),
-/* 239 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Main = function Main(props) {
-	  return _react2.default.createElement(
-	    "div",
-	    { className: "main" },
-	    props.children
-	  );
-	};
-
-	exports.default = Main;
-
-/***/ }),
-/* 240 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Project = function Project(_ref) {
-	  var projectTitle = _ref.projectTitle,
-	      projectSubtitle = _ref.projectSubtitle,
-	      projectDescriptionBold = _ref.projectDescriptionBold,
-	      projectDescription = _ref.projectDescription,
-	      projectText = _ref.projectText;
-
-	  return _react2.default.createElement(
-	    "div",
-	    { className: "project" },
-	    _react2.default.createElement(
-	      "h1",
-	      { className: "project_title" },
-	      projectTitle
-	    ),
-	    _react2.default.createElement(
-	      "h2",
-	      { className: "project_subtitle" },
-	      projectSubtitle
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      { className: "project_description" },
-	      _react2.default.createElement(
-	        "span",
-	        { className: "bold" },
-	        projectDescriptionBold
-	      ),
-	      projectDescription
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      { className: "project_text" },
-	      projectText
-	    )
-	  );
-	};
-
-	exports.default = Project;
-
-/***/ }),
-/* 241 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _Nav = __webpack_require__(218);
-
-	var _Nav2 = _interopRequireDefault(_Nav);
-
-	var _Project = __webpack_require__(240);
-
-	var _Project2 = _interopRequireDefault(_Project);
-
-	var _Gallery = __webpack_require__(225);
-
-	var _Gallery2 = _interopRequireDefault(_Gallery);
-
-	var _Footer = __webpack_require__(219);
-
-	var _Footer2 = _interopRequireDefault(_Footer);
-
-	var _projects = __webpack_require__(220);
-
-	var _projects2 = _interopRequireDefault(_projects);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Photo = function (_React$Component) {
-	  _inherits(Photo, _React$Component);
-
-	  function Photo() {
-	    _classCallCheck(this, Photo);
-
-	    var _this = _possibleConstructorReturn(this, (Photo.__proto__ || Object.getPrototypeOf(Photo)).call(this));
-
-	    _this.state = _projects2.default.photo[0];
-	    return _this;
-	  }
-
-	  _createClass(Photo, [{
-	    key: 'render',
-	    value: function render() {
-	      var project = this.state;
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'main' },
-	        _react2.default.createElement(_Footer2.default, null),
-	        _react2.default.createElement(_Project2.default, project),
-	        _react2.default.createElement(_Nav2.default, null)
-	      );
-	    }
-	  }]);
-
-	  return Photo;
-	}(_react2.default.Component);
-
-	exports.default = Photo;
 
 /***/ })
 /******/ ]);

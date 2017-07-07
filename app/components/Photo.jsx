@@ -15,9 +15,12 @@ class Photo extends React.Component {
     let project = this.state;
     return (
       <div className="main">
-        <Footer />
-        <Project {...project}/>
         <Nav />
+        <div className="project">
+          <Project {...project}/>
+          <Gallery images={this.state.projectImages}/>
+        </div>
+        <Footer />
       </div>
     )
   }

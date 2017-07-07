@@ -25,7 +25,7 @@ class Gallery extends React.Component {
       }
     },15);
   }
-  
+
   render() {
     let images = this.props.images;
     let renderImages = (images) => {

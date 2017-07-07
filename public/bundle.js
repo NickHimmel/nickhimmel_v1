@@ -25919,7 +25919,7 @@
 
 
 	// module
-	exports.push([module.id, ".footer {\n  position:fixed;\n  left:0px;\n  bottom:0px;\n  height:100px;\n  width:100%;\n  text-align: right;\n}\n\n.footer_links {\n  font-size: .75em;\n  margin-top: 64px;\n  margin-right: 50px;\n}\n\n.footer_links li {\n  border-right: none;\n  padding: 5px;\n}\n\n.middle_dot {\n  color: #8da2d9;\n  padding: 0;\n}\n", ""]);
+	exports.push([module.id, ".footer {\n  position:fixed;\n  left: 0px;\n  bottom: 0px;\n  height: 38px;\n  width: 100%;\n  text-align: right;\n  background-color: #fff;\n}\n\n.footer_links {\n  font-size: .75em;\n  margin: 5px 50px 0 0;\n}\n\n.footer_links li {\n  border-right: none;\n  padding: 5px;\n}\n\n.middle_dot {\n  color: #8da2d9;\n  padding: 0;\n}\n", ""]);
 
 	// exports
 

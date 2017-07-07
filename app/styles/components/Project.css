@@ -1,0 +1,40 @@
+.project {
+  margin: 50px;
+}
+
+.project_title, .project_subtitle {
+  font-family: 'Old Standard TT', serif;
+}
+
+.project_title {
+  font-size: 3em;
+  font-weight: 400;
+  margin: 0;
+  line-height: 48px;
+}
+
+.project_subtitle {
+  font-size: 1.5em;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+}
+
+.project_description {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  margin: 5px 0;
+}
+
+.project_link {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.project_text {
+  margin-top: 8px;
+  font-family: 'Open Sans', sans-serif;
+}

@@ -1,0 +1,46 @@
+.gallery-container {
+  position: relative;
+}
+
+#gallery {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+#gallery li {
+  display: inline;
+  border: none;
+}
+
+.images {
+  width: 90%;
+  max-width: 1080px;
+}
+
+.arrows {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 45%;
+  right: -9px;
+}
+
+.right-arrow, .left-arrow {
+  display: block;
+  width: 17px;
+  padding: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.3em;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.left-arrow {
+  margin-top: 10px;
+}

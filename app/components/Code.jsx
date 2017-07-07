@@ -13,7 +13,12 @@ class Code extends React.Component {
   }
 
   handleClick () {
-    alert("Yaha!")
+    let projectVideo = document.getElementById('projectVideo');
+    if (projectVideo.paused) {
+      projectVideo.play();
+    } else {
+      projectVideo.pause();
+    }
   }
 
   render() {

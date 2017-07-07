@@ -25083,7 +25083,12 @@
 	  _createClass(Code, [{
 	    key: 'handleClick',
 	    value: function handleClick() {
-	      alert("Yaha!");
+	      var projectVideo = document.getElementById('projectVideo');
+	      if (projectVideo.paused) {
+	        projectVideo.play();
+	      } else {
+	        projectVideo.pause();
+	      }
 	    }
 	  }, {
 	    key: 'render',
@@ -25278,7 +25283,7 @@
 	    null,
 	    _react2.default.createElement(
 	      "video",
-	      { width: "100%", controls: true, onClick: function onClick() {
+	      { id: "projectVideo", width: "100%", controls: true, onClick: function onClick() {
 	          props.onClick();
 	        } },
 	      _react2.default.createElement("source", { src: props.video, type: "video/mp4" })

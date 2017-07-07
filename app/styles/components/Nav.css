@@ -26,19 +26,13 @@
 }
 
 @media (max-width: 600px) {
-  .nav {
+  /*.nav {
     height: 100px;
-  }
-
+  }*/
   .nav_name {
-    float: none;
-    margin: auto;
-    padding: 12px 0;
-    text-align: center;
+    margin-left: 20px;
   }
   .nav_links {
-    float: none;
-    margin: auto;
-    text-align: center;
+    display: none;
   }
 }

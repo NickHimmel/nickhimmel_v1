@@ -25905,7 +25905,7 @@
 
 
 	// module
-	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n@media (max-width: 600px) {\n  .nav {\n    height: 100px;\n  }\n\n  .nav_name {\n    float: none;\n    margin: auto;\n    padding: 12px 0;\n    text-align: center;\n  }\n  .nav_links {\n    float: none;\n    margin: auto;\n    text-align: center;\n  }\n}\n", ""]);
+	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n@media (max-width: 600px) {\n  /*.nav {\n    height: 100px;\n  }*/\n  .nav_name {\n    margin-left: 20px;\n  }\n  .nav_links {\n    display: none;\n  }\n}\n", ""]);
 
 	// exports
 

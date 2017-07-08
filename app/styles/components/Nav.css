@@ -25,12 +25,34 @@
   margin-right: 50px;
 }
 
+.nav_dropdown {
+  display: none;
+}
+
 @media (max-width: 650px) {
 
   .nav_name {
-    margin-left: 20px;
+    margin-left: 15px;
   }
+
   .nav_links {
-    display: none;
+    float: left;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    background: #fff;
   }
+
+  .nav_dropdown {
+    display: block;
+  }
+
+  .nav_links li{
+    margin: 0 20px;
+    padding: 20px 0;
+    display: block;
+    border-right: 0;
+    border-top: solid 1px #8da2d9;
+  }
+
 }

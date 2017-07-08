@@ -11,6 +11,11 @@ class Nav extends React.Component {
           <li><Link to="/photo" activeClassName="active">Photography</Link></li>
           <li><Link to="/about" activeClassName="active">About</Link></li>
         </ul>
+        <ul className="nav_links nav_dropdown">
+          <li><a href="https://www.linkedin.com/in/nick-himmel">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/himmelnick/">Instagram</a></li>
+          <li><a href="https://github.com/NickHimmel">GitHub</a></li>
+        </ul>
       </div>
     )
   }

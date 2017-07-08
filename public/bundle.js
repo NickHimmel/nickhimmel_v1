@@ -25171,6 +25171,37 @@
 	              'About'
 	            )
 	          )
+	        ),
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'nav_links nav_dropdown' },
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://www.linkedin.com/in/nick-himmel' },
+	              'LinkedIn'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://www.instagram.com/himmelnick/' },
+	              'Instagram'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/NickHimmel' },
+	              'GitHub'
+	            )
+	          )
 	        )
 	      );
 	    }
@@ -25905,7 +25936,7 @@
 
 
 	// module
-	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n@media (max-width: 650px) {\n\n  .nav_name {\n    margin-left: 20px;\n  }\n  .nav_links {\n    display: none;\n  }\n}\n", ""]);
+	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n.nav_dropdown {\n  display: none;\n}\n\n@media (max-width: 650px) {\n\n  .nav_name {\n    margin-left: 15px;\n  }\n\n  .nav_links {\n    float: left;\n    top: 0;\n    width: 100%;\n    margin: 0;\n    background: #fff;\n  }\n\n  .nav_dropdown {\n    display: block;\n  }\n\n  .nav_links li{\n    margin: 0 20px;\n    padding: 20px 0;\n    display: block;\n    border-right: 0;\n    border-top: solid 1px #8da2d9;\n  }\n\n}\n", ""]);
 
 	// exports
 
@@ -25919,7 +25950,7 @@
 
 
 	// module
-	exports.push([module.id, ".footer {\n  position:fixed;\n  left: 0px;\n  bottom: 0px;\n  height: 38px;\n  width: 100%;\n  text-align: right;\n  background-color: #fff;\n}\n\n.footer_links {\n  font-size: .75em;\n  margin: 5px 50px 0 0;\n}\n\n.footer_links li {\n  border-right: none;\n  padding: 5px;\n}\n\n.middle_dot {\n  color: #8da2d9;\n  padding: 0;\n}\n\n@media (max-width: 650px) {\n  .footer {\n    top: 0;\n    height: 400px;\n  }\n\n  .footer_links {\n    font-size: 1em;\n    margin: 0;\n    text-align: left;\n  }\n\n  .footer_links li {\n    display: block;\n    margin: 0 20px;\n    padding: 20px 0;\n    border-top: solid 1px #8da2d9;\n  }\n\n  .footer_links li:first-child {\n      border: none;\n  }\n\n  .middle_dot {\n    display: none !important;\n  }\n\n}\n", ""]);
+	exports.push([module.id, ".footer {\n  position:fixed;\n  left: 0px;\n  bottom: 0px;\n  height: 38px;\n  width: 100%;\n  text-align: right;\n  background-color: #fff;\n}\n\n.footer_links {\n  font-size: .75em;\n  margin: 5px 50px 0 0;\n}\n\n.footer_links li {\n  border-right: none;\n  padding: 5px;\n}\n\n.middle_dot {\n  color: #8da2d9;\n  padding: 0;\n}\n\n@media (max-width: 650px) {\n  .footer {\n    display: none;\n  }\n}\n", ""]);
 
 	// exports
 

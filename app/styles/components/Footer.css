@@ -22,3 +22,32 @@
   color: #8da2d9;
   padding: 0;
 }
+
+@media (max-width: 650px) {
+  .footer {
+    top: 0;
+    height: 400px;
+  }
+
+  .footer_links {
+    font-size: 1em;
+    margin: 0;
+    text-align: left;
+  }
+
+  .footer_links li {
+    display: block;
+    margin: 0 20px;
+    padding: 20px 0;
+    border-top: solid 1px #8da2d9;
+  }
+
+  .footer_links li:first-child {
+      border: none;
+  }
+
+  .middle_dot {
+    display: none !important;
+  }
+
+}

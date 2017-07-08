@@ -25905,7 +25905,7 @@
 
 
 	// module
-	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n@media (max-width: 600px) {\n  /*.nav {\n    height: 100px;\n  }*/\n  .nav_name {\n    margin-left: 20px;\n  }\n  .nav_links {\n    display: none;\n  }\n}\n", ""]);
+	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n@media (max-width: 650px) {\n\n  .nav_name {\n    margin-left: 20px;\n  }\n  .nav_links {\n    display: none;\n  }\n}\n", ""]);
 
 	// exports
 
@@ -25919,7 +25919,7 @@
 
 
 	// module
-	exports.push([module.id, ".footer {\n  position:fixed;\n  left: 0px;\n  bottom: 0px;\n  height: 38px;\n  width: 100%;\n  text-align: right;\n  background-color: #fff;\n}\n\n.footer_links {\n  font-size: .75em;\n  margin: 5px 50px 0 0;\n}\n\n.footer_links li {\n  border-right: none;\n  padding: 5px;\n}\n\n.middle_dot {\n  color: #8da2d9;\n  padding: 0;\n}\n", ""]);
+	exports.push([module.id, ".footer {\n  position:fixed;\n  left: 0px;\n  bottom: 0px;\n  height: 38px;\n  width: 100%;\n  text-align: right;\n  background-color: #fff;\n}\n\n.footer_links {\n  font-size: .75em;\n  margin: 5px 50px 0 0;\n}\n\n.footer_links li {\n  border-right: none;\n  padding: 5px;\n}\n\n.middle_dot {\n  color: #8da2d9;\n  padding: 0;\n}\n\n@media (max-width: 650px) {\n  .footer {\n    top: 0;\n    height: 400px;\n  }\n\n  .footer_links {\n    font-size: 1em;\n    margin: 0;\n    text-align: left;\n  }\n\n  .footer_links li {\n    display: block;\n    margin: 0 20px;\n    padding: 20px 0;\n    border-top: solid 1px #8da2d9;\n  }\n\n  .footer_links li:first-child {\n      border: none;\n  }\n\n  .middle_dot {\n    display: none !important;\n  }\n\n}\n", ""]);
 
 	// exports
 
@@ -25933,7 +25933,7 @@
 
 
 	// module
-	exports.push([module.id, ".project {\n  margin: 50px;\n}\n\n.project_title, .project_subtitle {\n  font-family: 'Old Standard TT', serif;\n}\n\n.project_title {\n  font-size: 3em;\n  font-weight: 400;\n  margin: 0;\n  line-height: 48px;\n}\n\n.project_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.project_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 5px 0;\n}\n\n.project_link {\n  text-decoration: underline;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.project_text {\n  margin-top: 8px;\n  font-family: 'Open Sans', sans-serif;\n}\n\n@media (max-width: 600px) {\n  .project {\n    margin: 25px;\n  }\n}\n", ""]);
+	exports.push([module.id, ".project {\n  margin: 50px;\n}\n\n.project_title, .project_subtitle {\n  font-family: 'Old Standard TT', serif;\n}\n\n.project_title {\n  font-size: 3em;\n  font-weight: 400;\n  margin: 0;\n  line-height: 48px;\n}\n\n.project_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.project_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 5px 0;\n}\n\n.project_link {\n  text-decoration: underline;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.project_text {\n  margin-top: 8px;\n  font-family: 'Open Sans', sans-serif;\n}\n\n@media (max-width: 650px) {\n  .project {\n    margin: 25px;\n  }\n}\n", ""]);
 
 	// exports
 
@@ -26364,7 +26364,7 @@
 
 
 	// module
-	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n#gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n#gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 80%;\n  max-width: 950px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 45%;\n  right: -9px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  width: 17px;\n  padding: 0;\n  text-align: center;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.3em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);\n}\n\n.left-arrow {\n  margin-top: 10px;\n}\n\n@media (max-width: 600px) {\n  #gallery li {\n    text-align: center;\n    display: block;\n    padding: 0;\n  }\n\n  .images {\n    width: 100%;\n  }\n\n  .arrows {\n    display: none;\n  }\n}\n", ""]);
+	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n#gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n#gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 80%;\n  max-width: 950px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 45%;\n  right: -9px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  width: 17px;\n  padding: 0;\n  text-align: center;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.3em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);\n}\n\n.left-arrow {\n  margin-top: 10px;\n}\n\n@media (max-width: 650px) {\n  #gallery li {\n    text-align: center;\n    display: block;\n    padding: 0;\n  }\n\n  .images {\n    width: 100%;\n    margin: 20px 0;\n  }\n\n  .arrows {\n    display: none;\n  }\n}\n", ""]);
 
 	// exports
 

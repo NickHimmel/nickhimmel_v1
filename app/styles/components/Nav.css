@@ -25,10 +25,8 @@
   margin-right: 50px;
 }
 
-@media (max-width: 600px) {
-  /*.nav {
-    height: 100px;
-  }*/
+@media (max-width: 650px) {
+
   .nav_name {
     margin-left: 20px;
   }

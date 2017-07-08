@@ -39,7 +39,7 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .project {
     margin: 25px;
   }

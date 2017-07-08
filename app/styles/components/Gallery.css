@@ -45,7 +45,7 @@
   margin-top: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   #gallery li {
     text-align: center;
     display: block;
@@ -54,6 +54,7 @@
 
   .images {
     width: 100%;
+    margin: 20px 0;
   }
 
   .arrows {

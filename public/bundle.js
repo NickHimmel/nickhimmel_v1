@@ -25101,8 +25101,6 @@
 	  value: true
 	});
 
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 	var _react = __webpack_require__(1);
 
 	var _react2 = _interopRequireDefault(_react);
@@ -25111,104 +25109,90 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Nav = function (_React$Component) {
-	  _inherits(Nav, _React$Component);
-
-	  function Nav() {
-	    _classCallCheck(this, Nav);
-
-	    return _possibleConstructorReturn(this, (Nav.__proto__ || Object.getPrototypeOf(Nav)).apply(this, arguments));
-	  }
-
-	  _createClass(Nav, [{
-	    key: 'render',
-	    value: function render() {
-	      return _react2.default.createElement(
-	        'div',
-	        { className: 'nav' },
+	var Nav = function Nav() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'nav' },
+	    _react2.default.createElement(
+	      'h2',
+	      { className: 'nav_name name' },
+	      _react2.default.createElement(
+	        _reactRouter.Link,
+	        { to: '/', activeClassName: 'active' },
+	        'Nick Himmel'
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'a',
+	      { id: 'hamburger_icon' },
+	      _react2.default.createElement('div', { className: 'bar1' }),
+	      _react2.default.createElement('div', { className: 'bar2' }),
+	      _react2.default.createElement('div', { className: 'bar3' })
+	    ),
+	    _react2.default.createElement(
+	      'ul',
+	      { className: 'nav_links' },
+	      _react2.default.createElement(
+	        'li',
+	        null,
 	        _react2.default.createElement(
-	          'h2',
-	          { className: 'nav_name name' },
-	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: '/', activeClassName: 'active' },
-	            'Nick Himmel'
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'ul',
-	          { className: 'nav_links' },
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/code', activeClassName: 'active' },
-	              'Web Development'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/photo', activeClassName: 'active' },
-	              'Photography'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/about', activeClassName: 'active' },
-	              'About'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'ul',
-	          { className: 'nav_links nav_dropdown' },
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://www.linkedin.com/in/nick-himmel' },
-	              'LinkedIn'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://www.instagram.com/himmelnick/' },
-	              'Instagram'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              'a',
-	              { href: 'https://github.com/NickHimmel' },
-	              'GitHub'
-	            )
-	          )
+	          _reactRouter.Link,
+	          { to: '/code', activeClassName: 'active' },
+	          'Web Development'
 	        )
-	      );
-	    }
-	  }]);
-
-	  return Nav;
-	}(_react2.default.Component);
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/photo', activeClassName: 'active' },
+	          'Photography'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/about', activeClassName: 'active' },
+	          'About'
+	        )
+	      )
+	    ),
+	    _react2.default.createElement(
+	      'ul',
+	      { className: 'nav_links nav_dropdown' },
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://www.linkedin.com/in/nick-himmel' },
+	          'LinkedIn'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://www.instagram.com/himmelnick/' },
+	          'Instagram'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        null,
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://github.com/NickHimmel' },
+	          'GitHub'
+	        )
+	      )
+	    )
+	  );
+	};
 
 	exports.default = Nav;
 
@@ -25936,7 +25920,7 @@
 
 
 	// module
-	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n.nav_dropdown {\n  display: none;\n}\n\n@media (max-width: 700px) {\n  .nav_links {\n    font-size: .9em;\n    margin-top: 18px;\n  }\n}\n\n@media (max-width: 650px) {\n\n  .nav_name {\n    margin-left: 15px;\n  }\n\n  .nav_links {\n    display: none;\n    float: left;\n    top: 0;\n    width: 100%;\n    margin: 0;\n    background: #fff;\n  }\n\n  .nav_links li{\n    margin: 0 20px;\n    padding: 20px 0;\n    display: block;\n    border-right: 0;\n    border-top: solid 1px #8da2d9;\n  }\n\n}\n", ""]);
+	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n#hamburger_icon {\n  cursor: pointer;\n  display: none;\n}\n\n.bar1, .bar2, .bar3  {\n  width: 35px;\n  height: 5px;\n  background-color: #8da2d9;\n  margin: 6px 0;\n  transition: 0.4s;\n}\n\n.change .bar1 {\n -webkit-transform: rotate(-45deg) translate(-9px, 6px);\n transform: rotate(-45deg) translate(-9px, 6px);\n}\n\n.change .bar2 {\n    opacity: 0;\n}\n\n.change .bar3 {\n  -webkit-transform: rotate(45deg) translate(-8px, -8px);\n  transform: rotate(45deg) translate(-8px, -8px);\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n.nav_dropdown {\n  display: none;\n}\n\n@media (max-width: 700px) {\n  .nav_links {\n    font-size: .9em;\n    margin-top: 18px;\n  }\n}\n\n@media (max-width: 650px) {\n\n  .nav_name {\n    margin-left: 15px;\n  }\n\n  #hamburger_icon {\n    display: block;\n    float: right;\n  }\n\n  .nav_links {\n    display: none;\n    float: left;\n    top: 0;\n    width: 100%;\n    margin: 0;\n    background: #fff;\n  }\n\n  .nav_links li{\n    margin: 0 20px;\n    padding: 20px 0;\n    display: block;\n    border-right: 0;\n    border-top: solid 1px #8da2d9;\n  }\n\n}\n", ""]);
 
 	// exports
 

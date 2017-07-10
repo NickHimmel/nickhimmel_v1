@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <div className="nav">
       <h2 className="nav_name name"><Link to="/" activeClassName="active">Nick Himmel</Link></h2>
-      <a id="hamburger_icon">
+      <a id="drop_down_menu" className="closed" onClick={handleClick}>
         <div className="bar1"></div>
         <div className="bar2"></div>
         <div className="bar3"></div>
@@ -22,6 +22,25 @@ const Nav = () => {
       </ul>
     </div>
   )
+}
+
+const handleClick = () => {
+  let drop_down_menu = document.getElementById("drop_down_menu")
+  let hamburger_icon = document.getElementById("drop_down_menu").children;
+  if (drop_down_menu.classList.contains('closed')) {
+    for (var i = 0; i < hamburger_icon.length; i++) {
+        hamburger_icon[i].classList.add('change' + i);
+        drop_down_menu.classList.remove('closed');
+        drop_down_menu.classList.add('open');
+    }
+  }
+  else {
+    for (var i = 0; i < hamburger_icon.length; i++) {
+        hamburger_icon[i].classList.remove('change' + i);
+        drop_down_menu.classList.add('closed');
+        drop_down_menu.classList.remove('open');
+    }
+  }
 }
 
 export default Nav;

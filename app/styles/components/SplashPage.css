@@ -29,3 +29,13 @@
   border-top: solid 6px #8da2d9;
   width: 82px;
 }
+
+.line_break {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .small_no_border {
+    border-right: 0;
+  }
+}

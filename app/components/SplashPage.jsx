@@ -16,8 +16,12 @@ const SplashPage = () => {
         <ul>
           <li><a href="https://www.linkedin.com/in/nick-himmel" target="_blank">LinkedIn</a></li>
           <li><a href="https://www.instagram.com/himmelnick/" target="_blank">Instagram</a></li>
-          <li><a href="https://github.com/NickHimmel" target="_blank">GitHub</a></li>
-          <li className="no_right_border"><Link to="/about">About</Link></li>
+          <li className="no_right_border"><a href="https://github.com/NickHimmel" target="_blank">GitHub</a></li>
+        </ul>
+        <ul>
+          <li><Link to="/about">About</Link></li>
+          <li><a href="https://github.com/NickHimmel" target="_blank">Code For This Site</a></li>
+          <li className="no_right_border"><a href="https://github.com/NickHimmel" target="_blank">Resume</a></li>
         </ul>
       </div>
     </div>

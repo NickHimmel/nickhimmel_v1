@@ -17,6 +17,8 @@ const Nav = () => {
         <li className="nav_dropdown"><a href="https://www.linkedin.com/in/nick-himmel">LinkedIn</a></li>
         <li className="nav_dropdown"><a href="https://www.instagram.com/himmelnick/">Instagram</a></li>
         <li className="nav_dropdown"><a href="https://github.com/NickHimmel">GitHub</a></li>
+        <li className="nav_dropdown"><a href="https://github.com/NickHimmel" target="_blank">Code For This Site</a></li>
+        <li className="nav_dropdown"><a href="https://github.com/NickHimmel" target="_blank">Resume</a></li>
       </ul>
     </div>
   )

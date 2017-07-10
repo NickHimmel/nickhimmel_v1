@@ -24951,20 +24951,42 @@
 	        ),
 	        _react2.default.createElement(
 	          'li',
-	          null,
+	          { className: 'no_right_border' },
 	          _react2.default.createElement(
 	            'a',
 	            { href: 'https://github.com/NickHimmel', target: '_blank' },
 	            'GitHub'
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'ul',
+	        null,
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: '/about' },
+	            'About'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            'a',
+	            { href: 'https://github.com/NickHimmel', target: '_blank' },
+	            'Code For This Site'
 	          )
 	        ),
 	        _react2.default.createElement(
 	          'li',
 	          { className: 'no_right_border' },
 	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: '/about' },
-	            'About'
+	            'a',
+	            { href: 'https://github.com/NickHimmel', target: '_blank' },
+	            'Resume'
 	          )
 	        )
 	      )
@@ -25184,6 +25206,24 @@
 	          'a',
 	          { href: 'https://github.com/NickHimmel' },
 	          'GitHub'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        { className: 'nav_dropdown' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://github.com/NickHimmel', target: '_blank' },
+	          'Code For This Site'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'li',
+	        { className: 'nav_dropdown' },
+	        _react2.default.createElement(
+	          'a',
+	          { href: 'https://github.com/NickHimmel', target: '_blank' },
+	          'Resume'
 	        )
 	      )
 	    )
@@ -25909,7 +25949,7 @@
 
 
 	// module
-	exports.push([module.id, ".splashpage {\n  text-align: center;\n  margin-top: 82px;\n}\n\n.splashpage_name {\n  margin: auto;\n  padding: 5px 0;\n  color: #FFF;\n  background: #8da2d9;\n  width: 168px;\n}\n\n.splashpage_name:hover {\n  color:#8da2d9;\n  background: #ffff00\n}\n\n.splashpage_header {\n  font-family: 'Old Standard TT', serif;\n  font-weight: 400;\n  font-size: 5em;\n  line-height: 78px;\n  letter-spacing: 3px;\n}\n\n.splashpage_line {\n  margin: auto;\n  border-top: solid 6px #8da2d9;\n  width: 82px;\n}\n", ""]);
+	exports.push([module.id, ".splashpage {\n  text-align: center;\n  margin-top: 82px;\n}\n\n.splashpage_name {\n  margin: auto;\n  padding: 5px 0;\n  color: #FFF;\n  background: #8da2d9;\n  width: 168px;\n}\n\n.splashpage_name:hover {\n  color:#8da2d9;\n  background: #ffff00\n}\n\n.splashpage_header {\n  font-family: 'Old Standard TT', serif;\n  font-weight: 400;\n  font-size: 5em;\n  line-height: 78px;\n  letter-spacing: 3px;\n}\n\n.splashpage_line {\n  margin: auto;\n  border-top: solid 6px #8da2d9;\n  width: 82px;\n}\n\n.line_break {\n  display: none;\n}\n\n@media (max-width: 650px) {\n  .small_no_border {\n    border-right: 0;\n  }\n}\n", ""]);
 
 	// exports
 

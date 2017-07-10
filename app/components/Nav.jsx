@@ -25,13 +25,14 @@ const Nav = () => {
 const handleClick = () => {
   let hamburgerIcon = document.getElementById("hamburger_icon")
   let bars = hamburgerIcon.children;
-  let dropDownMenu = document.querySelector('.nav_links')
+  let dropDownMenu = document.querySelector('.nav_links');
   if (hamburgerIcon.classList.contains('closed')) {
     for (var i = 0; i < bars.length; i++) {
         bars[i].classList.add('change' + i);
     }
     hamburgerIcon.classList.remove('closed');
     hamburgerIcon.classList.add('open');
+    dropDownMenu.classList.add('show_menu');
   }
   else {
     for (var i = 0; i < bars.length; i++) {
@@ -39,6 +40,7 @@ const handleClick = () => {
     }
     hamburgerIcon.classList.add('closed');
     hamburgerIcon.classList.remove('open');
+    dropDownMenu.classList.remove('show_menu');
   }
 }
 

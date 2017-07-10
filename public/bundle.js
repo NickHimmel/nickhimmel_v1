@@ -25200,12 +25200,14 @@
 	    }
 	    hamburgerIcon.classList.remove('closed');
 	    hamburgerIcon.classList.add('open');
+	    dropDownMenu.classList.add('show_menu');
 	  } else {
 	    for (var i = 0; i < bars.length; i++) {
 	      bars[i].classList.remove('change' + i);
 	    }
 	    hamburgerIcon.classList.add('closed');
 	    hamburgerIcon.classList.remove('open');
+	    dropDownMenu.classList.remove('show_menu');
 	  }
 	};
 
@@ -25935,7 +25937,7 @@
 
 
 	// module
-	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n#hamburger_icon {\n  cursor: pointer;\n  display: none;\n  padding: 0;\n}\n\n.bar1, .bar2, .bar3  {\n  width: 34px;\n  height: 5px;\n  background-color: #8da2d9;\n  margin: 6px 0;\n  transition: 0.4s;\n  border-radius: 20px;\n}\n\n.change0 {\n -webkit-transform: rotate(-45deg) translate(-8px, 8px);\n transform: rotate(-45deg) translate(-8px, 8px);\n}\n\n.change1 {\n    opacity: 0;\n}\n\n.change2 {\n  -webkit-transform: rotate(45deg) translate(-8px, -8px);\n  transform: rotate(45deg) translate(-8px, -8px);\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n.nav_dropdown {\n  display: none;\n}\n\n@media (max-width: 700px) {\n  .nav_links {\n    font-size: .9em;\n    margin-top: 18px;\n  }\n}\n\n@media (max-width: 650px) {\n\n  .nav_name {\n    margin-left: 15px;\n  }\n\n  #hamburger_icon {\n    display: block;\n    float: right;\n    margin: 15px 20px 0 0;\n  }\n\n  .nav_links {\n    display: none;\n    float: left;\n    top: 0;\n    width: 100%;\n    margin: 0;\n    background: #fff;\n  }\n\n  .nav_links li{\n    margin: 0 20px;\n    padding: 20px 0;\n    display: block;\n    border-right: 0;\n    border-top: solid 1px #8da2d9;\n  }\n\n  .nav_dropdown {\n    display: block;\n  }\n\n  .show_menu {\n    display: block;\n  }\n}\n", ""]);
+	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n#hamburger_icon {\n  cursor: pointer;\n  display: none;\n  padding: 0;\n}\n\n.bar1, .bar2, .bar3  {\n  width: 34px;\n  height: 5px;\n  background-color: #8da2d9;\n  margin: 6px 0;\n  transition: 0.4s;\n  border-radius: 20px;\n}\n\n.change0 {\n -webkit-transform: rotate(-45deg) translate(-8px, 8px);\n transform: rotate(-45deg) translate(-8px, 8px);\n}\n\n.change1 {\n    opacity: 0;\n}\n\n.change2 {\n  -webkit-transform: rotate(45deg) translate(-8px, -8px);\n  transform: rotate(45deg) translate(-8px, -8px);\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n.nav_dropdown {\n  display: none;\n}\n\n@media (max-width: 700px) {\n\n  .nav_links {\n    margin-top: 15px;\n  }\n\n  .nav_name {\n    margin-left: 20px;\n  }\n\n  .nav_links {\n    float: right;\n    margin-right: 20px;\n  }\n}\n\n@media (max-width: 650px) {\n\n  .nav_name {\n    margin-left: 15px;\n  }\n\n  #hamburger_icon {\n    display: block;\n    float: right;\n    margin: 15px 20px 0 0;\n  }\n\n  .nav_links {\n    display: none;\n    float: left;\n    top: 0;\n    width: 100%;\n    margin: 0;\n    background: #fff;\n  }\n\n  .nav_links li{\n    margin: 0 20px;\n    padding: 20px 0;\n    display: block;\n    border-right: 0;\n    border-top: solid 1px #8da2d9;\n  }\n\n  .nav_links li:first-child{\n    border-top: 0;\n  }\n\n  .nav_dropdown {\n    display: block;\n  }\n\n  .show_menu {\n    display: block;\n  }\n}\n", ""]);
 
 	// exports
 
@@ -25963,7 +25965,7 @@
 
 
 	// module
-	exports.push([module.id, ".project {\n  margin: 50px;\n}\n\n.project_title, .project_subtitle {\n  font-family: 'Old Standard TT', serif;\n}\n\n.project_title {\n  font-size: 3em;\n  font-weight: 400;\n  margin: 0;\n  line-height: 48px;\n}\n\n.project_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.project_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 5px 0;\n}\n\n.project_link {\n  text-decoration: underline;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.project_text {\n  margin-top: 8px;\n  font-family: 'Open Sans', sans-serif;\n}\n\n@media (max-width: 650px) {\n  .project {\n    margin: 25px;\n  }\n}\n", ""]);
+	exports.push([module.id, ".project {\n  margin: 50px;\n}\n\n.project_title, .project_subtitle {\n  font-family: 'Old Standard TT', serif;\n}\n\n.project_title {\n  font-size: 3em;\n  font-weight: 400;\n  margin: 0;\n  line-height: 48px;\n}\n\n.project_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.project_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 5px 0;\n}\n\n.project_link {\n  text-decoration: underline;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.project_text {\n  margin-top: 8px;\n  font-family: 'Open Sans', sans-serif;\n}\n\n@media (max-width: 700px) {\n  .project {\n    margin: 25px;\n  }\n}\n", ""]);
 
 	// exports
 

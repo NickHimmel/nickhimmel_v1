@@ -24960,10 +24960,10 @@
 	        ),
 	        _react2.default.createElement(
 	          'li',
-	          null,
+	          { className: 'no_right_border' },
 	          _react2.default.createElement(
 	            _reactRouter.Link,
-	            { to: '/about', activeClassName: 'active' },
+	            { to: '/about' },
 	            'About'
 	          )
 	        )
@@ -25152,20 +25152,16 @@
 	      ),
 	      _react2.default.createElement(
 	        'li',
-	        null,
+	        { className: 'no_right_border' },
 	        _react2.default.createElement(
 	          _reactRouter.Link,
 	          { to: '/about', activeClassName: 'active' },
 	          'About'
 	        )
-	      )
-	    ),
-	    _react2.default.createElement(
-	      'ul',
-	      { className: 'nav_links nav_dropdown' },
+	      ),
 	      _react2.default.createElement(
 	        'li',
-	        null,
+	        { className: 'nav_dropdown' },
 	        _react2.default.createElement(
 	          'a',
 	          { href: 'https://www.linkedin.com/in/nick-himmel' },
@@ -25174,7 +25170,7 @@
 	      ),
 	      _react2.default.createElement(
 	        'li',
-	        null,
+	        { className: 'nav_dropdown' },
 	        _react2.default.createElement(
 	          'a',
 	          { href: 'https://www.instagram.com/himmelnick/' },
@@ -25183,7 +25179,7 @@
 	      ),
 	      _react2.default.createElement(
 	        'li',
-	        null,
+	        { className: 'nav_dropdown' },
 	        _react2.default.createElement(
 	          'a',
 	          { href: 'https://github.com/NickHimmel' },
@@ -25197,7 +25193,7 @@
 	var handleClick = function handleClick() {
 	  var hamburgerIcon = document.getElementById("hamburger_icon");
 	  var bars = hamburgerIcon.children;
-	  var dropDownMenu = document.querySelectorAll('.nav_links');
+	  var dropDownMenu = document.querySelector('.nav_links');
 	  if (hamburgerIcon.classList.contains('closed')) {
 	    for (var i = 0; i < bars.length; i++) {
 	      bars[i].classList.add('change' + i);
@@ -25925,7 +25921,7 @@
 
 
 	// module
-	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  font-size: 112.5%;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: #8da2d9;\n  text-decoration: none;\n  padding: 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n", ""]);
+	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  font-size: 112.5%;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: #8da2d9;\n  text-decoration: none;\n  padding: 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\n.no_right_border {\n  border-right: none;\n}\n", ""]);
 
 	// exports
 
@@ -25939,7 +25935,7 @@
 
 
 	// module
-	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n#hamburger_icon {\n  cursor: pointer;\n  display: none;\n  padding: 0;\n}\n\n.bar1, .bar2, .bar3  {\n  width: 34px;\n  height: 5px;\n  background-color: #8da2d9;\n  margin: 6px 0;\n  transition: 0.4s;\n  border-radius: 20px;\n}\n\n.change0 {\n -webkit-transform: rotate(-45deg) translate(-8px, 8px);\n transform: rotate(-45deg) translate(-8px, 8px);\n}\n\n.change1 {\n    opacity: 0;\n}\n\n.change2 {\n  -webkit-transform: rotate(45deg) translate(-8px, -8px);\n  transform: rotate(45deg) translate(-8px, -8px);\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n.nav_dropdown {\n  display: none;\n}\n\n@media (max-width: 700px) {\n  .nav_links {\n    font-size: .9em;\n    margin-top: 18px;\n  }\n}\n\n@media (max-width: 650px) {\n\n  .nav_name {\n    margin-left: 15px;\n  }\n\n  #hamburger_icon {\n    display: block;\n    float: right;\n    margin: 15px 20px 0 0;\n  }\n\n  .nav_links {\n    display: none;\n    float: left;\n    top: 0;\n    width: 100%;\n    margin: 0;\n    background: #fff;\n  }\n\n  .nav_links li{\n    margin: 0 20px;\n    padding: 20px 0;\n    display: block;\n    border-right: 0;\n    border-top: solid 1px #8da2d9;\n  }\n\n  .show_menu {\n    display: block;\n  }\n}\n", ""]);
+	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n#hamburger_icon {\n  cursor: pointer;\n  display: none;\n  padding: 0;\n}\n\n.bar1, .bar2, .bar3  {\n  width: 34px;\n  height: 5px;\n  background-color: #8da2d9;\n  margin: 6px 0;\n  transition: 0.4s;\n  border-radius: 20px;\n}\n\n.change0 {\n -webkit-transform: rotate(-45deg) translate(-8px, 8px);\n transform: rotate(-45deg) translate(-8px, 8px);\n}\n\n.change1 {\n    opacity: 0;\n}\n\n.change2 {\n  -webkit-transform: rotate(45deg) translate(-8px, -8px);\n  transform: rotate(45deg) translate(-8px, -8px);\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n.nav_dropdown {\n  display: none;\n}\n\n@media (max-width: 700px) {\n  .nav_links {\n    font-size: .9em;\n    margin-top: 18px;\n  }\n}\n\n@media (max-width: 650px) {\n\n  .nav_name {\n    margin-left: 15px;\n  }\n\n  #hamburger_icon {\n    display: block;\n    float: right;\n    margin: 15px 20px 0 0;\n  }\n\n  .nav_links {\n    display: none;\n    float: left;\n    top: 0;\n    width: 100%;\n    margin: 0;\n    background: #fff;\n  }\n\n  .nav_links li{\n    margin: 0 20px;\n    padding: 20px 0;\n    display: block;\n    border-right: 0;\n    border-top: solid 1px #8da2d9;\n  }\n\n  .nav_dropdown {\n    display: block;\n  }\n\n  .show_menu {\n    display: block;\n  }\n}\n", ""]);
 
 	// exports
 

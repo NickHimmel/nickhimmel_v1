@@ -94,6 +94,10 @@
     border-top: solid 1px #8da2d9;
   }
 
+  .nav_dropdown {
+    display: block;
+  }
+
   .show_menu {
     display: block;
   }

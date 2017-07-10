@@ -26,6 +26,6 @@ li {
   border-right: solid 1px #8da2d9;
 }
 
-li:last-child {
-  border: none;
+.no_right_border {
+  border-right: none;
 }

@@ -13,12 +13,10 @@ const Nav = () => {
       <ul className="nav_links">
         <li><Link to="/code" activeClassName="active">Web Development</Link></li>
         <li><Link to="/photo" activeClassName="active">Photography</Link></li>
-        <li><Link to="/about" activeClassName="active">About</Link></li>
-      </ul>
-      <ul className="nav_links nav_dropdown">
-        <li><a href="https://www.linkedin.com/in/nick-himmel">LinkedIn</a></li>
-        <li><a href="https://www.instagram.com/himmelnick/">Instagram</a></li>
-        <li><a href="https://github.com/NickHimmel">GitHub</a></li>
+        <li className="no_right_border"><Link to="/about" activeClassName="active">About</Link></li>
+        <li className="nav_dropdown"><a href="https://www.linkedin.com/in/nick-himmel">LinkedIn</a></li>
+        <li className="nav_dropdown"><a href="https://www.instagram.com/himmelnick/">Instagram</a></li>
+        <li className="nav_dropdown"><a href="https://github.com/NickHimmel">GitHub</a></li>
       </ul>
     </div>
   )
@@ -27,7 +25,7 @@ const Nav = () => {
 const handleClick = () => {
   let hamburgerIcon = document.getElementById("hamburger_icon")
   let bars = hamburgerIcon.children;
-  let dropDownMenu = document.querySelectorAll('.nav_links')
+  let dropDownMenu = document.querySelector('.nav_links')
   if (hamburgerIcon.classList.contains('closed')) {
     for (var i = 0; i < bars.length; i++) {
         bars[i].classList.add('change' + i);

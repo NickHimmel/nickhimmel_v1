@@ -17,7 +17,7 @@ const SplashPage = () => {
           <li><a href="https://www.linkedin.com/in/nick-himmel" target="_blank">LinkedIn</a></li>
           <li><a href="https://www.instagram.com/himmelnick/" target="_blank">Instagram</a></li>
           <li><a href="https://github.com/NickHimmel" target="_blank">GitHub</a></li>
-          <li><Link to="/about" activeClassName="active">About</Link></li>
+          <li className="no_right_border"><Link to="/about">About</Link></li>
         </ul>
       </div>
     </div>

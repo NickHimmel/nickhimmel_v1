@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <div className="nav">
       <h2 className="nav_name name"><Link to="/" activeClassName="active">Nick Himmel</Link></h2>
-      <a id="drop_down_menu" className="closed" onClick={handleClick}>
+      <a id="hamburger_icon" className="closed" onClick={handleClick}>
         <div className="bar1"></div>
         <div className="bar2"></div>
         <div className="bar3"></div>
@@ -25,21 +25,22 @@ const Nav = () => {
 }
 
 const handleClick = () => {
-  let drop_down_menu = document.getElementById("drop_down_menu")
-  let hamburger_icon = document.getElementById("drop_down_menu").children;
-  if (drop_down_menu.classList.contains('closed')) {
-    for (var i = 0; i < hamburger_icon.length; i++) {
-        hamburger_icon[i].classList.add('change' + i);
-        drop_down_menu.classList.remove('closed');
-        drop_down_menu.classList.add('open');
+  let hamburgerIcon = document.getElementById("hamburger_icon")
+  let bars = hamburgerIcon.children;
+  let dropDownMenu = document.querySelectorAll('.nav_links')
+  if (hamburgerIcon.classList.contains('closed')) {
+    for (var i = 0; i < bars.length; i++) {
+        bars[i].classList.add('change' + i);
     }
+    hamburgerIcon.classList.remove('closed');
+    hamburgerIcon.classList.add('open');
   }
   else {
-    for (var i = 0; i < hamburger_icon.length; i++) {
-        hamburger_icon[i].classList.remove('change' + i);
-        drop_down_menu.classList.add('closed');
-        drop_down_menu.classList.remove('open');
+    for (var i = 0; i < bars.length; i++) {
+        bars[i].classList.remove('change' + i);
     }
+    hamburgerIcon.classList.add('closed');
+    hamburgerIcon.classList.remove('open');
   }
 }
 

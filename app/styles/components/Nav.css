@@ -20,7 +20,7 @@
   margin-top: 27px;
 }
 
-#drop_down_menu {
+#hamburger_icon {
   cursor: pointer;
   display: none;
   padding: 0;
@@ -71,7 +71,7 @@
     margin-left: 15px;
   }
 
-  #drop_down_menu {
+  #hamburger_icon {
     display: block;
     float: right;
     margin: 15px 20px 0 0;
@@ -94,4 +94,7 @@
     border-top: solid 1px #8da2d9;
   }
 
+  .show_menu {
+    display: block;
+  }
 }

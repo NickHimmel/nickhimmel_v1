@@ -25124,7 +25124,7 @@
 	    ),
 	    _react2.default.createElement(
 	      'a',
-	      { id: 'drop_down_menu', className: 'closed', onClick: handleClick },
+	      { id: 'hamburger_icon', className: 'closed', onClick: handleClick },
 	      _react2.default.createElement('div', { className: 'bar1' }),
 	      _react2.default.createElement('div', { className: 'bar2' }),
 	      _react2.default.createElement('div', { className: 'bar3' })
@@ -25195,20 +25195,21 @@
 	};
 
 	var handleClick = function handleClick() {
-	  var drop_down_menu = document.getElementById("drop_down_menu");
-	  var hamburger_icon = document.getElementById("drop_down_menu").children;
-	  if (drop_down_menu.classList.contains('closed')) {
-	    for (var i = 0; i < hamburger_icon.length; i++) {
-	      hamburger_icon[i].classList.add('change' + i);
-	      drop_down_menu.classList.remove('closed');
-	      drop_down_menu.classList.add('open');
+	  var hamburgerIcon = document.getElementById("hamburger_icon");
+	  var bars = hamburgerIcon.children;
+	  var dropDownMenu = document.querySelectorAll('.nav_links');
+	  if (hamburgerIcon.classList.contains('closed')) {
+	    for (var i = 0; i < bars.length; i++) {
+	      bars[i].classList.add('change' + i);
 	    }
+	    hamburgerIcon.classList.remove('closed');
+	    hamburgerIcon.classList.add('open');
 	  } else {
-	    for (var i = 0; i < hamburger_icon.length; i++) {
-	      hamburger_icon[i].classList.remove('change' + i);
-	      drop_down_menu.classList.add('closed');
-	      drop_down_menu.classList.remove('open');
+	    for (var i = 0; i < bars.length; i++) {
+	      bars[i].classList.remove('change' + i);
 	    }
+	    hamburgerIcon.classList.add('closed');
+	    hamburgerIcon.classList.remove('open');
 	  }
 	};
 
@@ -25938,7 +25939,7 @@
 
 
 	// module
-	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n#drop_down_menu {\n  cursor: pointer;\n  display: none;\n  padding: 0;\n}\n\n.bar1, .bar2, .bar3  {\n  width: 34px;\n  height: 5px;\n  background-color: #8da2d9;\n  margin: 6px 0;\n  transition: 0.4s;\n  border-radius: 20px;\n}\n\n.change0 {\n -webkit-transform: rotate(-45deg) translate(-8px, 8px);\n transform: rotate(-45deg) translate(-8px, 8px);\n}\n\n.change1 {\n    opacity: 0;\n}\n\n.change2 {\n  -webkit-transform: rotate(45deg) translate(-8px, -8px);\n  transform: rotate(45deg) translate(-8px, -8px);\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n.nav_dropdown {\n  display: none;\n}\n\n@media (max-width: 700px) {\n  .nav_links {\n    font-size: .9em;\n    margin-top: 18px;\n  }\n}\n\n@media (max-width: 650px) {\n\n  .nav_name {\n    margin-left: 15px;\n  }\n\n  #drop_down_menu {\n    display: block;\n    float: right;\n    margin: 15px 20px 0 0;\n  }\n\n  .nav_links {\n    display: none;\n    float: left;\n    top: 0;\n    width: 100%;\n    margin: 0;\n    background: #fff;\n  }\n\n  .nav_links li{\n    margin: 0 20px;\n    padding: 20px 0;\n    display: block;\n    border-right: 0;\n    border-top: solid 1px #8da2d9;\n  }\n\n}\n", ""]);
+	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n#hamburger_icon {\n  cursor: pointer;\n  display: none;\n  padding: 0;\n}\n\n.bar1, .bar2, .bar3  {\n  width: 34px;\n  height: 5px;\n  background-color: #8da2d9;\n  margin: 6px 0;\n  transition: 0.4s;\n  border-radius: 20px;\n}\n\n.change0 {\n -webkit-transform: rotate(-45deg) translate(-8px, 8px);\n transform: rotate(-45deg) translate(-8px, 8px);\n}\n\n.change1 {\n    opacity: 0;\n}\n\n.change2 {\n  -webkit-transform: rotate(45deg) translate(-8px, -8px);\n  transform: rotate(45deg) translate(-8px, -8px);\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n.nav_dropdown {\n  display: none;\n}\n\n@media (max-width: 700px) {\n  .nav_links {\n    font-size: .9em;\n    margin-top: 18px;\n  }\n}\n\n@media (max-width: 650px) {\n\n  .nav_name {\n    margin-left: 15px;\n  }\n\n  #hamburger_icon {\n    display: block;\n    float: right;\n    margin: 15px 20px 0 0;\n  }\n\n  .nav_links {\n    display: none;\n    float: left;\n    top: 0;\n    width: 100%;\n    margin: 0;\n    background: #fff;\n  }\n\n  .nav_links li{\n    margin: 0 20px;\n    padding: 20px 0;\n    display: block;\n    border-right: 0;\n    border-top: solid 1px #8da2d9;\n  }\n\n  .show_menu {\n    display: block;\n  }\n}\n", ""]);
 
 	// exports
 

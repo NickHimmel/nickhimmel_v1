@@ -25786,21 +25786,6 @@
 	    'div',
 	    { className: 'main' },
 	    _react2.default.createElement(_Nav2.default, null),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'project' },
-	      _react2.default.createElement(
-	        'h1',
-	        { className: 'project_title' },
-	        'web developer committed to making quality stuff'
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'I am a web developer with a particular interest in data visualization and map-based interfaces, and a passion for creating beautiful things that help and inform people. My experience includes working with Ruby on Rails, React, and D3.js. I recently completed Dev Bootcamp, an intensive web development program in New York City, where I acquired advanced skills in HTML, CSS, JavaScript, Ruby, Ruby on Rails, and React. Before that, I earned a master\'s degree in digital photography from SVA. In both programs, I benefited from an emphasis on learning adaptability in a frequently changing digital landscape.'
-	      ),
-	      _react2.default.createElement('img', { src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/Drawing_by_Julia_Himmel.jpg', alt: 'Drawing of Nick Himmel by Julia Himmel' })
-	    ),
 	    _react2.default.createElement(_Footer2.default, null)
 	  );
 	};

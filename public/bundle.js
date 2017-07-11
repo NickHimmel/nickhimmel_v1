@@ -24951,42 +24951,39 @@
 	        ),
 	        _react2.default.createElement(
 	          'li',
-	          { className: 'no_right_border' },
+	          null,
 	          _react2.default.createElement(
 	            'a',
 	            { href: 'https://github.com/NickHimmel', target: '_blank' },
 	            'GitHub'
 	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'ul',
-	        null,
+	        ),
 	        _react2.default.createElement(
 	          'li',
-	          null,
+	          { className: 'small_no_border' },
 	          _react2.default.createElement(
 	            _reactRouter.Link,
 	            { to: '/about' },
 	            'About'
 	          )
 	        ),
+	        _react2.default.createElement('br', { className: 'line_break' }),
 	        _react2.default.createElement(
 	          'li',
-	          null,
+	          { className: 'second_line' },
 	          _react2.default.createElement(
 	            'a',
-	            { href: 'https://github.com/NickHimmel', target: '_blank' },
+	            { href: 'https://github.com/NickHimmel/NickHimmel.github.io', target: '_blank' },
 	            'Code For This Site'
 	          )
 	        ),
 	        _react2.default.createElement(
 	          'li',
-	          { className: 'no_right_border' },
+	          { className: 'no_right_border second_line' },
 	          _react2.default.createElement(
 	            'a',
-	            { href: 'https://github.com/NickHimmel', target: '_blank' },
-	            'Resume'
+	            { href: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/nick_himmel_resume.pdf', target: '_blank' },
+	            'Download Resume'
 	          )
 	        )
 	      )
@@ -25213,7 +25210,7 @@
 	        { className: 'nav_dropdown' },
 	        _react2.default.createElement(
 	          'a',
-	          { href: 'https://github.com/NickHimmel', target: '_blank' },
+	          { href: 'https://github.com/NickHimmel/NickHimmel.github.io', target: '_blank' },
 	          'Code For This Site'
 	        )
 	      ),
@@ -25222,8 +25219,8 @@
 	        { className: 'nav_dropdown' },
 	        _react2.default.createElement(
 	          'a',
-	          { href: 'https://github.com/NickHimmel', target: '_blank' },
-	          'Resume'
+	          { href: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/nick_himmel_resume.pdf', target: '_blank' },
+	          'Download Resume'
 	        )
 	      )
 	    )
@@ -25336,7 +25333,8 @@
 	          props.onClick();
 	        } },
 	      _react2.default.createElement("source", { src: props.video, type: "video/mp4" })
-	    )
+	    ),
+	    _react2.default.createElement("div", { className: "play_pause" })
 	  );
 	};
 
@@ -25458,6 +25456,34 @@
 	              _reactRouter.Link,
 	              { to: '/about', activeClassName: 'active' },
 	              'About'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'middle_dot' },
+	            '\xB7'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://github.com/NickHimmel/NickHimmel.github.io', target: '_blank' },
+	              'Code For This Site'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'middle_dot' },
+	            '\xB7'
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'a',
+	              { href: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/nick_himmel_resume.pdf', target: '_blank' },
+	              'Download Resume'
 	            )
 	          )
 	        )
@@ -25949,7 +25975,7 @@
 
 
 	// module
-	exports.push([module.id, ".splashpage {\n  text-align: center;\n  margin-top: 82px;\n}\n\n.splashpage_name {\n  margin: auto;\n  padding: 5px 0;\n  color: #FFF;\n  background: #8da2d9;\n  width: 168px;\n}\n\n.splashpage_name:hover {\n  color:#8da2d9;\n  background: #ffff00\n}\n\n.splashpage_header {\n  font-family: 'Old Standard TT', serif;\n  font-weight: 400;\n  font-size: 5em;\n  line-height: 78px;\n  letter-spacing: 3px;\n}\n\n.splashpage_line {\n  margin: auto;\n  border-top: solid 6px #8da2d9;\n  width: 82px;\n}\n\n.line_break {\n  display: none;\n}\n\n@media (max-width: 650px) {\n  .small_no_border {\n    border-right: 0;\n  }\n}\n", ""]);
+	exports.push([module.id, ".splashpage {\n  text-align: center;\n  margin-top: 82px;\n}\n\n.splashpage_name {\n  margin: auto;\n  padding: 5px 0;\n  color: #FFF;\n  background: #8da2d9;\n  width: 168px;\n}\n\n.splashpage_name:hover {\n  color:#8da2d9;\n  background: #ffff00\n}\n\n.splashpage_header {\n  font-family: 'Old Standard TT', serif;\n  font-weight: 400;\n  font-size: 5em;\n  line-height: 78px;\n  letter-spacing: 3px;\n}\n\n.splashpage_line {\n  margin: auto;\n  width: 82px;\n  height: 6px;\n  background-color: #8da2d9;\n}\n\n.line_break {\n  display: none;\n}\n@media (max-width: 700px) {\n  .small_no_border {\n    border: none;\n  }\n\n  .line_break {\n    display: block;\n  }\n\n  .second_line {\n    margin-top: 30px;\n  }\n}\n@media (max-width: 650px) {\n  .splashpage_header {\n    font-size: 3em;\n  }\n\n  .splashpage_line {\n    width: 50px;\n    height: 4px\n  }\n}\n", ""]);
 
 	// exports
 
@@ -25977,7 +26003,7 @@
 
 
 	// module
-	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n#hamburger_icon {\n  cursor: pointer;\n  display: none;\n  padding: 0;\n}\n\n.bar1, .bar2, .bar3  {\n  width: 34px;\n  height: 5px;\n  background-color: #8da2d9;\n  margin: 6px 0;\n  transition: 0.4s;\n  border-radius: 20px;\n}\n\n.change0 {\n -webkit-transform: rotate(-45deg) translate(-8px, 8px);\n transform: rotate(-45deg) translate(-8px, 8px);\n}\n\n.change1 {\n    opacity: 0;\n}\n\n.change2 {\n  -webkit-transform: rotate(45deg) translate(-8px, -8px);\n  transform: rotate(45deg) translate(-8px, -8px);\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n.nav_dropdown {\n  display: none;\n}\n\n@media (max-width: 700px) {\n\n  .nav_links {\n    margin-top: 15px;\n  }\n\n  .nav_name {\n    margin-left: 20px;\n  }\n\n  .nav_links {\n    float: right;\n    margin-right: 20px;\n  }\n}\n\n@media (max-width: 650px) {\n\n  .nav_name {\n    margin-left: 15px;\n  }\n\n  #hamburger_icon {\n    display: block;\n    float: right;\n    margin: 15px 20px 0 0;\n  }\n\n  .nav_links {\n    display: none;\n    float: left;\n    top: 0;\n    width: 100%;\n    margin: 0;\n    background: #fff;\n  }\n\n  .nav_links li{\n    margin: 0 20px;\n    padding: 20px 0;\n    display: block;\n    border-right: 0;\n    border-top: solid 1px #8da2d9;\n  }\n\n  .nav_links li:first-child{\n    border-top: 0;\n  }\n\n  .nav_dropdown {\n    display: block;\n  }\n\n  .show_menu {\n    display: block;\n  }\n}\n", ""]);
+	exports.push([module.id, ".name {\n  font-size: 1em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n}\n\n.nav {\n  z-index: 1;\n  width: 100%;\n  height: 82px;\n  top: 0px;\n  background-color: #fff;\n  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);\n}\n\n.nav_name {\n  float: left;\n  margin-left: 45px;\n  margin-top: 27px;\n}\n\n#hamburger_icon {\n  cursor: pointer;\n  float: right;\n  margin: 12px 20px 0 0;\n  display: none;\n  width: 40px;\n}\n\n.bar1, .bar2, .bar3  {\n  background-color:  #8da2d9;\n  -o-border-radius: 3px;\n  -moz-border-radius: 3px;\n  -ms-border-radius: 3px;\n  -webkit-border-radius: 3px;\n  border-radius: 3px;\n  content: '';\n  display: block;\n  height: 5px;\n  margin: 7px 0;\n  -moz-transition: all .2s ease-in-out;\n  -webkit-transition: all .2s ease-in-out;\n  transition: all .2s ease-in-out;\n}\n.change0 {\n  transform: translateY(12px) rotate(135deg);\n  -moz-transform: translateY(12px) rotate(135deg);\n  -webkit-transform: translateY(12px) rotate(135deg);\n}\n\n.change1 {\n  -moz-transform: scale(0);\n  -webkit-transform: scale(0);\n  transform: scale(0);\n}\n\n.change2 {\n  transform: translateY(-12px) rotate(-135deg);\n  -moz-transform: translateY(-12px) rotate(-135deg);\n  -webkit-transform: translateY(-12px) rotate(-135deg);\n}\n\n.nav_links {\n  float: right;\n  margin-right: 50px;\n}\n\n.nav_dropdown {\n  display: none;\n}\n\n@media (max-width: 700px) {\n\n  .nav_links {\n    margin-top: 15px;\n  }\n\n  .nav_name {\n    margin-left: 20px;\n  }\n\n  .nav_links {\n    float: right;\n    margin-right: 20px;\n  }\n}\n\n@media (max-width: 650px) {\n\n  .nav_name {\n    margin-left: 15px;\n  }\n\n  #hamburger_icon {\n    display: block;\n  }\n\n  .nav_links {\n    display: none;\n    float: left;\n    top: 0;\n    width: 100%;\n    margin: 0;\n    background: #fff;\n  }\n\n  .nav_links li{\n    margin: 0 20px;\n    padding: 20px 0;\n    display: block;\n    border-right: 0;\n    border-top: solid 1px #8da2d9;\n  }\n\n  .nav_links li:first-child{\n    border-top: 0;\n  }\n\n  .nav_dropdown {\n    display: block;\n  }\n\n  .show_menu {\n    display: block;\n  }\n}\n", ""]);
 
 	// exports
 
@@ -26005,7 +26031,7 @@
 
 
 	// module
-	exports.push([module.id, ".project {\n  margin: 50px;\n}\n\n.project_title, .project_subtitle {\n  font-family: 'Old Standard TT', serif;\n}\n\n.project_title {\n  font-size: 3em;\n  font-weight: 400;\n  margin: 0;\n  line-height: 48px;\n}\n\n.project_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.project_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 5px 0;\n}\n\n.project_link {\n  text-decoration: underline;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.project_text {\n  margin-top: 8px;\n  font-family: 'Open Sans', sans-serif;\n}\n\n@media (max-width: 700px) {\n  .project {\n    margin: 25px;\n  }\n}\n", ""]);
+	exports.push([module.id, ".project {\n  margin: 50px;\n}\n\n.project_title, .project_subtitle {\n  font-family: 'Old Standard TT', serif;\n}\n\n.project_title {\n  font-size: 3em;\n  font-weight: 400;\n  margin: 0;\n  line-height: 48px;\n}\n\n.project_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.project_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 10px 0;\n}\n\n.project_link {\n  text-decoration: underline;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.project_text {\n  margin-top: 8px;\n  font-family: 'Open Sans', sans-serif;\n}\n\n@media (max-width: 700px) {\n  .project {\n    margin: 25px;\n  }\n}\n", ""]);
 
 	// exports
 

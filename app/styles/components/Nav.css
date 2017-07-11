@@ -22,31 +22,43 @@
 
 #hamburger_icon {
   cursor: pointer;
+  float: right;
+  margin: 12px 20px 0 0;
   display: none;
-  padding: 0;
+  width: 40px;
 }
 
 .bar1, .bar2, .bar3  {
-  width: 34px;
+  background-color:  #8da2d9;
+  -o-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  content: '';
+  display: block;
   height: 5px;
-  background-color: #8da2d9;
-  margin: 6px 0;
-  transition: 0.4s;
-  border-radius: 20px;
+  margin: 7px 0;
+  -moz-transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
-
 .change0 {
- -webkit-transform: rotate(-45deg) translate(-8px, 8px);
- transform: rotate(-45deg) translate(-8px, 8px);
+  transform: translateY(12px) rotate(135deg);
+  -moz-transform: translateY(12px) rotate(135deg);
+  -webkit-transform: translateY(12px) rotate(135deg);
 }
 
 .change1 {
-    opacity: 0;
+  -moz-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
 }
 
 .change2 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
+  transform: translateY(-12px) rotate(-135deg);
+  -moz-transform: translateY(-12px) rotate(-135deg);
+  -webkit-transform: translateY(-12px) rotate(-135deg);
 }
 
 .nav_links {
@@ -82,8 +94,6 @@
 
   #hamburger_icon {
     display: block;
-    float: right;
-    margin: 15px 20px 0 0;
   }
 
   .nav_links {

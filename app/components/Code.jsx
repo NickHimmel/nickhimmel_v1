@@ -3,7 +3,7 @@ import Nav from 'app/components/Nav.jsx'
 import Project from 'Project.jsx';
 import Video from 'Video.jsx';
 import Footer from 'app/components/Footer.jsx'
-import Projects from 'app/actions/projects.js';
+import Projects from 'app/models/projects.js';
 
 class Code extends React.Component {
   constructor (props) {

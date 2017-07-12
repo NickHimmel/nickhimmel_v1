@@ -1,5 +1,6 @@
 Body {
   font-family: 'Open Sans', sans-serif;
+  font-size: 112.5%;
   margin: 0;
   padding: 0;
 }
@@ -25,10 +26,6 @@ li {
   border-right: solid 1px #8da2d9;
 }
 
-li:last-child {
-  border: none;
-}
-
-.main {
-  margin-top: 93px;
+.no_right_border {
+  border-right: none;
 }

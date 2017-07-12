@@ -26,6 +26,34 @@
 
 .splashpage_line {
   margin: auto;
-  border-top: solid 6px #8da2d9;
   width: 82px;
+  height: 6px;
+  background-color: #8da2d9;
+}
+
+.line_break {
+  display: none;
+}
+@media (max-width: 700px) {
+  .small_no_border {
+    border: none;
+  }
+
+  .line_break {
+    display: block;
+  }
+
+  .second_line {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 650px) {
+  .splashpage_header {
+    font-size: 3em;
+  }
+
+  .splashpage_line {
+    width: 50px;
+    height: 4px
+  }
 }

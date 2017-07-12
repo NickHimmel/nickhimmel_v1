@@ -3,7 +3,7 @@ import Nav from 'Nav.jsx';
 import Project from 'Project.jsx';
 import Gallery from 'Gallery.jsx'
 import Footer from 'Footer.jsx';
-import Projects from 'app/actions/projects.js';
+import Projects from 'app/models/projects.js';
 
 class Photo extends React.Component {
   constructor () {

@@ -14747,7 +14747,7 @@
 	 *
 	 * @providesModule shallowEqual
 	 * @typechecks
-	 *
+	 * 
 	 */
 
 	'use strict';
@@ -22972,7 +22972,7 @@
 	 * nested.
 	 *
 	 *   import { Route, createRoutesFromReactChildren } from 'react-router'
-	 *
+	 *   
 	 *   const routes = createRoutesFromReactChildren(
 	 *     <Route component={App}>
 	 *       <Route path="home" component={Dashboard}/>
@@ -25055,7 +25055,7 @@
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _projects = __webpack_require__(223);
+	var _projects = __webpack_require__(243);
 
 	var _projects2 = _interopRequireDefault(_projects);
 
@@ -25422,42 +25422,7 @@
 	exports.default = Footer;
 
 /***/ }),
-/* 223 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	exports.default = {
-	    photo: [{
-	        projectTitle: "nycthemeron",
-	        projectSubtitle: "Thesis for MPS in digital photography at SVA, 2008",
-	        projectDescriptionBold: "Nyc · the · me · ron:",
-	        projectDescription: " Greek meaning 24 consecutive hours and is the composite of the words for night and day",
-	        projectText: "For my thesis I created composite images that featured places I have lived, memories I have of growing up in New York and bits of New York City history. I combined built models with landscapes I photographed and added textures. The models were built primarily from coffee stirrers and hot glue. The eight images span from morning to night.",
-	        projectImages: [{ id: 1, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg", alt: "A Corner in The Past" }, { id: 2, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg", alt: "El and Lucida" }, { id: 3, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/003_Nick_Himmel_A_Museum_Of_Curiosities.jpg", alt: "A Museum of Curiosities" }, { id: 4, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/004_Nick_Himmel_The_Cyclone.jpg", alt: "The_Cyclone" }, { id: 5, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/005_Nick_Himmel_Day_Of_The_Sharks.jpg", alt: "Day_Of_The_Sharks" }, { id: 6, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/006_Nick_Himmel_Empire_Service_Metal.jpg", alt: "Empire_Service_Metal" }, { id: 7, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/007_Nick_Himmel_While_You_Were_Gone.jpg", alt: "While_You_Were_Gone" }, { id: 8, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg", alt: "A_Dream_Of_A_House" }]
-	    }],
-	    code: [{
-	        projectTitle: "mypolitician",
-	        projectSubtitle: "Final project for Dev Bootcamp",
-	        projectDescriptionBold: "Technologies used: ",
-	        projectDescription: "Ruby on Rails, React, D3; ",
-	        projectLink: "https://github.com/NickHimmel/myPolitician",
-	        projectText: "This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows constituents which bills the lawmaker introduced, their vote history, and their Twitter stream, and provides links to their social media pages.iI built the map, utilizing the D3.js JavaScript library, and I designed and built the front end of the site using CSS and the Bootstrap framework.",
-	        projectVideo: ["https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4"]
-	    }]
-	};
-
-/***/ }),
+/* 223 */,
 /* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25489,7 +25454,7 @@
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _projects = __webpack_require__(223);
+	var _projects = __webpack_require__(243);
 
 	var _projects2 = _interopRequireDefault(_projects);
 
@@ -25796,12 +25761,12 @@
 
 	exports = module.exports = __webpack_require__(232)(undefined);
 	// imports
-	exports.i(__webpack_require__(233), "");
 	exports.i(__webpack_require__(234), "");
+	exports.i(__webpack_require__(233), "");
 	exports.i(__webpack_require__(235), "");
 	exports.i(__webpack_require__(236), "");
 	exports.i(__webpack_require__(237), "");
-	exports.i(__webpack_require__(238), "");
+	exports.i(__webpack_require__(244), "");
 
 	// module
 	exports.push([module.id, "\n", ""]);
@@ -25900,7 +25865,7 @@
 
 
 	// module
-	exports.push([module.id, ".splashpage {\n  text-align: center;\n  margin-top: 82px;\n}\n\n.splashpage_name {\n  margin: auto;\n  padding: 5px 0;\n  color: #FFF;\n  background: #8da2d9;\n  width: 168px;\n}\n\n.splashpage_name:hover {\n  color:#8da2d9;\n  background: #ffff00\n}\n\n.splashpage_header {\n  font-family: 'Old Standard TT', serif;\n  font-weight: 400;\n  font-size: 5em;\n  line-height: 78px;\n  letter-spacing: 3px;\n}\n\n.splashpage_line {\n  margin: auto;\n  border-top: solid 6px #8da2d9;\n  width: 82px;\n}\n", ""]);
+	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: #8da2d9;\n  text-decoration: none;\n  padding: 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n\n.main {\n  margin-top: 93px;\n}\n", ""]);
 
 	// exports
 
@@ -25914,7 +25879,7 @@
 
 
 	// module
-	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: #8da2d9;\n  text-decoration: none;\n  padding: 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\nli:last-child {\n  border: none;\n}\n\n.main {\n  margin-top: 93px;\n}\n", ""]);
+	exports.push([module.id, ".splashpage {\n  text-align: center;\n  margin-top: 82px;\n}\n\n.splashpage_name {\n  margin: auto;\n  padding: 5px 0;\n  color: #FFF;\n  background: #8da2d9;\n  width: 168px;\n}\n\n.splashpage_name:hover {\n  color:#8da2d9;\n  background: #ffff00\n}\n\n.splashpage_header {\n  font-family: 'Old Standard TT', serif;\n  font-weight: 400;\n  font-size: 5em;\n  line-height: 78px;\n  letter-spacing: 3px;\n}\n\n.splashpage_line {\n  margin: auto;\n  border-top: solid 6px #8da2d9;\n  width: 82px;\n}\n", ""]);
 
 	// exports
 
@@ -25962,20 +25927,7 @@
 
 
 /***/ }),
-/* 238 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(232)(undefined);
-	// imports
-
-
-	// module
-	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n#gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n#gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 90%;\n  max-width: 1080px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 45%;\n  right: -9px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  width: 17px;\n  padding: 0;\n  text-align: center;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.3em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);\n}\n\n.left-arrow {\n  margin-top: 10px;\n}\n", ""]);
-
-	// exports
-
-
-/***/ }),
+/* 238 */,
 /* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -25994,7 +25946,7 @@
 		isOldIE = memoize(function() {
 			// Test for IE <= 9 as proposed by Browserhacks
 			// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
-			// Tests for existence of standard globals is to allow style-loader
+			// Tests for existence of standard globals is to allow style-loader 
 			// to operate correctly into non-standard environments
 			// @see https://github.com/webpack-contrib/style-loader/issues/177
 			return window && document && document.all && !window.atob;
@@ -26160,13 +26112,13 @@
 		// If a transform function was defined, run it on the css
 		if (options.transform && obj.css) {
 		    transformResult = options.transform(obj.css);
-
+		    
 		    if (transformResult) {
 		    	// If transform returns a value, use that instead of the original css.
 		    	// This allows running runtime transformations on the css.
 		    	obj.css = transformResult;
 		    } else {
-		    	// If the transform function returns a falsy value, don't add this css.
+		    	// If the transform function returns a falsy value, don't add this css. 
 		    	// This allows conditional loading of css
 		    	return function() {
 		    		// noop
@@ -26292,7 +26244,7 @@
 /* 240 */
 /***/ (function(module, exports) {
 
-
+	
 	/**
 	 * When source maps are enabled, `style-loader` uses a link element with a data-uri to
 	 * embed the css on the page. This breaks all relative urls because now they are relative to a
@@ -26381,6 +26333,58 @@
 		// send back the fixed css
 		return fixedCss;
 	};
+
+
+/***/ }),
+/* 241 */,
+/* 242 */,
+/* 243 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = {
+	    photo: [{
+	        projectTitle: "nycthemeron",
+	        projectSubtitle: "Thesis for MPS in digital photography at SVA, 2008",
+	        projectDescriptionBold: "Nyc · the · me · ron:",
+	        projectDescription: " Greek meaning 24 consecutive hours and is the composite of the words for night and day",
+	        projectText: "For my thesis I created composite images that featured places I have lived, memories I have of growing up in New York and bits of New York City history. I combined built models with landscapes I photographed and added textures. The models were built primarily from coffee stirrers and hot glue. The eight images span from morning to night.",
+	        projectImages: [{ id: 1, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg", alt: "A Corner in The Past" }, { id: 2, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg", alt: "El and Lucida" }, { id: 3, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/003_Nick_Himmel_A_Museum_Of_Curiosities.jpg", alt: "A Museum of Curiosities" }, { id: 4, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/004_Nick_Himmel_The_Cyclone.jpg", alt: "The_Cyclone" }, { id: 5, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/005_Nick_Himmel_Day_Of_The_Sharks.jpg", alt: "Day_Of_The_Sharks" }, { id: 6, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/006_Nick_Himmel_Empire_Service_Metal.jpg", alt: "Empire_Service_Metal" }, { id: 7, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/007_Nick_Himmel_While_You_Were_Gone.jpg", alt: "While_You_Were_Gone" }, { id: 8, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg", alt: "A_Dream_Of_A_House" }]
+	    }],
+	    code: [{
+	        projectTitle: "mypolitician",
+	        projectSubtitle: "Final project for Dev Bootcamp",
+	        projectDescriptionBold: "Technologies used: ",
+	        projectDescription: "Ruby on Rails, React, D3; ",
+	        projectLink: "https://github.com/NickHimmel/myPolitician",
+	        projectText: "This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows constituents which bills the lawmaker introduced, their vote history, and their Twitter stream, and provides links to their social media pages.iI built the map, utilizing the D3.js JavaScript library, and I designed and built the front end of the site using CSS and the Bootstrap framework.",
+	        projectVideo: ["https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4"]
+	    }]
+	};
+
+/***/ }),
+/* 244 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(232)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n#gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n#gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 90%;\n  max-width: 1080px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 45%;\n  right: -9px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  width: 17px;\n  padding: 0;\n  text-align: center;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.3em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);\n}\n\n.left-arrow {\n  margin-top: 10px;\n}\n", ""]);
+
+	// exports
 
 
 /***/ })

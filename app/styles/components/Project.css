@@ -23,7 +23,7 @@
 .project_description {
   font-family: 'Open Sans', sans-serif;
   font-style: italic;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 .project_link {
@@ -37,4 +37,10 @@
 .project_text {
   margin-top: 8px;
   font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 700px) {
+  .project {
+    margin: 25px;
+  }
 }

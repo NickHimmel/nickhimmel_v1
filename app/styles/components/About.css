@@ -1,0 +1,55 @@
+.about_text {
+  width: 40%;
+  margin-left: 115px;
+}
+
+.about {
+  margin: auto;
+  padding: 5px;
+  font-size: .75em;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFF;
+  background: #8da2d9;
+  width: 65px;
+}
+
+.about_title {
+  margin-top: 25px;
+  font-size: 2.4em;
+}
+
+.about_image {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  width: 60%;
+}
+
+@media (max-width: 650px) {
+  .small_about_image {
+    border-radius: 50%;
+    border: 1px solid #ededed;
+    width: 150px;
+    height: 150px;
+    background-image: url('https://s3.us-east-2.amazonaws.com/nickhimmel.com/Drawing_by_Julia_Himmel.jpg');
+    background-repeat: no-repeat;
+    background-position: 68% 10%;
+    background-color: #8da2d9;
+    background-size: 400px;
+    margin: auto;
+  }
+
+  .about_text {
+    width: 100%;
+    margin: 25px 0 0 0;
+  }
+
+  .about_image {
+    display: none;
+  }
+
+}

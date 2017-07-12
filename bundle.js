@@ -14747,7 +14747,7 @@
 	 *
 	 * @providesModule shallowEqual
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -22972,7 +22972,7 @@
 	 * nested.
 	 *
 	 *   import { Route, createRoutesFromReactChildren } from 'react-router'
-	 *   
+	 *
 	 *   const routes = createRoutesFromReactChildren(
 	 *     <Route component={App}>
 	 *       <Route path="home" component={Dashboard}/>
@@ -25786,31 +25786,6 @@
 	    'div',
 	    { className: 'main' },
 	    _react2.default.createElement(_Nav2.default, null),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'project' },
-	      _react2.default.createElement('div', { className: 'small_about_image' }),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'about_text' },
-	        _react2.default.createElement(
-	          'h2',
-	          { className: 'about' },
-	          'About'
-	        ),
-	        _react2.default.createElement(
-	          'h1',
-	          { className: 'project_title about_title' },
-	          'web developer committed to making quality stuff'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'Ad quistibea venihillest, sit dus eos aut voluptam net od es denis prae digendisim nest, cone cus nihic tem re, tem. Arcimagnimi, soluptate dolupta tiossi si utaspisi nat quatio od quatur. Quias audandu ciurempelia dollicide sitat. Gitat occuptatiur. Ora si quiandi orrorrum ea plautem intibus cone nus apiet moluptis sini o c tem iunt, sequi bera de volorem etur, quis nem laciendisto es experepro doluptistia nobit ute id modisit omnihil inihicabo.'
-	        )
-	      ),
-	      _react2.default.createElement('img', { className: 'about_image', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/Drawing_by_Julia_Himmel.jpg', alt: 'Drawing of Nick Himmel by Julia Himmel' })
-	    ),
 	    _react2.default.createElement(_Footer2.default, null)
 	  );
 	};
@@ -25860,7 +25835,6 @@
 	exports.i(__webpack_require__(236), "");
 	exports.i(__webpack_require__(237), "");
 	exports.i(__webpack_require__(238), "");
-	exports.i(__webpack_require__(241), "");
 
 	// module
 	exports.push([module.id, "\n", ""]);
@@ -26053,7 +26027,7 @@
 		isOldIE = memoize(function() {
 			// Test for IE <= 9 as proposed by Browserhacks
 			// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
-			// Tests for existence of standard globals is to allow style-loader 
+			// Tests for existence of standard globals is to allow style-loader
 			// to operate correctly into non-standard environments
 			// @see https://github.com/webpack-contrib/style-loader/issues/177
 			return window && document && document.all && !window.atob;
@@ -26219,13 +26193,13 @@
 		// If a transform function was defined, run it on the css
 		if (options.transform && obj.css) {
 		    transformResult = options.transform(obj.css);
-		    
+
 		    if (transformResult) {
 		    	// If transform returns a value, use that instead of the original css.
 		    	// This allows running runtime transformations on the css.
 		    	obj.css = transformResult;
 		    } else {
-		    	// If the transform function returns a falsy value, don't add this css. 
+		    	// If the transform function returns a falsy value, don't add this css.
 		    	// This allows conditional loading of css
 		    	return function() {
 		    		// noop
@@ -26351,7 +26325,7 @@
 /* 240 */
 /***/ (function(module, exports) {
 
-	
+
 	/**
 	 * When source maps are enabled, `style-loader` uses a link element with a data-uri to
 	 * embed the css on the page. This breaks all relative urls because now they are relative to a
@@ -26440,20 +26414,6 @@
 		// send back the fixed css
 		return fixedCss;
 	};
-
-
-/***/ }),
-/* 241 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(232)(undefined);
-	// imports
-
-
-	// module
-	exports.push([module.id, ".about_text {\n  width: 40%;\n  margin-left: 115px;\n}\n\n.about {\n  margin: auto;\n  padding: 5px;\n  font-size: .75em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n  text-align: center;\n  color: #FFF;\n  background: #8da2d9;\n  width: 65px;\n}\n\n.about_title {\n  margin-top: 25px;\n  font-size: 2.4em;\n}\n\n.about_image {\n  z-index: -1;\n  position: absolute;\n  right: 0;\n  top: 30%;\n  width: 60%;\n}\n\n@media (max-width: 650px) {\n  .small_about_image {\n    border-radius: 50%;\n    border: 1px solid #ededed;\n    width: 150px;\n    height: 150px;\n    background-image: url('https://s3.us-east-2.amazonaws.com/nickhimmel.com/Drawing_by_Julia_Himmel.jpg');\n    background-repeat: no-repeat;\n    background-position: 68% 10%;\n    background-color: #8da2d9;\n    background-size: 400px;\n    margin: auto;\n  }\n\n  .about_text {\n    width: 100%;\n    margin: 25px 0 0 0;\n  }\n\n  .about_image {\n    display: none;\n  }\n\n}\n", ""]);
-
-	// exports
 
 
 /***/ })

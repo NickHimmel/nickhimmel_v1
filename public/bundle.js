@@ -25789,6 +25789,7 @@
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'project about_container' },
+	      _react2.default.createElement('div', { className: 'small_about_image' }),
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'about_text' },
@@ -26450,7 +26451,7 @@
 
 
 	// module
-	exports.push([module.id, ".about_container {\n  position: relative;\n}\n\n.about_text {\n  width: 40%;\n  margin-left: 115px;\n}\n\n.about {\n  margin: auto;\n  padding: 5px;\n  font-size: .75em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n  text-align: center;\n  color: #FFF;\n  background: #8da2d9;\n  width: 65px;\n}\n\n.about_title {\n  margin-top: 25px;\n  font-size: 2.4em;\n}\n\n.about_image {\n  z-index: -1;\n  position: absolute;\n  right: 0;\n  top: 30%;\n  width: 60%;\n}\n", ""]);
+	exports.push([module.id, ".about_container {\n  position: relative;\n}\n\n.about_text {\n  width: 40%;\n  margin-left: 115px;\n}\n\n.about {\n  margin: auto;\n  padding: 5px;\n  font-size: .75em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n  text-align: center;\n  color: #FFF;\n  background: #8da2d9;\n  width: 65px;\n}\n\n.about_title {\n  margin-top: 25px;\n  font-size: 2.4em;\n}\n\n.about_image {\n  z-index: -1;\n  position: absolute;\n  right: 0;\n  top: 30%;\n  width: 60%;\n}\n\n@media (max-width: 650px) {\n  .small_about_image {\n    border-radius: 50%;\n    border: 1px solid #ededed;\n    width: 150px;\n    height: 150px;\n    background-image: url('https://s3.us-east-2.amazonaws.com/nickhimmel.com/Drawing_by_Julia_Himmel.jpg');\n    background-repeat: no-repeat;\n    background-position: 68% 10%;\n    background-color: #8da2d9;\n    background-size: 400px;\n    margin: auto;\n  }\n\n  .about_text {\n    width: 100%;\n    margin: 25px 0 0 0;\n  }\n\n  .about_image {\n    display: none;\n  }\n\n}\n", ""]);
 
 	// exports
 

@@ -7,6 +7,7 @@ const About = () => {
     <div className="main">
       <Nav />
       <div className="project about_container">
+        <div className="small_about_image"></div>
         <div className="about_text">
           <h2 className="about">About</h2>
           <h1 className="project_title about_title">web developer committed to making quality stuff</h1>

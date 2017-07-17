@@ -24930,7 +24930,7 @@
 	      null,
 	      _react2.default.createElement(
 	        'ul',
-	        null,
+	        { className: 'splashpage_nav' },
 	        _react2.default.createElement(
 	          'li',
 	          null,
@@ -25806,7 +25806,22 @@
 	        _react2.default.createElement(
 	          'p',
 	          null,
-	          'Ad quistibea venihillest, sit dus eos aut voluptam net od es denis prae digendisim nest, cone cus nihic tem re, tem. Arcimagnimi, soluptate dolupta tiossi si utaspisi nat quatio od quatur. Quias audandu ciurempelia dollicide sitat. Gitat occuptatiur. Ora si quiandi orrorrum ea plautem intibus cone nus apiet moluptis sini o c tem iunt, sequi bera de volorem etur, quis nem laciendisto es experepro doluptistia nobit ute id modisit omnihil inihicabo.'
+	          'I\u2019m a lifelong New Yorker \u2014 I was born in Fort Greene. My art centers on my memories of the city and its history.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'At the Daily News, I led a team of imaging specialists and half a million New Yorkers saw my work every day. We broke news under some very tense deadlines, and we didn\u2019t let quality slip. The stories I worked on included investigative pieces that ended up changing people\u2019s lives for the better.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          { className: 'long_column' },
+	          'That\u2019s what I want to keep doing as a front-end developer: I want to make quality work that informs people and empowers them to take matters into their own hands. That\u2019s why I went to Dev Bootcamp and became a web developer. It\u2019s why I made sure to learn D3, the data visualization library.'
+	        ),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'We should talk! '
 	        )
 	      ),
 	      _react2.default.createElement('img', { className: 'about_image', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/Drawing_by_Julia_Himmel.jpg', alt: 'Drawing of Nick Himmel by Julia Himmel' })
@@ -25973,7 +25988,7 @@
 
 
 	// module
-	exports.push([module.id, ".splashpage {\n  text-align: center;\n  margin-top: 82px;\n}\n\n.splashpage_name {\n  margin: auto;\n  padding: 5px 0;\n  color: #FFF;\n  background: #8da2d9;\n  width: 168px;\n}\n\n.splashpage_name:hover {\n  color:#8da2d9;\n  background: #ffff00\n}\n\n.splashpage_header {\n  font-family: 'Old Standard TT', serif;\n  font-weight: 400;\n  font-size: 5em;\n  line-height: 78px;\n  letter-spacing: 3px;\n}\n\n.splashpage_line {\n  margin: auto;\n  width: 82px;\n  height: 6px;\n  background-color: #8da2d9;\n}\n\n.line_break {\n  display: none;\n}\n@media (max-width: 700px) {\n  .small_no_border {\n    border: none;\n  }\n\n  .line_break {\n    display: block;\n  }\n\n  .second_line {\n    margin-top: 30px;\n  }\n}\n@media (max-width: 650px) {\n  .splashpage_header {\n    font-size: 3em;\n  }\n\n  .splashpage_line {\n    width: 50px;\n    height: 4px\n  }\n}\n", ""]);
+	exports.push([module.id, ".splashpage {\n  text-align: center;\n  margin-top: 82px;\n}\n\n.splashpage_name {\n  margin: auto;\n  padding: 5px 0;\n  color: #FFF;\n  background: #8da2d9;\n  width: 168px;\n}\n\n.splashpage_name:hover {\n  color:#8da2d9;\n  background: #ffff00\n}\n\n.splashpage_header {\n  font-family: 'Old Standard TT', serif;\n  font-weight: 400;\n  font-size: 5em;\n  line-height: 78px;\n  letter-spacing: 3px;\n}\n\n.splashpage_line {\n  margin: auto;\n  width: 82px;\n  height: 6px;\n  background-color: #8da2d9;\n}\n\n.line_break {\n  display: none;\n}\n\n@media (max-width: 700px) {\n  .small_no_border {\n    border: none;\n  }\n\n  .line_break {\n    display: block;\n  }\n\n  .second_line {\n    margin-top: 30px;\n  }\n}\n\n@media (max-width: 650px) {\n  .splashpage_header a {\n    padding: 0;\n  }\n\n  .splashpage_header {\n    font-size: 3em;\n  }\n\n  .splashpage_line {\n    width: 50px;\n    height: 4px\n  }\n}\n\n@media (max-width: 320px) {\n  .splashpage {\n    margin-top: 50px;\n  }\n\n  .splashpage_header {\n    font-size: 2.5em;\n    margin: 33px 0;\n  }\n\n  .splashpage_line {\n    width: 45px;\n  }\n\n  .splashpage_nav {\n    font-size: .8em;\n  }\n}\n", ""]);
 
 	// exports
 
@@ -26451,7 +26466,7 @@
 
 
 	// module
-	exports.push([module.id, ".about_text {\n  width: 40%;\n  margin-left: 115px;\n}\n\n.about {\n  margin: auto;\n  padding: 5px;\n  font-size: .75em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n  text-align: center;\n  color: #FFF;\n  background: #8da2d9;\n  width: 65px;\n}\n\n.about_title {\n  margin-top: 25px;\n  font-size: 2.4em;\n}\n\n.about_image {\n  z-index: -1;\n  position: absolute;\n  right: 0;\n  top: 30%;\n  width: 60%;\n}\n\n@media (max-width: 650px) {\n  .small_about_image {\n    border-radius: 50%;\n    border: 1px solid #ededed;\n    width: 150px;\n    height: 150px;\n    background-image: url('https://s3.us-east-2.amazonaws.com/nickhimmel.com/Drawing_by_Julia_Himmel.jpg');\n    background-repeat: no-repeat;\n    background-position: 68% 10%;\n    background-color: #8da2d9;\n    background-size: 400px;\n    margin: auto;\n  }\n\n  .about_text {\n    width: 100%;\n    margin: 25px 0 0 0;\n  }\n\n  .about_image {\n    display: none;\n  }\n\n}\n", ""]);
+	exports.push([module.id, ".about_text {\n  width: 40%;\n  margin-left: 50px;\n  background: #fff;\n}\n\n.about {\n  margin: auto;\n  padding: 5px;\n  font-size: .75em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n  text-align: center;\n  color: #FFF;\n  background: #8da2d9;\n  width: 65px;\n}\n\n.about_title {\n  margin-top: 25px;\n  font-size: 2.4em;\n}\n\n.about_text p {\n  font-size: .82em;\n}\n\n.about_image {\n  z-index: -1;\n  position: absolute;\n  right: 0;\n  top: 35%;\n  width: 60%;\n}\n\n@media (max-width: 650px) {\n  .small_about_image {\n    border-radius: 50%;\n    border: 1px solid #ededed;\n    width: 150px;\n    height: 150px;\n    background-image: url('https://s3.us-east-2.amazonaws.com/nickhimmel.com/Drawing_by_Julia_Himmel.jpg');\n    background-repeat: no-repeat;\n    background-position: 68% 10%;\n    background-color: #8da2d9;\n    background-size: 400px;\n    margin: auto;\n  }\n\n  .about_text {\n    width: 100%;\n    margin: 25px 0 0 0;\n  }\n\n  .about_image {\n    display: none;\n  }\n\n}\n", ""]);
 
 	// exports
 

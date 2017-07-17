@@ -1,6 +1,7 @@
 .about_text {
   width: 40%;
-  margin-left: 115px;
+  margin-left: 50px;
+  background: #fff;
 }
 
 .about {
@@ -21,11 +22,15 @@
   font-size: 2.4em;
 }
 
+.about_text p {
+  font-size: .82em;
+}
+
 .about_image {
   z-index: -1;
   position: absolute;
   right: 0;
-  top: 30%;
+  top: 35%;
   width: 60%;
 }
 

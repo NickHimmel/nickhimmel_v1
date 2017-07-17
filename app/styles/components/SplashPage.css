@@ -34,6 +34,7 @@
 .line_break {
   display: none;
 }
+
 @media (max-width: 700px) {
   .small_no_border {
     border: none;
@@ -47,7 +48,12 @@
     margin-top: 30px;
   }
 }
+
 @media (max-width: 650px) {
+  .splashpage_header a {
+    padding: 0;
+  }
+
   .splashpage_header {
     font-size: 3em;
   }
@@ -55,5 +61,24 @@
   .splashpage_line {
     width: 50px;
     height: 4px
+  }
+}
+
+@media (max-width: 320px) {
+  .splashpage {
+    margin-top: 50px;
+  }
+
+  .splashpage_header {
+    font-size: 2.5em;
+    margin: 33px 0;
+  }
+
+  .splashpage_line {
+    width: 45px;
+  }
+
+  .splashpage_nav {
+    font-size: .8em;
   }
 }

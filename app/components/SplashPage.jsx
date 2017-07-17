@@ -13,7 +13,7 @@ const SplashPage = () => {
         <h2 className="splashpage_header"><Link to="/photo" activeClassName="active">photography</Link></h2>
       </div>
       <div>
-        <ul>
+        <ul className="splashpage_nav">
           <li><a href="https://www.linkedin.com/in/nick-himmel" target="_blank">LinkedIn</a></li>
           <li><a href="https://www.instagram.com/himmelnick/" target="_blank">Instagram</a></li>
           <li><a href="https://github.com/NickHimmel" target="_blank">GitHub</a></li>

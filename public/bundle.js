@@ -25847,7 +25847,7 @@
 	var options = {}
 	options.transform = transform
 	// add the styles to the DOM
-	var update = __webpack_require__(239)(content, options);
+	var update = __webpack_require__(240)(content, options);
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -25875,7 +25875,7 @@
 	exports.i(__webpack_require__(236), "");
 	exports.i(__webpack_require__(237), "");
 	exports.i(__webpack_require__(238), "");
-	exports.i(__webpack_require__(241), "");
+	exports.i(__webpack_require__(239), "");
 
 	// module
 	exports.push([module.id, "\n", ""]);
@@ -26053,6 +26053,20 @@
 /* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	exports = module.exports = __webpack_require__(232)(undefined);
+	// imports
+
+
+	// module
+	exports.push([module.id, ".about_text {\n  width: 40%;\n  margin-left: 50px;\n  background: #fff;\n}\n\n.about {\n  margin: auto;\n  padding: 5px;\n  font-size: .75em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n  text-align: center;\n  color: #FFF;\n  background: #8da2d9;\n  width: 65px;\n}\n\n.about_title {\n  margin-top: 25px;\n  font-size: 2.4em;\n}\n\n.about_text p {\n  font-size: .82em;\n}\n\n.about_image {\n  z-index: -1;\n  position: absolute;\n  right: 0;\n  top: 35%;\n  width: 60%;\n}\n\n@media (max-width: 650px) {\n  .small_about_image {\n    border-radius: 50%;\n    border: 1px solid #ededed;\n    width: 150px;\n    height: 150px;\n    background-image: url('https://s3.us-east-2.amazonaws.com/nickhimmel.com/Drawing_by_Julia_Himmel.jpg');\n    background-repeat: no-repeat;\n    background-position: 68% 10%;\n    background-color: #8da2d9;\n    background-size: 400px;\n    margin: auto;\n  }\n\n  .about_text {\n    width: 100%;\n    margin: 25px 0 0 0;\n  }\n\n  .about_image {\n    display: none;\n  }\n\n}\n", ""]);
+
+	// exports
+
+
+/***/ }),
+/* 240 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	/*
 		MIT License http://www.opensource.org/licenses/mit-license.php
 		Author Tobias Koppers @sokra
@@ -26087,7 +26101,7 @@
 		singletonElement = null,
 		singletonCounter = 0,
 		styleElementsInsertedAtTop = [],
-		fixUrls = __webpack_require__(240);
+		fixUrls = __webpack_require__(241);
 
 	module.exports = function(list, options) {
 		if(false) {
@@ -26363,7 +26377,7 @@
 
 
 /***/ }),
-/* 240 */
+/* 241 */
 /***/ (function(module, exports) {
 
 	
@@ -26455,20 +26469,6 @@
 		// send back the fixed css
 		return fixedCss;
 	};
-
-
-/***/ }),
-/* 241 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(232)(undefined);
-	// imports
-
-
-	// module
-	exports.push([module.id, ".about_text {\n  width: 40%;\n  margin-left: 50px;\n  background: #fff;\n}\n\n.about {\n  margin: auto;\n  padding: 5px;\n  font-size: .75em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n  text-align: center;\n  color: #FFF;\n  background: #8da2d9;\n  width: 65px;\n}\n\n.about_title {\n  margin-top: 25px;\n  font-size: 2.4em;\n}\n\n.about_text p {\n  font-size: .82em;\n}\n\n.about_image {\n  z-index: -1;\n  position: absolute;\n  right: 0;\n  top: 35%;\n  width: 60%;\n}\n\n@media (max-width: 650px) {\n  .small_about_image {\n    border-radius: 50%;\n    border: 1px solid #ededed;\n    width: 150px;\n    height: 150px;\n    background-image: url('https://s3.us-east-2.amazonaws.com/nickhimmel.com/Drawing_by_Julia_Himmel.jpg');\n    background-repeat: no-repeat;\n    background-position: 68% 10%;\n    background-color: #8da2d9;\n    background-size: 400px;\n    margin: auto;\n  }\n\n  .about_text {\n    width: 100%;\n    margin: 25px 0 0 0;\n  }\n\n  .about_image {\n    display: none;\n  }\n\n}\n", ""]);
-
-	// exports
 
 
 /***/ })

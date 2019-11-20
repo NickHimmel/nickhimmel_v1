@@ -2,6 +2,11 @@
   margin: 50px;
 }
 
+.project-list-item {
+  border-right: 0;
+  margin-bottom: 50px;
+}
+
 .project_title, .project_subtitle {
   font-family: 'Old Standard TT', serif;
 }
@@ -37,6 +42,10 @@
 .project_text {
   margin-top: 8px;
   font-family: 'Open Sans', sans-serif;
+}
+
+.project-video {
+  max-width: 900px;
 }
 
 @media (max-width: 700px) {

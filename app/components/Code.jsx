@@ -1,14 +1,12 @@
 import React from 'react';
 import Nav from 'app/components/Nav.jsx'
-import Project from 'Project.jsx';
-import Video from 'Video.jsx';
+import Projects from 'Projects.jsx';
 import Footer from 'app/components/Footer.jsx'
-import Projects from 'app/models/projects.js';
+import ProjectsList from 'app/models/projects.js';
 
 class Code extends React.Component {
   constructor (props) {
     super(props);
-    this.state = Projects.code[0];
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -26,10 +24,7 @@ class Code extends React.Component {
     return (
       <div className="main">
         <Nav />
-        <div className="project">
-          <Project {...project}/>
-          <Video video={this.state.projectVideo} onClick={this.handleClick}/>
-        </div>
+        <Projects projects={ProjectsList.code} onClick={this.handleClick}/>
         <Footer />
       </div>
     )

@@ -68,15 +68,15 @@
 
 	var _Code2 = _interopRequireDefault(_Code);
 
-	var _Photo = __webpack_require__(224);
+	var _Photo = __webpack_require__(226);
 
 	var _Photo2 = _interopRequireDefault(_Photo);
 
-	var _About = __webpack_require__(229);
+	var _About = __webpack_require__(231);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _App = __webpack_require__(230);
+	var _App = __webpack_require__(232);
 
 	var _App2 = _interopRequireDefault(_App);
 
@@ -25039,19 +25039,15 @@
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
-	var _Project = __webpack_require__(220);
+	var _Projects = __webpack_require__(220);
 
-	var _Project2 = _interopRequireDefault(_Project);
+	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _Video = __webpack_require__(221);
-
-	var _Video2 = _interopRequireDefault(_Video);
-
-	var _Footer = __webpack_require__(222);
+	var _Footer = __webpack_require__(224);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _projects = __webpack_require__(223);
+	var _projects = __webpack_require__(225);
 
 	var _projects2 = _interopRequireDefault(_projects);
 
@@ -25071,7 +25067,6 @@
 
 	    var _this = _possibleConstructorReturn(this, (Code.__proto__ || Object.getPrototypeOf(Code)).call(this, props));
 
-	    _this.state = _projects2.default.code[0];
 	    _this.handleClick = _this.handleClick.bind(_this);
 	    return _this;
 	  }
@@ -25094,12 +25089,7 @@
 	        'div',
 	        { className: 'main' },
 	        _react2.default.createElement(_Nav2.default, null),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'project' },
-	          _react2.default.createElement(_Project2.default, project),
-	          _react2.default.createElement(_Video2.default, { video: this.state.projectVideo, onClick: this.handleClick })
-	        ),
+	        _react2.default.createElement(_Projects2.default, { projects: _projects2.default.code, onClick: this.handleClick }),
 	        _react2.default.createElement(_Footer2.default, null)
 	      );
 	    }
@@ -25254,7 +25244,116 @@
 /* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _Project = __webpack_require__(221);
+
+	var _Project2 = _interopRequireDefault(_Project);
+
+	var _Video = __webpack_require__(223);
+
+	var _Video2 = _interopRequireDefault(_Video);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Projects = function Projects(props) {
+	  var projects = props.projects;
+	  var projectList = projects.map(function (project) {
+	    return _react2.default.createElement(
+	      'li',
+	      { key: project.id, className: 'project-list-item' },
+	      _react2.default.createElement(_Project2.default, project),
+	      project.projectVideo && _react2.default.createElement(_Video2.default, { video: project.projectVideo, onClick: props.onClick })
+	    );
+	  });
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'project' },
+	    _react2.default.createElement(
+	      'ul',
+	      null,
+	      projectList
+	    )
+	  );
+	};
+
+	exports.default = Projects;
+
+/***/ }),
+/* 221 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _links = __webpack_require__(222);
+
+	var _links2 = _interopRequireDefault(_links);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Project = function Project(_ref) {
+	  var projectTitle = _ref.projectTitle,
+	      projectSubtitle = _ref.projectSubtitle,
+	      projectDescriptionBold = _ref.projectDescriptionBold,
+	      projectDescription = _ref.projectDescription,
+	      projectLinks = _ref.projectLinks,
+	      projectText = _ref.projectText;
+
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'h1',
+	      { className: 'project_title' },
+	      projectTitle
+	    ),
+	    _react2.default.createElement(
+	      'h2',
+	      { className: 'project_subtitle' },
+	      projectSubtitle
+	    ),
+	    projectLinks && _react2.default.createElement(_links2.default, { links: projectLinks }),
+	    _react2.default.createElement(
+	      'p',
+	      { className: 'project_description' },
+	      _react2.default.createElement(
+	        'span',
+	        { className: 'bold' },
+	        projectDescriptionBold
+	      ),
+	      projectDescription
+	    ),
+	    _react2.default.createElement(
+	      'p',
+	      { className: 'project_text' },
+	      projectText
+	    )
+	  );
+	};
+
+	exports.default = Project;
+
+/***/ }),
+/* 222 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -25266,48 +25365,34 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var Project = function Project(_ref) {
-	  var projectTitle = _ref.projectTitle,
-	      projectSubtitle = _ref.projectSubtitle,
-	      projectDescriptionBold = _ref.projectDescriptionBold,
-	      projectDescription = _ref.projectDescription,
-	      projectText = _ref.projectText;
-
-	  return _react2.default.createElement(
-	    "div",
-	    null,
-	    _react2.default.createElement(
-	      "h1",
-	      { className: "project_title" },
-	      projectTitle
-	    ),
-	    _react2.default.createElement(
-	      "h2",
-	      { className: "project_subtitle" },
-	      projectSubtitle
-	    ),
-	    _react2.default.createElement(
-	      "p",
-	      { className: "project_description" },
+	var Links = function Links(props) {
+	  var links = props.links;
+	  var linksList = links.map(function (link) {
+	    return _react2.default.createElement(
+	      'li',
+	      { key: link.id },
 	      _react2.default.createElement(
-	        "span",
-	        { className: "bold" },
-	        projectDescriptionBold
-	      ),
-	      projectDescription
-	    ),
+	        'a',
+	        { href: link.link, target: '_blank', rel: 'noopener noreferrer' },
+	        link.site
+	      )
+	    );
+	  });
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'links' },
 	    _react2.default.createElement(
-	      "p",
-	      { className: "project_text" },
-	      projectText
+	      'ul',
+	      null,
+	      linksList
 	    )
 	  );
 	};
 
-	exports.default = Project;
+	exports.default = Links;
 
 /***/ }),
-/* 221 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25329,7 +25414,7 @@
 	    null,
 	    _react2.default.createElement(
 	      "video",
-	      { id: "projectVideo", width: "100%", controls: true, onClick: function onClick() {
+	      { id: "projectVideo", className: "project-video", width: "100%", controls: true, onClick: function onClick() {
 	          props.onClick();
 	        } },
 	      _react2.default.createElement("source", { src: props.video, type: "video/mp4" })
@@ -25340,7 +25425,7 @@
 	exports.default = Video;
 
 /***/ }),
-/* 222 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25473,7 +25558,7 @@
 	exports.default = Footer;
 
 /***/ }),
-/* 223 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25498,18 +25583,35 @@
 	        projectImages: [{ id: 1, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/001_Nick_Himmel_A_Corner_in_the_Past.jpg", alt: "A Corner in The Past" }, { id: 2, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/002_Nick_Himmel_El_And_Lucida.jpg", alt: "El and Lucida" }, { id: 3, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/003_Nick_Himmel_A_Museum_Of_Curiosities.jpg", alt: "A Museum of Curiosities" }, { id: 4, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/004_Nick_Himmel_The_Cyclone.jpg", alt: "The_Cyclone" }, { id: 5, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/005_Nick_Himmel_Day_Of_The_Sharks.jpg", alt: "Day_Of_The_Sharks" }, { id: 6, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/006_Nick_Himmel_Empire_Service_Metal.jpg", alt: "Empire_Service_Metal" }, { id: 7, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/007_Nick_Himmel_While_You_Were_Gone.jpg", alt: "While_You_Were_Gone" }, { id: 8, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/008_Nick_Himmel_A_Dream_Of_A_House.jpg", alt: "A_Dream_Of_A_House" }]
 	    }],
 	    code: [{
-	        projectTitle: "mypolitician",
-	        projectSubtitle: "Final project for Dev Bootcamp",
+	        id: "1",
+	        projectTitle: "Civil Media Company",
+	        projectSubtitle: "Freelance Front End Developer, April 2018 – present",
 	        projectDescriptionBold: "Technologies used: ",
-	        projectDescription: "Ruby on Rails, React, D3; ",
-	        projectLink: "https://github.com/NickHimmel/myPolitician",
-	        projectText: "This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows constituents which bills the lawmaker introduced, their vote history, and their Twitter stream, and provides links to their social media pages. I built the map, utilizing the D3.js JavaScript library, and I designed and built the front end of the site using CSS and the Bootstrap framework.",
+	        projectDescription: "Javascript, SASS, Wordpress",
+	        projectText: "Civil is a blockchain startup focusing on journalism. They have a custom WordPress theme for small independent newsrooms. I adapted Civil’s WordPress theme to the individual needs of 11 different newsrooms using CSS. I worked with each newsroom to learn their needs and brand and make their sites look exactly the way they wanted. I also worked with a designer on two major redesigns of Civil’s marketing site, achieving pixel-perfect results. I contributed additional features to the marketing site on an as-needed basis."
+	    }, {
+	        id: "2",
+	        projectTitle: "Changing New York",
+	        projectSubtitle: "Personal project to further my React and Redux skills.",
+	        projectDescriptionBold: "Technologies used: ",
+	        projectDescription: "React, Redux, D3, SASS",
+	        projectLinks: [{ id: 201, site: "site", link: "https://changing-new-york-app.herokuapp.com/" }, { id: 202, site: "github", link: "https://github.com/NickHimmel/changing-new-york-app" }],
+	        projectText: "This app uses my own photographs paired with Berenice Abbott’s historic photographs from the New York York Public Library Digital Collections API, along with Mapbox, to engage users in a conversation about New York’s changing waterfront. Users can click on locations on a map of New York’s waterfront to see historic photos paired with contemporary ones and read about the area’s development.",
+	        projectVideo: ["https://s3.us-east-2.amazonaws.com/nickhimmel.com/changingnewyork.mp4"]
+	    }, {
+	        id: "3",
+	        projectTitle: "mypolitician",
+	        projectSubtitle: "Personal project to further my React and Redux skills.",
+	        projectDescriptionBold: "Technologies used: ",
+	        projectDescription: "React, Redux, D3, SASS",
+	        projectLinks: [{ id: 301, site: "site (site is currently not working)", link: "https://my-politician-app.herokuapp.com/" }, { id: 302, site: "github", link: "https://github.com/NickHimmel/my-politician-app" }],
+	        projectText: "This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows the lawmakers’ financial information, their donors, which bills the lawmaker introduced, their vote history, and provides links to their social media pages. I pull this information from the ProPublica and OpenSecrets APIs.",
 	        projectVideo: ["https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4"]
 	    }]
 	};
 
 /***/ }),
-/* 224 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25528,19 +25630,19 @@
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
-	var _Project = __webpack_require__(220);
+	var _Project = __webpack_require__(221);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
-	var _Gallery = __webpack_require__(225);
+	var _Gallery = __webpack_require__(227);
 
 	var _Gallery2 = _interopRequireDefault(_Gallery);
 
-	var _Footer = __webpack_require__(222);
+	var _Footer = __webpack_require__(224);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _projects = __webpack_require__(223);
+	var _projects = __webpack_require__(225);
 
 	var _projects2 = _interopRequireDefault(_projects);
 
@@ -25607,7 +25709,7 @@
 	exports.default = Photo;
 
 /***/ }),
-/* 225 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25622,15 +25724,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _GalleryImage = __webpack_require__(226);
+	var _GalleryImage = __webpack_require__(228);
 
 	var _GalleryImage2 = _interopRequireDefault(_GalleryImage);
 
-	var _RightArrow = __webpack_require__(227);
+	var _RightArrow = __webpack_require__(229);
 
 	var _RightArrow2 = _interopRequireDefault(_RightArrow);
 
-	var _LeftArrow = __webpack_require__(228);
+	var _LeftArrow = __webpack_require__(230);
 
 	var _LeftArrow2 = _interopRequireDefault(_LeftArrow);
 
@@ -25663,7 +25765,7 @@
 	exports.default = Gallery;
 
 /***/ }),
-/* 226 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25694,7 +25796,7 @@
 	exports.default = GalleryImage;
 
 /***/ }),
-/* 227 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25726,7 +25828,7 @@
 	exports.default = RightArrow;
 
 /***/ }),
-/* 228 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25758,7 +25860,7 @@
 	exports.default = LeftArrow;
 
 /***/ }),
-/* 229 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25775,7 +25877,7 @@
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
-	var _Footer = __webpack_require__(222);
+	var _Footer = __webpack_require__(224);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -25833,13 +25935,13 @@
 	exports.default = About;
 
 /***/ }),
-/* 230 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(231);
+	var content = __webpack_require__(233);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// Prepare cssTransformation
 	var transform;
@@ -25847,7 +25949,7 @@
 	var options = {}
 	options.transform = transform
 	// add the styles to the DOM
-	var update = __webpack_require__(240)(content, options);
+	var update = __webpack_require__(242)(content, options);
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -25864,18 +25966,18 @@
 	}
 
 /***/ }),
-/* 231 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(232)(undefined);
+	exports = module.exports = __webpack_require__(234)(undefined);
 	// imports
-	exports.i(__webpack_require__(233), "");
-	exports.i(__webpack_require__(234), "");
 	exports.i(__webpack_require__(235), "");
 	exports.i(__webpack_require__(236), "");
 	exports.i(__webpack_require__(237), "");
 	exports.i(__webpack_require__(238), "");
 	exports.i(__webpack_require__(239), "");
+	exports.i(__webpack_require__(240), "");
+	exports.i(__webpack_require__(241), "");
 
 	// module
 	exports.push([module.id, "\n", ""]);
@@ -25884,7 +25986,7 @@
 
 
 /***/ }),
-/* 232 */
+/* 234 */
 /***/ (function(module, exports) {
 
 	/*
@@ -25966,24 +26068,24 @@
 
 
 /***/ }),
-/* 233 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(232)(undefined);
+	exports = module.exports = __webpack_require__(234)(undefined);
 	// imports
 
 
 	// module
-	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  font-size: 112.5%;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: #8da2d9;\n  text-decoration: none;\n  padding: 5px;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\n.no_right_border {\n  border-right: none;\n}\n", ""]);
+	exports.push([module.id, "Body {\n  font-family: 'Open Sans', sans-serif;\n  font-size: 112.5%;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  color: #8da2d9;\n  text-decoration: none;\n  padding: 5px;\n  cursor: pointer;\n}\n\na:hover {\n  background: #ffff00;\n}\n\nul {\n  padding: 0;\n}\n\nli {\n  padding: 10px 5px;\n  list-style: none;\n  display: inline-block;\n  border-right: solid 1px #8da2d9;\n}\n\n.no_right_border {\n  border-right: none;\n}\n", ""]);
 
 	// exports
 
 
 /***/ }),
-/* 234 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(232)(undefined);
+	exports = module.exports = __webpack_require__(234)(undefined);
 	// imports
 
 
@@ -25994,10 +26096,10 @@
 
 
 /***/ }),
-/* 235 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(232)(undefined);
+	exports = module.exports = __webpack_require__(234)(undefined);
 	// imports
 
 
@@ -26008,10 +26110,10 @@
 
 
 /***/ }),
-/* 236 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(232)(undefined);
+	exports = module.exports = __webpack_require__(234)(undefined);
 	// imports
 
 
@@ -26022,24 +26124,24 @@
 
 
 /***/ }),
-/* 237 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(232)(undefined);
+	exports = module.exports = __webpack_require__(234)(undefined);
 	// imports
 
 
 	// module
-	exports.push([module.id, ".project {\n  margin: 50px;\n}\n\n.project_title, .project_subtitle {\n  font-family: 'Old Standard TT', serif;\n}\n\n.project_title {\n  font-size: 3em;\n  font-weight: 400;\n  margin: 0;\n  line-height: 48px;\n}\n\n.project_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.project_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 10px 0;\n}\n\n.project_link {\n  text-decoration: underline;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.project_text {\n  margin-top: 8px;\n  font-family: 'Open Sans', sans-serif;\n}\n\n@media (max-width: 700px) {\n  .project {\n    margin: 25px;\n  }\n}\n", ""]);
+	exports.push([module.id, ".project {\n  margin: 50px;\n}\n\n.project-list-item {\n  border-right: 0;\n  margin-bottom: 50px;\n}\n\n.project_title, .project_subtitle {\n  font-family: 'Old Standard TT', serif;\n}\n\n.project_title {\n  font-size: 3em;\n  font-weight: 400;\n  margin: 0;\n  line-height: 48px;\n}\n\n.project_subtitle {\n  font-size: 1.5em;\n  font-weight: 400;\n  font-style: italic;\n  margin: 0;\n}\n\n.project_description {\n  font-family: 'Open Sans', sans-serif;\n  font-style: italic;\n  margin: 10px 0;\n}\n\n.project_link {\n  text-decoration: underline;\n}\n\n.bold {\n  font-weight: 700;\n}\n\n.project_text {\n  margin-top: 8px;\n  font-family: 'Open Sans', sans-serif;\n}\n\n.project-video {\n  max-width: 900px;\n}\n\n@media (max-width: 700px) {\n  .project {\n    margin: 25px;\n  }\n}\n", ""]);
 
 	// exports
 
 
 /***/ }),
-/* 238 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(232)(undefined);
+	exports = module.exports = __webpack_require__(234)(undefined);
 	// imports
 
 
@@ -26050,10 +26152,10 @@
 
 
 /***/ }),
-/* 239 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(232)(undefined);
+	exports = module.exports = __webpack_require__(234)(undefined);
 	// imports
 
 
@@ -26064,7 +26166,7 @@
 
 
 /***/ }),
-/* 240 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*
@@ -26101,7 +26203,7 @@
 		singletonElement = null,
 		singletonCounter = 0,
 		styleElementsInsertedAtTop = [],
-		fixUrls = __webpack_require__(241);
+		fixUrls = __webpack_require__(243);
 
 	module.exports = function(list, options) {
 		if(false) {
@@ -26377,7 +26479,7 @@
 
 
 /***/ }),
-/* 241 */
+/* 243 */
 /***/ (function(module, exports) {
 
 	

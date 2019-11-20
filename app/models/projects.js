@@ -22,12 +22,33 @@ export default {
     ],
     code: [
       {
-          projectTitle: "mypolitician",
-          projectSubtitle: "Final project for Dev Bootcamp",
+          id: "1",
+          projectTitle: "Civil Media Company",
+          projectSubtitle: "Freelance Front End Developer, April 2018 – present",
           projectDescriptionBold: "Technologies used: ",
-          projectDescription: "Ruby on Rails, React, D3; ",
-          projectLink: "https://github.com/NickHimmel/myPolitician",
-          projectText: "This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows constituents which bills the lawmaker introduced, their vote history, and their Twitter stream, and provides links to their social media pages. I built the map, utilizing the D3.js JavaScript library, and I designed and built the front end of the site using CSS and the Bootstrap framework.",
+          projectDescription: "Javascript, SASS, Wordpress",
+          projectText: "Civil is a blockchain startup focusing on journalism. They have a custom WordPress theme for small independent newsrooms. I adapted Civil’s WordPress theme to the individual needs of 11 different newsrooms using CSS. I worked with each newsroom to learn their needs and brand and make their sites look exactly the way they wanted. I also worked with a designer on two major redesigns of Civil’s marketing site, achieving pixel-perfect results. I contributed additional features to the marketing site on an as-needed basis."
+      },
+      {
+          id: "2",
+          projectTitle: "Changing New York",
+          projectSubtitle: "Personal project to further my React and Redux skills.",
+          projectDescriptionBold: "Technologies used: ",
+          projectDescription: "React, Redux, D3, SASS",
+          projectLinks: [{id: 201, site: "site", link: "https://changing-new-york-app.herokuapp.com/"}, {id: 202, site: "github", link: "https://github.com/NickHimmel/changing-new-york-app"}],
+          projectText: "This app uses my own photographs paired with Berenice Abbott’s historic photographs from the New York York Public Library Digital Collections API, along with Mapbox, to engage users in a conversation about New York’s changing waterfront. Users can click on locations on a map of New York’s waterfront to see historic photos paired with contemporary ones and read about the area’s development.",
+          projectVideo: [
+            "https://s3.us-east-2.amazonaws.com/nickhimmel.com/changingnewyork.mp4"
+          ]
+      },
+      {
+          id: "3",
+          projectTitle: "mypolitician",
+          projectSubtitle: "Personal project to further my React and Redux skills.",
+          projectDescriptionBold: "Technologies used: ",
+          projectDescription: "React, Redux, D3, SASS",
+          projectLinks: [{id: 301, site: "site (site is currently not working)", link: "https://my-politician-app.herokuapp.com/"}, {id: 302, site: "github", link: "https://github.com/NickHimmel/my-politician-app"}],
+          projectText: "This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows the lawmakers’ financial information, their donors, which bills the lawmaker introduced, their vote history, and provides links to their social media pages. I pull this information from the ProPublica and OpenSecrets APIs.",
           projectVideo: [
             "https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4"
           ]

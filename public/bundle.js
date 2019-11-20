@@ -68,15 +68,15 @@
 
 	var _Code2 = _interopRequireDefault(_Code);
 
-	var _Photo = __webpack_require__(226);
+	var _Photo = __webpack_require__(224);
 
 	var _Photo2 = _interopRequireDefault(_Photo);
 
-	var _About = __webpack_require__(231);
+	var _About = __webpack_require__(229);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _App = __webpack_require__(232);
+	var _App = __webpack_require__(230);
 
 	var _App2 = _interopRequireDefault(_App);
 
@@ -14747,7 +14747,7 @@
 	 *
 	 * @providesModule shallowEqual
 	 * @typechecks
-	 * 
+	 *
 	 */
 
 	'use strict';
@@ -22972,7 +22972,7 @@
 	 * nested.
 	 *
 	 *   import { Route, createRoutesFromReactChildren } from 'react-router'
-	 *   
+	 *
 	 *   const routes = createRoutesFromReactChildren(
 	 *     <Route component={App}>
 	 *       <Route path="home" component={Dashboard}/>
@@ -24930,7 +24930,7 @@
 	      null,
 	      _react2.default.createElement(
 	        'ul',
-	        { className: 'splashpage_nav' },
+	        null,
 	        _react2.default.createElement(
 	          'li',
 	          null,
@@ -25039,19 +25039,19 @@
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
-	var _Project = __webpack_require__(221);
+	var _Project = __webpack_require__(220);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
-	var _Video = __webpack_require__(223);
+	var _Video = __webpack_require__(221);
 
 	var _Video2 = _interopRequireDefault(_Video);
 
-	var _Footer = __webpack_require__(224);
+	var _Footer = __webpack_require__(222);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _projects = __webpack_require__(225);
+	var _projects = __webpack_require__(223);
 
 	var _projects2 = _interopRequireDefault(_projects);
 
@@ -25251,8 +25251,7 @@
 	exports.default = Nav;
 
 /***/ }),
-/* 220 */,
-/* 221 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25308,8 +25307,7 @@
 	exports.default = Project;
 
 /***/ }),
-/* 222 */,
-/* 223 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25342,7 +25340,7 @@
 	exports.default = Video;
 
 /***/ }),
-/* 224 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25475,7 +25473,7 @@
 	exports.default = Footer;
 
 /***/ }),
-/* 225 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25505,13 +25503,13 @@
 	        projectDescriptionBold: "Technologies used: ",
 	        projectDescription: "Ruby on Rails, React, D3; ",
 	        projectLink: "https://github.com/NickHimmel/myPolitician",
-	        projectText: "This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows constituents which bills the lawmaker introduced, their vote history, and their Twitter stream, and provides links to their social media pages. I built the map, utilizing the D3.js JavaScript library, and I designed and built the front end of the site using CSS and the Bootstrap framework.",
+	        projectText: "This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows constituents which bills the lawmaker introduced, their vote history, and their Twitter stream, and provides links to their social media pages.iI built the map, utilizing the D3.js JavaScript library, and I designed and built the front end of the site using CSS and the Bootstrap framework.",
 	        projectVideo: ["https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4"]
 	    }]
 	};
 
 /***/ }),
-/* 226 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25530,19 +25528,19 @@
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
-	var _Project = __webpack_require__(221);
+	var _Project = __webpack_require__(220);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
-	var _Gallery = __webpack_require__(227);
+	var _Gallery = __webpack_require__(225);
 
 	var _Gallery2 = _interopRequireDefault(_Gallery);
 
-	var _Footer = __webpack_require__(224);
+	var _Footer = __webpack_require__(222);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _projects = __webpack_require__(225);
+	var _projects = __webpack_require__(223);
 
 	var _projects2 = _interopRequireDefault(_projects);
 
@@ -25609,7 +25607,7 @@
 	exports.default = Photo;
 
 /***/ }),
-/* 227 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25624,15 +25622,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _GalleryImage = __webpack_require__(228);
+	var _GalleryImage = __webpack_require__(226);
 
 	var _GalleryImage2 = _interopRequireDefault(_GalleryImage);
 
-	var _RightArrow = __webpack_require__(229);
+	var _RightArrow = __webpack_require__(227);
 
 	var _RightArrow2 = _interopRequireDefault(_RightArrow);
 
-	var _LeftArrow = __webpack_require__(230);
+	var _LeftArrow = __webpack_require__(228);
 
 	var _LeftArrow2 = _interopRequireDefault(_LeftArrow);
 
@@ -25665,7 +25663,7 @@
 	exports.default = Gallery;
 
 /***/ }),
-/* 228 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25696,7 +25694,7 @@
 	exports.default = GalleryImage;
 
 /***/ }),
-/* 229 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25728,7 +25726,7 @@
 	exports.default = RightArrow;
 
 /***/ }),
-/* 230 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25760,7 +25758,7 @@
 	exports.default = LeftArrow;
 
 /***/ }),
-/* 231 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25777,7 +25775,7 @@
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
-	var _Footer = __webpack_require__(224);
+	var _Footer = __webpack_require__(222);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -25788,46 +25786,6 @@
 	    'div',
 	    { className: 'main' },
 	    _react2.default.createElement(_Nav2.default, null),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'project' },
-	      _react2.default.createElement('div', { className: 'small_about_image' }),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'about_text' },
-	        _react2.default.createElement(
-	          'h2',
-	          { className: 'about' },
-	          'About'
-	        ),
-	        _react2.default.createElement(
-	          'h1',
-	          { className: 'project_title about_title' },
-	          'web developer committed to making quality stuff'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'I\u2019m a lifelong New Yorker \u2014 I was born in Fort Greene. My art centers on my memories of the city and its history.'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'At the Daily News, I led a team of imaging specialists and half a million New Yorkers saw my work every day. We broke news under some very tense deadlines, and we didn\u2019t let quality slip. The stories I worked on included investigative pieces that ended up changing people\u2019s lives for the better.'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          { className: 'long_column' },
-	          'That\u2019s what I want to keep doing as a front-end developer: I want to make quality work that informs people and empowers them to take matters into their own hands. That\u2019s why I went to Dev Bootcamp and became a web developer. It\u2019s why I made sure to learn D3, the data visualization library.'
-	        ),
-	        _react2.default.createElement(
-	          'p',
-	          null,
-	          'We should talk! '
-	        )
-	      ),
-	      _react2.default.createElement('img', { className: 'about_image', src: 'https://s3.us-east-2.amazonaws.com/nickhimmel.com/Drawing_by_Julia_Himmel.jpg', alt: 'Drawing of Nick Himmel by Julia Himmel' })
-	    ),
 	    _react2.default.createElement(_Footer2.default, null)
 	  );
 	};
@@ -25835,13 +25793,13 @@
 	exports.default = About;
 
 /***/ }),
-/* 232 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(233);
+	var content = __webpack_require__(231);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// Prepare cssTransformation
 	var transform;
@@ -25849,7 +25807,7 @@
 	var options = {}
 	options.transform = transform
 	// add the styles to the DOM
-	var update = __webpack_require__(242)(content, options);
+	var update = __webpack_require__(239)(content, options);
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -25866,18 +25824,17 @@
 	}
 
 /***/ }),
-/* 233 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(234)(undefined);
+	exports = module.exports = __webpack_require__(232)(undefined);
 	// imports
+	exports.i(__webpack_require__(233), "");
+	exports.i(__webpack_require__(234), "");
 	exports.i(__webpack_require__(235), "");
 	exports.i(__webpack_require__(236), "");
 	exports.i(__webpack_require__(237), "");
 	exports.i(__webpack_require__(238), "");
-	exports.i(__webpack_require__(239), "");
-	exports.i(__webpack_require__(240), "");
-	exports.i(__webpack_require__(241), "");
 
 	// module
 	exports.push([module.id, "\n", ""]);
@@ -25886,7 +25843,7 @@
 
 
 /***/ }),
-/* 234 */
+/* 232 */
 /***/ (function(module, exports) {
 
 	/*
@@ -25968,10 +25925,10 @@
 
 
 /***/ }),
-/* 235 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(234)(undefined);
+	exports = module.exports = __webpack_require__(232)(undefined);
 	// imports
 
 
@@ -25982,24 +25939,24 @@
 
 
 /***/ }),
-/* 236 */
+/* 234 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(234)(undefined);
+	exports = module.exports = __webpack_require__(232)(undefined);
 	// imports
 
 
 	// module
-	exports.push([module.id, ".splashpage {\n  text-align: center;\n  margin-top: 82px;\n}\n\n.splashpage_name {\n  margin: auto;\n  padding: 5px 0;\n  color: #FFF;\n  background: #8da2d9;\n  width: 168px;\n}\n\n.splashpage_name:hover {\n  color:#8da2d9;\n  background: #ffff00\n}\n\n.splashpage_header {\n  font-family: 'Old Standard TT', serif;\n  font-weight: 400;\n  font-size: 5em;\n  line-height: 78px;\n  letter-spacing: 3px;\n}\n\n.splashpage_line {\n  margin: auto;\n  width: 82px;\n  height: 6px;\n  background-color: #8da2d9;\n}\n\n.line_break {\n  display: none;\n}\n\n@media (max-width: 700px) {\n  .small_no_border {\n    border: none;\n  }\n\n  .line_break {\n    display: block;\n  }\n\n  .second_line {\n    margin-top: 30px;\n  }\n}\n\n@media (max-width: 650px) {\n  .splashpage_header a {\n    padding: 0;\n  }\n\n  .splashpage_header {\n    font-size: 3em;\n  }\n\n  .splashpage_line {\n    width: 50px;\n    height: 4px\n  }\n}\n\n@media (max-width: 320px) {\n  .splashpage {\n    margin-top: 50px;\n  }\n\n  .splashpage_header {\n    font-size: 2.5em;\n    margin: 33px 0;\n  }\n\n  .splashpage_line {\n    width: 45px;\n  }\n\n  .splashpage_nav {\n    font-size: .8em;\n  }\n}\n", ""]);
+	exports.push([module.id, ".splashpage {\n  text-align: center;\n  margin-top: 82px;\n}\n\n.splashpage_name {\n  margin: auto;\n  padding: 5px 0;\n  color: #FFF;\n  background: #8da2d9;\n  width: 168px;\n}\n\n.splashpage_name:hover {\n  color:#8da2d9;\n  background: #ffff00\n}\n\n.splashpage_header {\n  font-family: 'Old Standard TT', serif;\n  font-weight: 400;\n  font-size: 5em;\n  line-height: 78px;\n  letter-spacing: 3px;\n}\n\n.splashpage_line {\n  margin: auto;\n  width: 82px;\n  height: 6px;\n  background-color: #8da2d9;\n}\n\n.line_break {\n  display: none;\n}\n@media (max-width: 700px) {\n  .small_no_border {\n    border: none;\n  }\n\n  .line_break {\n    display: block;\n  }\n\n  .second_line {\n    margin-top: 30px;\n  }\n}\n@media (max-width: 650px) {\n  .splashpage_header {\n    font-size: 3em;\n  }\n\n  .splashpage_line {\n    width: 50px;\n    height: 4px\n  }\n}\n", ""]);
 
 	// exports
 
 
 /***/ }),
-/* 237 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(234)(undefined);
+	exports = module.exports = __webpack_require__(232)(undefined);
 	// imports
 
 
@@ -26010,10 +25967,10 @@
 
 
 /***/ }),
-/* 238 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(234)(undefined);
+	exports = module.exports = __webpack_require__(232)(undefined);
 	// imports
 
 
@@ -26024,10 +25981,10 @@
 
 
 /***/ }),
-/* 239 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(234)(undefined);
+	exports = module.exports = __webpack_require__(232)(undefined);
 	// imports
 
 
@@ -26038,10 +25995,10 @@
 
 
 /***/ }),
-/* 240 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(234)(undefined);
+	exports = module.exports = __webpack_require__(232)(undefined);
 	// imports
 
 
@@ -26052,21 +26009,7 @@
 
 
 /***/ }),
-/* 241 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(234)(undefined);
-	// imports
-
-
-	// module
-	exports.push([module.id, ".about_text {\n  width: 40%;\n  margin-left: 50px;\n  background: #fff;\n}\n\n.about {\n  margin: auto;\n  padding: 5px;\n  font-size: .75em;\n  font-weight: 800;\n  letter-spacing: 3px;\n  text-transform: uppercase;\n  text-align: center;\n  color: #FFF;\n  background: #8da2d9;\n  width: 65px;\n}\n\n.about_title {\n  margin-top: 25px;\n  font-size: 2.4em;\n}\n\n.about_text p {\n  font-size: .82em;\n}\n\n.about_image {\n  z-index: -1;\n  position: absolute;\n  right: 0;\n  top: 35%;\n  width: 60%;\n}\n\n@media (max-width: 650px) {\n  .small_about_image {\n    border-radius: 50%;\n    border: 1px solid #ededed;\n    width: 150px;\n    height: 150px;\n    background-image: url('https://s3.us-east-2.amazonaws.com/nickhimmel.com/Drawing_by_Julia_Himmel.jpg');\n    background-repeat: no-repeat;\n    background-position: 68% 10%;\n    background-color: #8da2d9;\n    background-size: 400px;\n    margin: auto;\n  }\n\n  .about_text {\n    width: 100%;\n    margin: 25px 0 0 0;\n  }\n\n  .about_image {\n    display: none;\n  }\n\n}\n", ""]);
-
-	// exports
-
-
-/***/ }),
-/* 242 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*
@@ -26084,7 +26027,7 @@
 		isOldIE = memoize(function() {
 			// Test for IE <= 9 as proposed by Browserhacks
 			// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
-			// Tests for existence of standard globals is to allow style-loader 
+			// Tests for existence of standard globals is to allow style-loader
 			// to operate correctly into non-standard environments
 			// @see https://github.com/webpack-contrib/style-loader/issues/177
 			return window && document && document.all && !window.atob;
@@ -26103,7 +26046,7 @@
 		singletonElement = null,
 		singletonCounter = 0,
 		styleElementsInsertedAtTop = [],
-		fixUrls = __webpack_require__(243);
+		fixUrls = __webpack_require__(240);
 
 	module.exports = function(list, options) {
 		if(false) {
@@ -26250,13 +26193,13 @@
 		// If a transform function was defined, run it on the css
 		if (options.transform && obj.css) {
 		    transformResult = options.transform(obj.css);
-		    
+
 		    if (transformResult) {
 		    	// If transform returns a value, use that instead of the original css.
 		    	// This allows running runtime transformations on the css.
 		    	obj.css = transformResult;
 		    } else {
-		    	// If the transform function returns a falsy value, don't add this css. 
+		    	// If the transform function returns a falsy value, don't add this css.
 		    	// This allows conditional loading of css
 		    	return function() {
 		    		// noop
@@ -26379,10 +26322,10 @@
 
 
 /***/ }),
-/* 243 */
+/* 240 */
 /***/ (function(module, exports) {
 
-	
+
 	/**
 	 * When source maps are enabled, `style-loader` uses a link element with a data-uri to
 	 * embed the css on the page. This breaks all relative urls because now they are relative to a

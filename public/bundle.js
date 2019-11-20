@@ -68,15 +68,15 @@
 
 	var _Code2 = _interopRequireDefault(_Code);
 
-	var _Photo = __webpack_require__(224);
+	var _Photo = __webpack_require__(226);
 
 	var _Photo2 = _interopRequireDefault(_Photo);
 
-	var _About = __webpack_require__(229);
+	var _About = __webpack_require__(231);
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _App = __webpack_require__(230);
+	var _App = __webpack_require__(232);
 
 	var _App2 = _interopRequireDefault(_App);
 
@@ -25039,19 +25039,19 @@
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
-	var _Project = __webpack_require__(220);
+	var _Project = __webpack_require__(221);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
-	var _Video = __webpack_require__(221);
+	var _Video = __webpack_require__(223);
 
 	var _Video2 = _interopRequireDefault(_Video);
 
-	var _Footer = __webpack_require__(222);
+	var _Footer = __webpack_require__(224);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _projects = __webpack_require__(223);
+	var _projects = __webpack_require__(225);
 
 	var _projects2 = _interopRequireDefault(_projects);
 
@@ -25251,7 +25251,8 @@
 	exports.default = Nav;
 
 /***/ }),
-/* 220 */
+/* 220 */,
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25307,7 +25308,8 @@
 	exports.default = Project;
 
 /***/ }),
-/* 221 */
+/* 222 */,
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25340,7 +25342,7 @@
 	exports.default = Video;
 
 /***/ }),
-/* 222 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25473,7 +25475,7 @@
 	exports.default = Footer;
 
 /***/ }),
-/* 223 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25509,7 +25511,7 @@
 	};
 
 /***/ }),
-/* 224 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25528,19 +25530,19 @@
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
-	var _Project = __webpack_require__(220);
+	var _Project = __webpack_require__(221);
 
 	var _Project2 = _interopRequireDefault(_Project);
 
-	var _Gallery = __webpack_require__(225);
+	var _Gallery = __webpack_require__(227);
 
 	var _Gallery2 = _interopRequireDefault(_Gallery);
 
-	var _Footer = __webpack_require__(222);
+	var _Footer = __webpack_require__(224);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _projects = __webpack_require__(223);
+	var _projects = __webpack_require__(225);
 
 	var _projects2 = _interopRequireDefault(_projects);
 
@@ -25607,7 +25609,7 @@
 	exports.default = Photo;
 
 /***/ }),
-/* 225 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25622,15 +25624,15 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _GalleryImage = __webpack_require__(226);
+	var _GalleryImage = __webpack_require__(228);
 
 	var _GalleryImage2 = _interopRequireDefault(_GalleryImage);
 
-	var _RightArrow = __webpack_require__(227);
+	var _RightArrow = __webpack_require__(229);
 
 	var _RightArrow2 = _interopRequireDefault(_RightArrow);
 
-	var _LeftArrow = __webpack_require__(228);
+	var _LeftArrow = __webpack_require__(230);
 
 	var _LeftArrow2 = _interopRequireDefault(_LeftArrow);
 
@@ -25663,7 +25665,7 @@
 	exports.default = Gallery;
 
 /***/ }),
-/* 226 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25694,7 +25696,7 @@
 	exports.default = GalleryImage;
 
 /***/ }),
-/* 227 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25726,7 +25728,7 @@
 	exports.default = RightArrow;
 
 /***/ }),
-/* 228 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25758,7 +25760,7 @@
 	exports.default = LeftArrow;
 
 /***/ }),
-/* 229 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25775,7 +25777,7 @@
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
-	var _Footer = __webpack_require__(222);
+	var _Footer = __webpack_require__(224);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -25833,13 +25835,13 @@
 	exports.default = About;
 
 /***/ }),
-/* 230 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(231);
+	var content = __webpack_require__(233);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// Prepare cssTransformation
 	var transform;
@@ -25847,7 +25849,7 @@
 	var options = {}
 	options.transform = transform
 	// add the styles to the DOM
-	var update = __webpack_require__(240)(content, options);
+	var update = __webpack_require__(242)(content, options);
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -25864,18 +25866,18 @@
 	}
 
 /***/ }),
-/* 231 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(232)(undefined);
+	exports = module.exports = __webpack_require__(234)(undefined);
 	// imports
-	exports.i(__webpack_require__(233), "");
-	exports.i(__webpack_require__(234), "");
 	exports.i(__webpack_require__(235), "");
 	exports.i(__webpack_require__(236), "");
 	exports.i(__webpack_require__(237), "");
 	exports.i(__webpack_require__(238), "");
 	exports.i(__webpack_require__(239), "");
+	exports.i(__webpack_require__(240), "");
+	exports.i(__webpack_require__(241), "");
 
 	// module
 	exports.push([module.id, "\n", ""]);
@@ -25884,7 +25886,7 @@
 
 
 /***/ }),
-/* 232 */
+/* 234 */
 /***/ (function(module, exports) {
 
 	/*
@@ -25966,10 +25968,10 @@
 
 
 /***/ }),
-/* 233 */
+/* 235 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(232)(undefined);
+	exports = module.exports = __webpack_require__(234)(undefined);
 	// imports
 
 
@@ -25980,10 +25982,10 @@
 
 
 /***/ }),
-/* 234 */
+/* 236 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(232)(undefined);
+	exports = module.exports = __webpack_require__(234)(undefined);
 	// imports
 
 
@@ -25994,10 +25996,10 @@
 
 
 /***/ }),
-/* 235 */
+/* 237 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(232)(undefined);
+	exports = module.exports = __webpack_require__(234)(undefined);
 	// imports
 
 
@@ -26008,10 +26010,10 @@
 
 
 /***/ }),
-/* 236 */
+/* 238 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(232)(undefined);
+	exports = module.exports = __webpack_require__(234)(undefined);
 	// imports
 
 
@@ -26022,10 +26024,10 @@
 
 
 /***/ }),
-/* 237 */
+/* 239 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(232)(undefined);
+	exports = module.exports = __webpack_require__(234)(undefined);
 	// imports
 
 
@@ -26036,10 +26038,10 @@
 
 
 /***/ }),
-/* 238 */
+/* 240 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(232)(undefined);
+	exports = module.exports = __webpack_require__(234)(undefined);
 	// imports
 
 
@@ -26050,10 +26052,10 @@
 
 
 /***/ }),
-/* 239 */
+/* 241 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(232)(undefined);
+	exports = module.exports = __webpack_require__(234)(undefined);
 	// imports
 
 
@@ -26064,7 +26066,7 @@
 
 
 /***/ }),
-/* 240 */
+/* 242 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*
@@ -26101,7 +26103,7 @@
 		singletonElement = null,
 		singletonCounter = 0,
 		styleElementsInsertedAtTop = [],
-		fixUrls = __webpack_require__(241);
+		fixUrls = __webpack_require__(243);
 
 	module.exports = function(list, options) {
 		if(false) {
@@ -26377,7 +26379,7 @@
 
 
 /***/ }),
-/* 241 */
+/* 243 */
 /***/ (function(module, exports) {
 
 	

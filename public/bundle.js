@@ -68,7 +68,7 @@
 
 	var _Code2 = _interopRequireDefault(_Code);
 
-	var _Photo = __webpack_require__(226);
+	var _Photo = __webpack_require__(230);
 
 	var _Photo2 = _interopRequireDefault(_Photo);
 
@@ -25043,11 +25043,11 @@
 
 	var _Projects2 = _interopRequireDefault(_Projects);
 
-	var _Footer = __webpack_require__(224);
+	var _Footer = __webpack_require__(228);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _projects = __webpack_require__(225);
+	var _projects = __webpack_require__(229);
 
 	var _projects2 = _interopRequireDefault(_projects);
 
@@ -25067,6 +25067,7 @@
 
 	    var _this = _possibleConstructorReturn(this, (Code.__proto__ || Object.getPrototypeOf(Code)).call(this, props));
 
+	    _this.state = _projects2.default;
 	    _this.handleVideoClick = _this.handleVideoClick.bind(_this);
 	    _this.handleGalleryClick = _this.handleGalleryClick.bind(_this);
 	    return _this;
@@ -25102,12 +25103,11 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      var project = this.state;
 	      return _react2.default.createElement(
 	        'div',
 	        { className: 'main' },
 	        _react2.default.createElement(_Nav2.default, null),
-	        _react2.default.createElement(_Projects2.default, { projects: _projects2.default.code, onVideoClick: this.handleVideoClick, onGalleryClick: this.handleGalleryClick }),
+	        _react2.default.createElement(_Projects2.default, { projects: this.state.code, onVideoClick: this.handleVideoClick, onGalleryClick: this.handleGalleryClick }),
 	        _react2.default.createElement(_Footer2.default, null)
 	      );
 	    }
@@ -25280,7 +25280,7 @@
 
 	var _Video2 = _interopRequireDefault(_Video);
 
-	var _Gallery = __webpack_require__(227);
+	var _Gallery = __webpack_require__(224);
 
 	var _Gallery2 = _interopRequireDefault(_Gallery);
 
@@ -25294,7 +25294,7 @@
 	      { key: project.id, className: 'project-list-item' },
 	      _react2.default.createElement(_Project2.default, project),
 	      project.projectVideo && _react2.default.createElement(_Video2.default, { video: project.projectVideo, onClick: props.onVideoClick, id: project.id }),
-	      project.projectImages && _react2.default.createElement(_Gallery2.default, { images: project.projectImages, onClick: props.onGalleryClick, id: project.id })
+	      project.projectImages && _react2.default.createElement(_Gallery2.default, { images: project.projectImages, onClick: props.onGalleryClick, id: project.id, type: 'gallery-code' })
 	    );
 	  });
 	  return _react2.default.createElement(
@@ -25458,6 +25458,95 @@
 	  value: true
 	});
 
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _GalleryImage = __webpack_require__(225);
+
+	var _GalleryImage2 = _interopRequireDefault(_GalleryImage);
+
+	var _Arrow = __webpack_require__(244);
+
+	var _Arrow2 = _interopRequireDefault(_Arrow);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Gallery = function Gallery(props) {
+	  var galleryId = "gallery-" + props.id;
+	  var galleryType = "gallery " + props.type;
+	  var rightArrow = ["right-arrow", "right", '\u203A'];
+	  var leftArrow = ["left-arrow", "left", '\u2039'];
+	  var images = props.images;
+	  var renderImages = function renderImages(images) {
+	    return images.map(function (image) {
+	      return _react2.default.createElement(_GalleryImage2.default, _extends({ key: image.id }, image));
+	    });
+	  };
+	  return _react2.default.createElement(
+	    'div',
+	    { className: 'gallery-container' },
+	    _react2.default.createElement(
+	      'ul',
+	      { id: galleryId, className: galleryType },
+	      renderImages(images)
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'arrows' },
+	      _react2.default.createElement(_Arrow2.default, { onClick: props.onClick, id: galleryId, direction: rightArrow }),
+	      _react2.default.createElement(_Arrow2.default, { onClick: props.onClick, id: galleryId, direction: leftArrow })
+	    )
+	  );
+	};
+
+	exports.default = Gallery;
+
+/***/ }),
+/* 225 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var GalleryImage = function GalleryImage(_ref) {
+	  var src = _ref.src,
+	      alt = _ref.alt;
+
+	  return _react2.default.createElement(
+	    "li",
+	    null,
+	    " ",
+	    _react2.default.createElement("img", { className: "images", src: src, alt: alt }),
+	    " "
+	  );
+	};
+
+	exports.default = GalleryImage;
+
+/***/ }),
+/* 226 */,
+/* 227 */,
+/* 228 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 	var _react = __webpack_require__(1);
@@ -25582,7 +25671,7 @@
 	exports.default = Footer;
 
 /***/ }),
-/* 225 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -25644,7 +25733,7 @@
 	};
 
 /***/ }),
-/* 226 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -25667,15 +25756,15 @@
 
 	var _Project2 = _interopRequireDefault(_Project);
 
-	var _Gallery = __webpack_require__(227);
+	var _Gallery = __webpack_require__(224);
 
 	var _Gallery2 = _interopRequireDefault(_Gallery);
 
-	var _Footer = __webpack_require__(224);
+	var _Footer = __webpack_require__(228);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
-	var _projects = __webpack_require__(225);
+	var _projects = __webpack_require__(229);
 
 	var _projects2 = _interopRequireDefault(_projects);
 
@@ -25729,7 +25818,7 @@
 	          'div',
 	          { className: 'project' },
 	          _react2.default.createElement(_Project2.default, project),
-	          _react2.default.createElement(_Gallery2.default, { images: this.state.projectImages, onClick: this.handleClick })
+	          _react2.default.createElement(_Gallery2.default, { images: this.state.projectImages, onClick: this.handleClick, type: 'gallery-photo' })
 	        ),
 	        _react2.default.createElement(_Footer2.default, null)
 	      );
@@ -25740,162 +25829,6 @@
 	}(_react2.default.Component);
 
 	exports.default = Photo;
-
-/***/ }),
-/* 227 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _GalleryImage = __webpack_require__(228);
-
-	var _GalleryImage2 = _interopRequireDefault(_GalleryImage);
-
-	var _RightArrow = __webpack_require__(229);
-
-	var _RightArrow2 = _interopRequireDefault(_RightArrow);
-
-	var _LeftArrow = __webpack_require__(230);
-
-	var _LeftArrow2 = _interopRequireDefault(_LeftArrow);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Gallery = function Gallery(props) {
-	  var galleryId = "gallery-" + props.id;
-	  var images = props.images;
-	  var renderImages = function renderImages(images) {
-	    return images.map(function (image) {
-	      return _react2.default.createElement(_GalleryImage2.default, _extends({ key: image.id }, image));
-	    });
-	  };
-	  return _react2.default.createElement(
-	    'div',
-	    { className: 'gallery-container' },
-	    _react2.default.createElement(
-	      'ul',
-	      { id: galleryId, className: 'gallery' },
-	      renderImages(images)
-	    ),
-	    _react2.default.createElement(
-	      'div',
-	      { className: 'arrows' },
-	      _react2.default.createElement(_RightArrow2.default, { onClick: props.onClick, id: galleryId }),
-	      _react2.default.createElement(_LeftArrow2.default, { onClick: props.onClick, id: galleryId })
-	    )
-	  );
-	};
-
-	exports.default = Gallery;
-
-/***/ }),
-/* 228 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var GalleryImage = function GalleryImage(_ref) {
-	  var src = _ref.src,
-	      alt = _ref.alt;
-
-	  return _react2.default.createElement(
-	    "li",
-	    null,
-	    " ",
-	    _react2.default.createElement("img", { className: "images", src: src, alt: alt }),
-	    " "
-	  );
-	};
-
-	exports.default = GalleryImage;
-
-/***/ }),
-/* 229 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var RightArrow = function RightArrow(props) {
-	  var galleryId = props.id;
-
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(
-	      'a',
-	      { className: 'right-arrow', onClick: function onClick() {
-	          props.onClick('right', galleryId);
-	        } },
-	      '\u203A'
-	    )
-	  );
-	};
-
-	exports.default = RightArrow;
-
-/***/ }),
-/* 230 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var LeftArrow = function LeftArrow(props) {
-	  var galleryId = props.id;
-
-	  return _react2.default.createElement(
-	    'div',
-	    null,
-	    _react2.default.createElement(
-	      'a',
-	      { className: 'left-arrow', onClick: function onClick() {
-	          props.onClick('left', galleryId);
-	        } },
-	      '\u2039'
-	    )
-	  );
-	};
-
-	exports.default = LeftArrow;
 
 /***/ }),
 /* 231 */
@@ -25915,7 +25848,7 @@
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
-	var _Footer = __webpack_require__(224);
+	var _Footer = __webpack_require__(228);
 
 	var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -26184,7 +26117,7 @@
 
 
 	// module
-	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n.gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n  height: 480px;\n}\n\n.gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 56%;\n  max-width: 950px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 45%;\n  right: -9px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  width: 17px;\n  padding: 0;\n  text-align: center;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.3em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);\n}\n\n.left-arrow {\n  margin-top: 10px;\n}\n\n@media (max-width: 650px) {\n  .gallery {\n    height: 100%;\n  }\n  \n  .gallery li {\n    text-align: center;\n    display: block;\n    padding: 0;\n  }\n\n  .images {\n    width: 100%;\n    margin: 20px 0;\n  }\n\n  .arrows {\n    display: none;\n  }\n}\n", ""]);
+	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n.gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n.gallery-code {\n  height: 480px;\n}\n\n.gallery-code img{\n  width: 55%;\n}\n\n.gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  max-width: 950px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 45%;\n  right: -9px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  width: 17px;\n  padding: 0;\n  text-align: center;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.3em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);\n}\n\n.left-arrow {\n  margin-top: 10px;\n}\n\n@media (max-width: 650px) {\n  .gallery {\n    height: 100%;\n  }\n\n  .gallery li {\n    text-align: center;\n    display: block;\n    padding: 0;\n  }\n\n  .images {\n    width: 100%;\n    margin: 20px 0;\n  }\n\n  .arrows {\n    display: none;\n  }\n}\n", ""]);
 
 	// exports
 
@@ -26610,6 +26543,43 @@
 		return fixedCss;
 	};
 
+
+/***/ }),
+/* 244 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Arrow = function Arrow(props) {
+	  var galleryId = props.id;
+	  var arrowClass = props.direction[0];
+	  var arrowDirection = props.direction[1];
+	  var arrowUnicode = props.direction[2];
+
+	  return _react2.default.createElement(
+	    'div',
+	    null,
+	    _react2.default.createElement(
+	      'a',
+	      { className: arrowClass, onClick: function onClick() {
+	          props.onClick(arrowDirection, galleryId);
+	        } },
+	      arrowUnicode
+	    )
+	  );
+	};
+
+	exports.default = Arrow;
 
 /***/ })
 /******/ ]);

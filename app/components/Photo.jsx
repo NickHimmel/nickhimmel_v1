@@ -8,8 +8,8 @@ import Projects from 'app/models/projects.js';
 class Photo extends React.Component {
   constructor () {
     super();
-    this.state = Projects.photo[0]
-    this.handleClick = this.handleClick.bind(this)
+    this.state = Projects.photo[0];
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick (direction, id) {
@@ -36,7 +36,7 @@ class Photo extends React.Component {
         <Nav />
         <div className="project">
           <Project {...project}/>
-          <Gallery images={this.state.projectImages} onClick={this.handleClick}/>
+          <Gallery images={this.state.projectImages} onClick={this.handleClick} type="gallery-photo"/>
         </div>
         <Footer />
       </div>

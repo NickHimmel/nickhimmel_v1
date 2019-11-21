@@ -12,7 +12,7 @@ const Projects = (props) => {
         <Video video={project.projectVideo} onClick={props.onVideoClick} id={project.id}/>
       }
       {project.projectImages &&
-        <Gallery images={project.projectImages} onClick={props.onGalleryClick} id={project.id}/>
+        <Gallery images={project.projectImages} onClick={props.onGalleryClick} id={project.id} type="gallery-code"/>
       }
     </li>
   );

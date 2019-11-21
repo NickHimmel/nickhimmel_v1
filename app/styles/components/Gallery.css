@@ -9,7 +9,14 @@
   overflow-x: scroll;
   overflow-y: hidden;
   width: 100%;
+}
+
+.gallery-code {
   height: 480px;
+}
+
+.gallery-code img{
+  width: 55%;
 }
 
 .gallery li {
@@ -18,7 +25,6 @@
 }
 
 .images {
-  width: 56%;
   max-width: 950px;
 }
 
@@ -50,7 +56,7 @@
   .gallery {
     height: 100%;
   }
-  
+
   .gallery li {
     text-align: center;
     display: block;

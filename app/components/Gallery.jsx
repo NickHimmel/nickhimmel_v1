@@ -1,12 +1,14 @@
 import React from 'react';
 import GalleryImage from 'GalleryImage.jsx';
-import RightArrow from 'RightArrow.jsx';
-import LeftArrow from 'LeftArrow.jsx';
+import Arrow from 'Arrow.jsx';
 
 const Gallery = (props) => {
   const galleryId = "gallery-" + props.id;
-  let images = props.images;
-  let renderImages = (images) => {
+  const galleryType = "gallery " + props.type;
+  const rightArrow = ["right-arrow", "right", "\u203A"];
+  const leftArrow = ["left-arrow", "left", "\u2039"];
+  const images = props.images;
+  const renderImages = (images) => {
     return images.map((image) => {
       return (
         <GalleryImage key={image.id} {...image}/>
@@ -15,12 +17,12 @@ const Gallery = (props) => {
   };
   return (
     <div className="gallery-container">
-      <ul id={galleryId} className="gallery">
+      <ul id={galleryId} className={galleryType}>
         {renderImages(images)}
       </ul>
       <div className="arrows">
-        <RightArrow onClick={props.onClick} id={galleryId}/>
-        <LeftArrow onClick={props.onClick} id={galleryId}/>
+        <Arrow onClick={props.onClick} id={galleryId} direction={rightArrow}/>
+        <Arrow onClick={props.onClick} id={galleryId} direction={leftArrow}/>
       </div>
     </div>
   )

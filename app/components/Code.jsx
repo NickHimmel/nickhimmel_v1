@@ -7,6 +7,7 @@ import ProjectsList from 'app/models/projects.js';
 class Code extends React.Component {
   constructor (props) {
     super(props);
+    this.state = ProjectsList;
     this.handleVideoClick = this.handleVideoClick.bind(this);
     this.handleGalleryClick = this.handleGalleryClick.bind(this);
   }
@@ -38,11 +39,10 @@ class Code extends React.Component {
   }
 
   render() {
-    let project = this.state;
     return (
       <div className="main">
         <Nav />
-        <Projects projects={ProjectsList.code} onVideoClick={this.handleVideoClick} onGalleryClick={this.handleGalleryClick}/>
+        <Projects projects={this.state.code} onVideoClick={this.handleVideoClick} onGalleryClick={this.handleGalleryClick}/>
         <Footer />
       </div>
     )

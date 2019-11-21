@@ -12,8 +12,8 @@ class Photo extends React.Component {
     this.handleClick = this.handleClick.bind(this)
   }
 
-  handleClick (direction) {
-    let galleryDiv = document.getElementById('gallery');
+  handleClick (direction, id) {
+    let galleryDiv = document.getElementById(id);
     var scrollAmount = 0;
     var slideTimer = setInterval(function(){
       if (direction === 'right') {

@@ -7,11 +7,12 @@ import ProjectsList from 'app/models/projects.js';
 class Code extends React.Component {
   constructor (props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this);
+    this.handleVideoClick = this.handleVideoClick.bind(this);
+    this.handleGalleryClick = this.handleGalleryClick.bind(this);
   }
 
-  handleClick () {
-    let projectVideo = document.getElementById('projectVideo');
+  handleVideoClick (id) {
+    let projectVideo = document.getElementById(id);
     if (projectVideo.paused) {
       projectVideo.play();
     } else {
@@ -19,12 +20,29 @@ class Code extends React.Component {
     }
   }
 
+  handleGalleryClick (direction, id) {
+    let galleryDiv = document.getElementById(id);
+    var scrollAmount = 0;
+    var slideTimer = setInterval(function(){
+      if (direction === 'right') {
+        galleryDiv.scrollLeft += 10;
+      }
+      else {
+        galleryDiv.scrollLeft -= 10;
+      };
+      scrollAmount += 10;
+      if(scrollAmount >= 100){
+          window.clearInterval(slideTimer);
+      }
+    },15);
+  }
+
   render() {
     let project = this.state;
     return (
       <div className="main">
         <Nav />
-        <Projects projects={ProjectsList.code} onClick={this.handleClick}/>
+        <Projects projects={ProjectsList.code} onVideoClick={this.handleVideoClick} onGalleryClick={this.handleGalleryClick}/>
         <Footer />
       </div>
     )

@@ -1,8 +1,9 @@
 .gallery-container {
   position: relative;
+  max-width: 900px;
 }
 
-#gallery {
+.gallery {
   margin: 0;
   padding: 0;
   white-space: nowrap;
@@ -11,7 +12,7 @@
   width: 100%;
 }
 
-#gallery li {
+.gallery li {
   display: inline;
   border: none;
 }

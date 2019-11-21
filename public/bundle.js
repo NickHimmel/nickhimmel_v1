@@ -25067,19 +25067,37 @@
 
 	    var _this = _possibleConstructorReturn(this, (Code.__proto__ || Object.getPrototypeOf(Code)).call(this, props));
 
-	    _this.handleClick = _this.handleClick.bind(_this);
+	    _this.handleVideoClick = _this.handleVideoClick.bind(_this);
+	    _this.handleGalleryClick = _this.handleGalleryClick.bind(_this);
 	    return _this;
 	  }
 
 	  _createClass(Code, [{
-	    key: 'handleClick',
-	    value: function handleClick() {
-	      var projectVideo = document.getElementById('projectVideo');
+	    key: 'handleVideoClick',
+	    value: function handleVideoClick(id) {
+	      var projectVideo = document.getElementById(id);
 	      if (projectVideo.paused) {
 	        projectVideo.play();
 	      } else {
 	        projectVideo.pause();
 	      }
+	    }
+	  }, {
+	    key: 'handleGalleryClick',
+	    value: function handleGalleryClick(direction, id) {
+	      var galleryDiv = document.getElementById(id);
+	      var scrollAmount = 0;
+	      var slideTimer = setInterval(function () {
+	        if (direction === 'right') {
+	          galleryDiv.scrollLeft += 10;
+	        } else {
+	          galleryDiv.scrollLeft -= 10;
+	        };
+	        scrollAmount += 10;
+	        if (scrollAmount >= 100) {
+	          window.clearInterval(slideTimer);
+	        }
+	      }, 15);
 	    }
 	  }, {
 	    key: 'render',
@@ -25089,7 +25107,7 @@
 	        'div',
 	        { className: 'main' },
 	        _react2.default.createElement(_Nav2.default, null),
-	        _react2.default.createElement(_Projects2.default, { projects: _projects2.default.code, onClick: this.handleClick }),
+	        _react2.default.createElement(_Projects2.default, { projects: _projects2.default.code, onVideoClick: this.handleVideoClick, onGalleryClick: this.handleGalleryClick }),
 	        _react2.default.createElement(_Footer2.default, null)
 	      );
 	    }
@@ -25262,6 +25280,10 @@
 
 	var _Video2 = _interopRequireDefault(_Video);
 
+	var _Gallery = __webpack_require__(227);
+
+	var _Gallery2 = _interopRequireDefault(_Gallery);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Projects = function Projects(props) {
@@ -25271,7 +25293,8 @@
 	      'li',
 	      { key: project.id, className: 'project-list-item' },
 	      _react2.default.createElement(_Project2.default, project),
-	      project.projectVideo && _react2.default.createElement(_Video2.default, { video: project.projectVideo, onClick: props.onClick })
+	      project.projectVideo && _react2.default.createElement(_Video2.default, { video: project.projectVideo, onClick: props.onVideoClick, id: project.id }),
+	      project.projectImages && _react2.default.createElement(_Gallery2.default, { images: project.projectImages, onClick: props.onGalleryClick, id: project.id })
 	    );
 	  });
 	  return _react2.default.createElement(
@@ -25408,13 +25431,14 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Video = function Video(props) {
+	  var videoId = "project-video-" + props.id;
 
 	  return _react2.default.createElement(
 	    "div",
 	    null,
 	    _react2.default.createElement(
 	      "video",
-	      { id: "projectVideo", className: "project-video", width: "100%", controls: true, onClick: function onClick() {
+	      { id: videoId, className: "project-video", width: "100%", controls: true, onClick: function onClick(videoId) {
 	          props.onClick();
 	        } },
 	      _react2.default.createElement("source", { src: props.video, type: "video/mp4" })
@@ -25588,14 +25612,16 @@
 	        projectSubtitle: "Freelance Front End Developer, April 2018 – present",
 	        projectDescriptionBold: "Technologies used: ",
 	        projectDescription: "CSS, Wordpress",
-	        projectText: "Civil is a blockchain startup focusing on journalism. They have a custom WordPress theme for small independent newsrooms. I adapted Civil’s WordPress theme to the individual needs of 11 different newsrooms using CSS. I worked with each newsroom to learn their needs and brand and make their sites look exactly the way they wanted."
+	        projectText: "Civil is a blockchain startup focusing on journalism. They have a custom WordPress theme for small independent newsrooms. I adapted Civil’s WordPress theme to the individual needs of 11 different newsrooms using CSS. I worked with each newsroom to learn their needs and brand and make their sites look exactly the way they wanted.",
+	        projectImages: [{ id: 1, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_bcc.jpg", alt: "Block Club Chicago" }, { id: 2, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_zigzag.jpg", alt: "Zig Zag" }, { id: 3, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_sludge.jpg", alt: "Sludge" }, { id: 4, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_documented.jpg", alt: "Documented" }, { id: 5, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_colorado_sun.jpg", alt: "The Colorado Sun" }, { id: 6, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_ecowurd.jpg", alt: "ecoWURD" }, { id: 7, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_smallbow.jpg", alt: "Small Bow" }, { id: 8, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_faqnyc.jpg", alt: "FAQ NYC" }, { id: 9, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_hmmdaily.jpg", alt: "Hmm Daily" }, { id: 10, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_cannabiswire.jpg", alt: "Cannabis Wire" }, { id: 11, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_popula.jpg", alt: "Popula" }]
 	    }, {
 	        id: "4",
 	        projectTitle: "Civil Media Company",
 	        projectSubtitle: "Freelance Front End Developer, April 2018 – present",
 	        projectDescriptionBold: "Technologies used: ",
 	        projectDescription: "JavaScript, SASS",
-	        projectText: "I worked with a designer on two major redesigns of Civil’s marketing site, achieving pixel-perfect results. I contributed additional features to the marketing site on an as-needed basis."
+	        projectText: "I worked with a designer on two major redesigns of Civil’s marketing site, achieving pixel-perfect results. I contributed additional features to the marketing site on an as-needed basis.",
+	        projectImages: [{ id: 1, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/Civil_Website_01_001.jpg", alt: "Civil Marketing Site Redesign For Token Launch 2018" }, { id: 2, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/Civil_Website_01_002.jpg", alt: "Civil Marketing Site Redesign For Token Launch 2018" }, { id: 3, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/Civil_Website_01_003.jpg", alt: "Civil Marketing Site Redesign For Token Launch 2018" }, { id: 4, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/Civil_Website_01_004.jpg", alt: "Civil Marketing Site Redesign For Token Launch 2018" }, { id: 5, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/Civil_Website_01_005.jpg", alt: "Civil Marketing Site Redesign For Token Launch 2018" }, { id: 6, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/Civil_Website_01_006.jpg", alt: "Civil Marketing Site Redesign For Token Launch 2018" }, { id: 7, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/Civil_Website_02_001.jpg", alt: "Civil Marketing Site Redesign For Newsrooms" }, { id: 8, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/Civil_Website_02_002.jpg", alt: "Civil Marketing Site Redesign For Newsrooms" }, { id: 9, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/Civil_Website_02_003.jpg", alt: "Civil Marketing Site Redesign For Newsrooms" }, { id: 10, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/Civil_Website_02_004.jpg", alt: "Civil Marketing Site Redesign For Newsrooms" }, { id: 11, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/Civil_Website_02_005.jpg", alt: "Civil Marketing Site Redesign For Newsrooms" }, { id: 12, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/Civil_Website_02_006.jpg", alt: "Civil Marketing Site Redesign For Newsrooms" }, { id: 13, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/Civil_Website_02_007.jpg", alt: "Civil Marketing Site Redesign For Newsrooms" }, { id: 14, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/Civil_Website_02_008.jpg", alt: "Civil Marketing Site Redesign For Newsrooms" }, { id: 15, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/Civil_Website_02_009.jpg", alt: "Civil Marketing Site Redesign For Newsrooms" }, { id: 16, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/Civil_Website_03_001.jpg", alt: "Civil Countdown Timer" }, { id: 17, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/Civil_Website_03_002.jpg", alt: "Civil Countdown Timer" }]
 	    }, {
 	        id: "2",
 	        projectTitle: "Changing New York",
@@ -25676,8 +25702,8 @@
 
 	  _createClass(Photo, [{
 	    key: 'handleClick',
-	    value: function handleClick(direction) {
-	      var galleryDiv = document.getElementById('gallery');
+	    value: function handleClick(direction, id) {
+	      var galleryDiv = document.getElementById(id);
 	      var scrollAmount = 0;
 	      var slideTimer = setInterval(function () {
 	        if (direction === 'right') {
@@ -25746,6 +25772,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Gallery = function Gallery(props) {
+	  var galleryId = "gallery-" + props.id;
 	  var images = props.images;
 	  var renderImages = function renderImages(images) {
 	    return images.map(function (image) {
@@ -25757,14 +25784,14 @@
 	    { className: 'gallery-container' },
 	    _react2.default.createElement(
 	      'ul',
-	      { id: 'gallery' },
+	      { id: galleryId, className: 'gallery' },
 	      renderImages(images)
 	    ),
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'arrows' },
-	      _react2.default.createElement(_RightArrow2.default, { onClick: props.onClick }),
-	      _react2.default.createElement(_LeftArrow2.default, { onClick: props.onClick })
+	      _react2.default.createElement(_RightArrow2.default, { onClick: props.onClick, id: galleryId }),
+	      _react2.default.createElement(_LeftArrow2.default, { onClick: props.onClick, id: galleryId })
 	    )
 	  );
 	};
@@ -25819,13 +25846,15 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var RightArrow = function RightArrow(props) {
+	  var galleryId = props.id;
+
 	  return _react2.default.createElement(
 	    'div',
 	    null,
 	    _react2.default.createElement(
 	      'a',
 	      { className: 'right-arrow', onClick: function onClick() {
-	          props.onClick('right');
+	          props.onClick('right', galleryId);
 	        } },
 	      '\u203A'
 	    )
@@ -25851,13 +25880,15 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var LeftArrow = function LeftArrow(props) {
+	  var galleryId = props.id;
+
 	  return _react2.default.createElement(
 	    'div',
 	    null,
 	    _react2.default.createElement(
 	      'a',
 	      { className: 'left-arrow', onClick: function onClick() {
-	          props.onClick('left');
+	          props.onClick('left', galleryId);
 	        } },
 	      '\u2039'
 	    )
@@ -26153,7 +26184,7 @@
 
 
 	// module
-	exports.push([module.id, ".gallery-container {\n  position: relative;\n}\n\n#gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n#gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 80%;\n  max-width: 950px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 45%;\n  right: -9px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  width: 17px;\n  padding: 0;\n  text-align: center;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.3em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);\n}\n\n.left-arrow {\n  margin-top: 10px;\n}\n\n@media (max-width: 650px) {\n  #gallery li {\n    text-align: center;\n    display: block;\n    padding: 0;\n  }\n\n  .images {\n    width: 100%;\n    margin: 20px 0;\n  }\n\n  .arrows {\n    display: none;\n  }\n}\n", ""]);
+	exports.push([module.id, ".gallery-container {\n  position: relative;\n  max-width: 900px;\n}\n\n.gallery {\n  margin: 0;\n  padding: 0;\n  white-space: nowrap;\n  overflow-x: scroll;\n  overflow-y: hidden;\n  width: 100%;\n}\n\n.gallery li {\n  display: inline;\n  border: none;\n}\n\n.images {\n  width: 80%;\n  max-width: 950px;\n}\n\n.arrows {\n  margin: 0;\n  padding: 0;\n  position: absolute;\n  top: 45%;\n  right: -9px;\n}\n\n.right-arrow, .left-arrow {\n  display: block;\n  width: 17px;\n  padding: 0;\n  text-align: center;\n  font-family: 'Open Sans', sans-serif;\n  font-size: 1.3em;\n  cursor: pointer;\n  background-color: #fff;\n  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);\n}\n\n.left-arrow {\n  margin-top: 10px;\n}\n\n@media (max-width: 650px) {\n  #gallery li {\n    text-align: center;\n    display: block;\n    padding: 0;\n  }\n\n  .images {\n    width: 100%;\n    margin: 20px 0;\n  }\n\n  .arrows {\n    display: none;\n  }\n}\n", ""]);
 
 	// exports
 

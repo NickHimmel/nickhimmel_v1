@@ -31,15 +31,15 @@ export default {
           projectImages: [
             {id: 1, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_bcc.jpg", alt: "Block Club Chicago"},
             {id: 2, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_zigzag.jpg", alt: "Zig Zag"},
-            {id: 3, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_sludge.jpg", alt: "Sludge"},
-            {id: 4, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_documented.jpg", alt: "Documented"},
-            {id: 5, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_colorado_sun.jpg", alt: "The Colorado Sun"},
-            {id: 6, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_ecowurd.jpg", alt: "ecoWURD"},
-            {id: 7, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_smallbow.jpg", alt: "Small Bow"},
-            {id: 8, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_faqnyc.jpg", alt: "FAQ NYC"},
-            {id: 9, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_hmmdaily.jpg", alt: "Hmm Daily"},
-            {id: 10, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_cannabiswire.jpg", alt: "Cannabis Wire"},
-            {id: 11, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_popula.jpg", alt: "Popula"}
+            {id: 3, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_popula.jpg", alt: "Popula"},
+            {id: 4, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_sludge.jpg", alt: "Sludge"},
+            {id: 5, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_documented.jpg", alt: "Documented"},
+            {id: 6, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_colorado_sun.jpg", alt: "The Colorado Sun"},
+            {id: 7, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_ecowurd.jpg", alt: "ecoWURD"},
+            {id: 8, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_smallbow.jpg", alt: "Small Bow"},
+            {id: 9, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_faqnyc.jpg", alt: "FAQ NYC"},
+            {id: 10, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_hmmdaily.jpg", alt: "Hmm Daily"},
+            {id: 11, src: "https://s3.us-east-2.amazonaws.com/nickhimmel.com/civil_newsrooms_cannabiswire.jpg", alt: "Cannabis Wire"}
           ]
       },
       {

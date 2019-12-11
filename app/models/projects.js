@@ -87,7 +87,7 @@ export default {
           projectSubtitle: "Personal project to further my React and Redux skills.",
           projectDescriptionBold: "Technologies used: ",
           projectDescription: "React, Redux, D3, SASS",
-          projectLinks: [{id: 301, site: "site (site is currently not working)", link: "https://my-politician-app.herokuapp.com/"}, {id: 302, site: "github", link: "https://github.com/NickHimmel/my-politician-app"}],
+          projectLinks: [{id: 301, site: "site", link: "https://nickhimmel.github.io/my-politician-app/"}, {id: 302, site: "github", link: "https://github.com/NickHimmel/my-politician-app"}],
           projectText: "This app lets people click on a district on a dynamic map of New York State to find out who their local congressman is as well as who their state representatives are. It shows the lawmakers’ financial information, their donors, which bills the lawmaker introduced, their vote history, and provides links to their social media pages. I pull this information from the ProPublica and OpenSecrets APIs.",
           projectVideo: [
             "https://s3.us-east-2.amazonaws.com/nickhimmel.com/mypolitician.mp4"
